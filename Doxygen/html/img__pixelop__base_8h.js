@@ -1,0 +1,27 @@
+var img__pixelop__base_8h =
+[
+    [ "ImgAbsDiff", "img__pixelop__base_8h.html#a23289a5e57f4f4ace7bce57a51ef7b41", null ],
+    [ "ImgAbsDiff", "img__pixelop__base_8h.html#a9fcf40390a74535ec405e5ac9b77df3c", null ],
+    [ "ImgAdd", "img__pixelop__base_8h.html#a98ac37220de2b1c1897a1ce53bc7a26e", null ],
+    [ "ImgAdd", "img__pixelop__base_8h.html#a460fb1829e5154ac2424fdc2eef3e8d7", null ],
+    [ "ImgAnd", "img__pixelop__base_8h.html#ae3ee208dc4de59579b3dcdaffe9aefb4", null ],
+    [ "ImgAnd", "img__pixelop__base_8h.html#a7136bbf568d6f4890f7efdafa78b3ee9", null ],
+    [ "ImgCopy", "img__pixelop__base_8h.html#abf3d2eca779ce7daf31ff8cda85071ff", null ],
+    [ "ImgCopy", "img__pixelop__base_8h.html#a67195812b8030bf0c8482ed1ae58830d", null ],
+    [ "ImgMagnitude", "img__pixelop__base_8h.html#a0dfcdec323175aaab958537966c8649b", null ],
+    [ "ImgMagnitude", "img__pixelop__base_8h.html#ac0c88d8b748bd6acb327f8caccf8ec9e", null ],
+    [ "ImgMax", "img__pixelop__base_8h.html#abe877677eec5f88b7df9ed56f8d7aacd", null ],
+    [ "ImgMax", "img__pixelop__base_8h.html#aab8435e1d1c044a06fec4f57fe7e849b", null ],
+    [ "ImgMin", "img__pixelop__base_8h.html#a965d672ae716cbc1174d71fbf2aa7c4e", null ],
+    [ "ImgMin", "img__pixelop__base_8h.html#a65c0e0eedb9225f82a0f39a661a3b926", null ],
+    [ "ImgMultiply", "img__pixelop__base_8h.html#a55bf7718a672a17c3f073141b3443f55", null ],
+    [ "ImgMultiply", "img__pixelop__base_8h.html#afac617bfcbe26ee4647f294c87b4728d", null ],
+    [ "ImgNot", "img__pixelop__base_8h.html#a9db2d4ad99a5f9d53d9a4959ba884665", null ],
+    [ "ImgNot", "img__pixelop__base_8h.html#a9030469d99ad0c1f84db2ce87b3cdd57", null ],
+    [ "ImgOr", "img__pixelop__base_8h.html#ae1d4956a94cd08717e1765eed350a4a6", null ],
+    [ "ImgOr", "img__pixelop__base_8h.html#ad97494c7976d4a2d74e56b1978c657bc", null ],
+    [ "ImgSubtract", "img__pixelop__base_8h.html#ab12429c2ce7dbdeee3135234d053c494", null ],
+    [ "ImgSubtract", "img__pixelop__base_8h.html#aa646712d9618946feab8ddf5773a4d79", null ],
+    [ "ImgXor", "img__pixelop__base_8h.html#a9ff166ba30836374fd436530b6427e9b", null ],
+    [ "ImgXor", "img__pixelop__base_8h.html#ac5da1ce8e528872136440ceb66fccbde", null ]
+];
