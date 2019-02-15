@@ -1,6 +1,6 @@
 ## HiFlipVX
 
-Open Source ***Hi***gh-Level Synthesis ***F***PGA ***L***ibrary for ***I***mage ***P***rocessing
+Open Source **Hi**gh-Level Synthesis **F**PGA **L**ibrary for **I**mage **P**rocessing
 
 - Image procesing library for FPGAs
 - Contains 28 image processing functions
@@ -104,9 +104,8 @@ If you use this code as part of your work, please cite the following paper:
 
 
 ## Contact Info
-M.Sc. Lester Kalms
-Technische Universität Dresden
-lester.kalms@tu-dresden.de
+M.Sc. Lester Kalms,
+Technische Universität Dresden,
+lester.kalms@tu-dresden.de,
 
 https://scholar.google.com/citations?user=ybrapsUAAAAJ&hl=en&oi=sra
-
