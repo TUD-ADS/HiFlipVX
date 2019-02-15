@@ -1,0 +1,261 @@
+\hypertarget{img__pixelop__core_8h}{}\section{img\+\_\+pixelop\+\_\+core.\+h File Reference}
+\label{img__pixelop__core_8h}\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+
+
+Description\+:~\newline
+ These are all core functions needed for the pixel operation functions (Do not call functions from here)  
+
+
+{\ttfamily \#include \char`\"{}img\+\_\+helper.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Scalar\+Int , typename Scalar\+Uint , typename Comp\+Int , typename Comp\+Uint , vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, const vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ }\\Scalar\+Int \hyperlink{img__pixelop__core_8h_abc0f164c5fe18169b7fa567007d5eec5}{Magnitude\+Signed} (Scalar\+Int input1, Scalar\+Int input2)
+\begin{DoxyCompactList}\small\item\em Compute Magnitude of one pixel (signed) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Uint , typename Comp\+Uint , vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ }\\Scalar\+Uint \hyperlink{img__pixelop__core_8h_a547ed962ebdc33c6c6becfed66e4e972}{Magnitude\+Unsigned} (Scalar\+Uint input1, Scalar\+Uint input2)
+\begin{DoxyCompactList}\small\item\em Compute Magnitude of one pixel (unsigned) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , typename Comp\+Type , bool I\+S\+\_\+\+S\+I\+G\+N\+ED, vx\+\_\+type\+\_\+e S\+C\+A\+L\+A\+R\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ }\\Scalar\+Type \hyperlink{img__pixelop__core_8h_ae44da830472618896f4b9ad43a37986b}{Multiply} (Scalar\+Type input1, Scalar\+Type input2)
+\begin{DoxyCompactList}\small\item\em Performs element-\/wise multiplication between two images and a scalar value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ }\\Scalar\+Type \hyperlink{img__pixelop__core_8h_a9640e6fb2524d6939bbe538998c82dd2}{Arithmetic} (Scalar\+Type input1, Scalar\+Type input2)
+\begin{DoxyCompactList}\small\item\em Computes an arithmetic operation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ }\\void \hyperlink{img__pixelop__core_8h_ada8dc0c97d7de743d6223c3442dd5fea}{Pixelwise\+Compute\+Same\+Type} (Scalar\+Type src1, Scalar\+Type src2, Scalar\+Type \&dst)
+\begin{DoxyCompactList}\small\item\em Performs a pixelwise operation on an image or between two images. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \hyperlink{img__pixelop__core_8h_a4ab9a31ce5875ee2aa24fd2b19635983}{Pixelwise\+Check\+Same\+Type} ()
+\begin{DoxyCompactList}\small\item\em Checks if the input parameters are valid. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ }\\void \hyperlink{img__pixelop__core_8h_afc80b4b565e5c63bd9b1342a7fb32652}{Pixelwise\+Same\+Type} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs a pixelwise operation on an image or between two images (Top function) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__core_8h_a648ddb2c1c2fbe5f428cc6fdbaaaa0d3}\label{img__pixelop__core_8h_a648ddb2c1c2fbe5f428cc6fdbaaaa0d3}} 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ }\\void {\bfseries Pixelwise\+Same\+Type} (Scalar\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description\+:~\newline
+ These are all core functions needed for the pixel operation functions (Do not call functions from here) 
+
+Licence\+: G\+NU G\+P\+Lv3 ~\newline
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) G\+P\+L-\/licensed code must also be made available under the G\+PL along with build \& install instructions.
+
+\begin{DoxyAuthor}{Author}
+Lester Kalms \href{mailto:lester.kalms@tu-dresden.de}{\tt lester.\+kalms@tu-\/dresden.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{img__pixelop__core_8h_a9640e6fb2524d6939bbe538998c82dd2}\label{img__pixelop__core_8h_a9640e6fb2524d6939bbe538998c82dd2}} 
+\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}!Arithmetic@{Arithmetic}}
+\index{Arithmetic@{Arithmetic}!img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Arithmetic()}{Arithmetic()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ \\
+Scalar\+Type Arithmetic (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{input1,  }\item[{Scalar\+Type}]{input2 }\end{DoxyParamCaption})}
+
+
+
+Computes an arithmetic operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the image pixels \\
+\hline
+{\em O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE} & Operation type (e.\+g. arithmetic add, sub, mul) \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & Conversion policy (wrap \& saturate) \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & Rounding policy (to zero \& nearest even) \\
+\hline
+{\em S\+C\+A\+LE} & A positive fixed-\/point (16-\/bit fraction) number multiplied to each product before overflow handling (between 0.\+0 and 1.\+0) \\
+\hline
+{\em input1} & 1. input pixel \\
+\hline
+{\em input2} & 2. input pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__pixelop__core_8h_abc0f164c5fe18169b7fa567007d5eec5}\label{img__pixelop__core_8h_abc0f164c5fe18169b7fa567007d5eec5}} 
+\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}!Magnitude\+Signed@{Magnitude\+Signed}}
+\index{Magnitude\+Signed@{Magnitude\+Signed}!img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Magnitude\+Signed()}{MagnitudeSigned()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Int , typename Scalar\+Uint , typename Comp\+Int , typename Comp\+Uint , vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, const vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ \\
+Scalar\+Int Magnitude\+Signed (\begin{DoxyParamCaption}\item[{Scalar\+Int}]{input1,  }\item[{Scalar\+Int}]{input2 }\end{DoxyParamCaption})}
+
+
+
+Compute Magnitude of one pixel (signed) 
+
+Tested for 8, 16 and 32 bit $\vert$ exact Open\+VX results 
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Int} & Data type of the image pixels \\
+\hline
+{\em Scalar\+Uint} & Data type of the image pixels \\
+\hline
+{\em Comp\+Int} & Data type for the computation \\
+\hline
+{\em Comp\+Uint} & Data type for the computation \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & Conversion policy (wrap \& saturate) \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & Rounding policy (to zero \& nearest even) \\
+\hline
+{\em input1} & 1. input pixel \\
+\hline
+{\em input2} & 2. input pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__pixelop__core_8h_a547ed962ebdc33c6c6becfed66e4e972}\label{img__pixelop__core_8h_a547ed962ebdc33c6c6becfed66e4e972}} 
+\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}!Magnitude\+Unsigned@{Magnitude\+Unsigned}}
+\index{Magnitude\+Unsigned@{Magnitude\+Unsigned}!img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Magnitude\+Unsigned()}{MagnitudeUnsigned()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Uint , typename Comp\+Uint , vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ \\
+Scalar\+Uint Magnitude\+Unsigned (\begin{DoxyParamCaption}\item[{Scalar\+Uint}]{input1,  }\item[{Scalar\+Uint}]{input2 }\end{DoxyParamCaption})}
+
+
+
+Compute Magnitude of one pixel (unsigned) 
+
+Tested for 8, 16 and 32 bit $\vert$ exact Open\+VX results if M\+A\+X\+\_\+\+V\+A\+L\+UE and C\+H\+E\+C\+K\+\_\+\+M\+AX are true ~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Uint} & Data type of the image pixels \\
+\hline
+{\em Comp\+Uint} & Data type for the computation \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & Conversion policy (wrap \& saturate) \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & Rounding policy (to zero \& nearest even) \\
+\hline
+{\em input1} & 1. input pixel \\
+\hline
+{\em input2} & 2. input pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__pixelop__core_8h_ae44da830472618896f4b9ad43a37986b}\label{img__pixelop__core_8h_ae44da830472618896f4b9ad43a37986b}} 
+\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Multiply()}{Multiply()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , typename Comp\+Type , bool I\+S\+\_\+\+S\+I\+G\+N\+ED, vx\+\_\+type\+\_\+e S\+C\+A\+L\+A\+R\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ \\
+Scalar\+Type Multiply (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{input1,  }\item[{Scalar\+Type}]{input2 }\end{DoxyParamCaption})}
+
+
+
+Performs element-\/wise multiplication between two images and a scalar value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the image pixels \\
+\hline
+{\em Comp\+Type} & Data type for the computation \\
+\hline
+{\em I\+S\+\_\+\+S\+I\+G\+N\+ED} & Is true if it is a signed value \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & Conversion policy (wrap \& saturate) \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & Rounding policy (to zero \& nearest even) \\
+\hline
+{\em S\+C\+A\+LE} & A positive fixed-\/point (16-\/bit fraction) number multiplied to each product before overflow handling (between 0.\+0 and 1.\+0) \\
+\hline
+{\em input1} & 1. input pixel \\
+\hline
+{\em input2} & 2. input pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__pixelop__core_8h_a4ab9a31ce5875ee2aa24fd2b19635983}\label{img__pixelop__core_8h_a4ab9a31ce5875ee2aa24fd2b19635983}} 
+\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}!Pixelwise\+Check\+Same\+Type@{Pixelwise\+Check\+Same\+Type}}
+\index{Pixelwise\+Check\+Same\+Type@{Pixelwise\+Check\+Same\+Type}!img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Pixelwise\+Check\+Same\+Type()}{PixelwiseCheckSameType()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} Pixelwise\+Check\+Same\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the input parameters are valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data beats (I\+M\+G\+\_\+\+P\+I\+X\+EL / V\+E\+C\+\_\+\+S\+I\+ZE) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__pixelop__core_8h_ada8dc0c97d7de743d6223c3442dd5fea}\label{img__pixelop__core_8h_ada8dc0c97d7de743d6223c3442dd5fea}} 
+\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}!Pixelwise\+Compute\+Same\+Type@{Pixelwise\+Compute\+Same\+Type}}
+\index{Pixelwise\+Compute\+Same\+Type@{Pixelwise\+Compute\+Same\+Type}!img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Pixelwise\+Compute\+Same\+Type()}{PixelwiseComputeSameType()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ \\
+void Pixelwise\+Compute\+Same\+Type (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{src1,  }\item[{Scalar\+Type}]{src2,  }\item[{Scalar\+Type \&}]{dst }\end{DoxyParamCaption})}
+
+
+
+Performs a pixelwise operation on an image or between two images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the image pixels \\
+\hline
+{\em O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE} & Operation type (e.\+g. bitwise or, and, xor, not $\vert$ arithmetic add, sub, mul) \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & Conversion policy (wrap \& saturate) \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & Rounding policy (to zero \& nearest even) \\
+\hline
+{\em S\+C\+A\+LE} & A positive fixed-\/point (16-\/bit fraction) number multiplied to each product before overflow handling (between 0.\+0 and 1.\+0) \\
+\hline
+{\em src1} & 1. input pixel \\
+\hline
+{\em src2} & 2. input pixel \\
+\hline
+{\em dst} & result \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__core_8h_afc80b4b565e5c63bd9b1342a7fb32652}\label{img__pixelop__core_8h_afc80b4b565e5c63bd9b1342a7fb32652}} 
+\index{img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}!Pixelwise\+Same\+Type@{Pixelwise\+Same\+Type}}
+\index{Pixelwise\+Same\+Type@{Pixelwise\+Same\+Type}!img\+\_\+pixelop\+\_\+core.\+h@{img\+\_\+pixelop\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Pixelwise\+Same\+Type()}{PixelwiseSameType()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ \\
+void Pixelwise\+Same\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs a pixelwise operation on an image or between two images (Top function) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em O\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE} & Operation type (e.\+g. bitwise or, and, xor, not $\vert$ arithmetic add, sub, mul) \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & Conversion policy (wrap \& saturate) \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & Rounding policy (to zero \& nearest even) \\
+\hline
+{\em S\+C\+A\+LE} & A positive fixed-\/point (16-\/bit fraction) number multiplied to each product before overflow handling (between 0.\+0 and 1.\+0) \\
+\hline
+{\em in1} & 1. input image \\
+\hline
+{\em in2} & 2. input image \\
+\hline
+{\em out} & Output image \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,589 @@
+\hypertarget{img__helper_8h}{}\section{img\+\_\+helper.\+h File Reference}
+\label{img__helper_8h}\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+
+
+Description\+:~\newline
+ These are helper functions needed by different functions (e.\+g. static assertion). All own Enumerations, Typedefs, Macros and Namespaces are contained in this file.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include \char`\"{}vx\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvx__image}{vx\+\_\+image$<$ T\+Y\+P\+E, S\+I\+Z\+E $>$}
+\begin{DoxyCompactList}\small\item\em Needed as image type for vectorization. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_static_assertion}{Static\+Assertion$<$ bool $>$}
+\item 
+struct \hyperlink{struct_static_assertion_3_01true_01_4}{Static\+Assertion$<$ true $>$}
+\item 
+struct \hyperlink{struct_static_assertion_test}{Static\+Assertion\+Test$<$ i $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_h_i_f_l_i_p_v_x}{H\+I\+F\+L\+I\+P\+VX}
+\begin{DoxyCompactList}\small\item\em Contains the different pixelwise and filter operation types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{img__helper_8h_a525335710b53cb064ca56b936120431e}\label{img__helper_8h_a525335710b53cb064ca56b936120431e}} 
+\#define \hyperlink{img__helper_8h_a525335710b53cb064ca56b936120431e}{\+\_\+\+U\+S\+E\+\_\+\+M\+A\+T\+H\+\_\+\+D\+E\+F\+I\+N\+ES}
+\begin{DoxyCompactList}\small\item\em set this to S\+D\+SoC, when using S\+D\+SoC \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_a17cfa1f1cf650e3f3850169a77fd8024}\label{img__helper_8h_a17cfa1f1cf650e3f3850169a77fd8024}} 
+\#define \hyperlink{img__helper_8h_a17cfa1f1cf650e3f3850169a77fd8024}{V\+X\+\_\+\+I\+N\+T8\+\_\+\+M\+IN}~static\+\_\+cast$<$int8\+\_\+t$>$(0-\/128)
+\begin{DoxyCompactList}\small\item\em Minimum of signed 8 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_a1120a2a995459484bc71d0831df8bafd}\label{img__helper_8h_a1120a2a995459484bc71d0831df8bafd}} 
+\#define \hyperlink{img__helper_8h_a1120a2a995459484bc71d0831df8bafd}{V\+X\+\_\+\+I\+N\+T16\+\_\+\+M\+IN}~static\+\_\+cast$<$int16\+\_\+t$>$(0-\/32768)
+\begin{DoxyCompactList}\small\item\em Minimum of signed 16 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_add34395862734b7eae2bf2760614bb90}\label{img__helper_8h_add34395862734b7eae2bf2760614bb90}} 
+\#define \hyperlink{img__helper_8h_add34395862734b7eae2bf2760614bb90}{V\+X\+\_\+\+I\+N\+T32\+\_\+\+M\+IN}~static\+\_\+cast$<$int32\+\_\+t$>$(0-\/2147483648)
+\begin{DoxyCompactList}\small\item\em Minimum of signed 32 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_aa5367e1b703116e1f2066461e97a142f}\label{img__helper_8h_aa5367e1b703116e1f2066461e97a142f}} 
+\#define \hyperlink{img__helper_8h_aa5367e1b703116e1f2066461e97a142f}{V\+X\+\_\+\+I\+N\+T8\+\_\+\+M\+AX}~static\+\_\+cast$<$int8\+\_\+t$>$(127)
+\begin{DoxyCompactList}\small\item\em Maximum of signed 8 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_a8c31d6bef836e210c943a23a2e6db6cf}\label{img__helper_8h_a8c31d6bef836e210c943a23a2e6db6cf}} 
+\#define \hyperlink{img__helper_8h_a8c31d6bef836e210c943a23a2e6db6cf}{V\+X\+\_\+\+I\+N\+T16\+\_\+\+M\+AX}~static\+\_\+cast$<$int16\+\_\+t$>$(32767)
+\begin{DoxyCompactList}\small\item\em Maximum of signed 16 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_a0b96e60168519d4d0d3dc68d22a59d5d}\label{img__helper_8h_a0b96e60168519d4d0d3dc68d22a59d5d}} 
+\#define \hyperlink{img__helper_8h_a0b96e60168519d4d0d3dc68d22a59d5d}{V\+X\+\_\+\+I\+N\+T32\+\_\+\+M\+AX}~static\+\_\+cast$<$int32\+\_\+t$>$(2147483647)
+\begin{DoxyCompactList}\small\item\em Maximum of signed 32 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_aa69d1b826ab7583cd525236bc6bb593a}\label{img__helper_8h_aa69d1b826ab7583cd525236bc6bb593a}} 
+\#define \hyperlink{img__helper_8h_aa69d1b826ab7583cd525236bc6bb593a}{V\+X\+\_\+\+U\+I\+N\+T8\+\_\+\+M\+AX}~static\+\_\+cast$<$uint8\+\_\+t$>$(0xff)
+\begin{DoxyCompactList}\small\item\em Maximum of unsigned 8 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_a766d6ad84bf4ac84564053e2968aa878}\label{img__helper_8h_a766d6ad84bf4ac84564053e2968aa878}} 
+\#define \hyperlink{img__helper_8h_a766d6ad84bf4ac84564053e2968aa878}{V\+X\+\_\+\+U\+I\+N\+T16\+\_\+\+M\+AX}~static\+\_\+cast$<$uint16\+\_\+t$>$(0xffff)
+\begin{DoxyCompactList}\small\item\em Maximum of unsigned 16 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_aad5a912fe3fb8eeac33d2f444d3e330b}\label{img__helper_8h_aad5a912fe3fb8eeac33d2f444d3e330b}} 
+\#define \hyperlink{img__helper_8h_aad5a912fe3fb8eeac33d2f444d3e330b}{V\+X\+\_\+\+U\+I\+N\+T32\+\_\+\+M\+AX}~static\+\_\+cast$<$uint32\+\_\+t$>$(0xffffffff)
+\begin{DoxyCompactList}\small\item\em Maximum of unsigned 32 bit type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__helper_8h_ae71449b1cc6e6250b91f539153a7a0d3}\label{img__helper_8h_ae71449b1cc6e6250b91f539153a7a0d3}} 
+\#define \hyperlink{img__helper_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\+\_\+\+PI}~3.\+14159265358979323846
+\begin{DoxyCompactList}\small\item\em PI if not defined by cmath. \end{DoxyCompactList}\item 
+\#define \hyperlink{img__helper_8h_a4ca94068826728af1654c706a1a76496}{G\+E\+T\+\_\+\+T\+Y\+PE}(T\+Y\+PE)
+\begin{DoxyCompactList}\small\item\em Gets the datatype of an integer\+: \end{DoxyCompactList}\item 
+\#define {\bfseries V\+E\+C\+T\+O\+R\+\_\+\+P\+I\+X\+E\+LS}(H\+E\+I\+G\+HT,  W\+I\+D\+TH,  V\+E\+C\+\_\+\+N\+UM)
+\item 
+\mbox{\Hypertarget{img__helper_8h_a5617b2cffb7277a1386c6d22cc0ed458}\label{img__helper_8h_a5617b2cffb7277a1386c6d22cc0ed458}} 
+\#define {\bfseries C\+O\+N\+C\+A\+T\+E\+N\+A\+TE}(arg1,  arg2)~C\+O\+N\+C\+A\+T\+E\+N\+A\+T\+E1(arg1, arg2)
+\item 
+\mbox{\Hypertarget{img__helper_8h_a720b19e8da7888c44f8967645746461a}\label{img__helper_8h_a720b19e8da7888c44f8967645746461a}} 
+\#define {\bfseries C\+O\+N\+C\+A\+T\+E\+N\+A\+T\+E1}(arg1,  arg2)~C\+O\+N\+C\+A\+T\+E\+N\+A\+T\+E2(arg1, arg2)
+\item 
+\mbox{\Hypertarget{img__helper_8h_a51db04648044828a15b0ed085158e3e5}\label{img__helper_8h_a51db04648044828a15b0ed085158e3e5}} 
+\#define {\bfseries C\+O\+N\+C\+A\+T\+E\+N\+A\+T\+E2}(arg1,  arg2)~arg1\#\#arg2
+\item 
+\#define \hyperlink{img__helper_8h_a4fb984a6b42d864a6ad0f60cfcdf3c3a}{S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}(expression,  message)
+\begin{DoxyCompactList}\small\item\em Pre-\/\+C++11 Static Assertions Without Boost. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} \{ \newline
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57aeeec0ad0352dfa90243e9c5bdeef915f}{H\+I\+F\+L\+I\+P\+V\+X\+::\+G\+A\+U\+S\+S\+I\+A\+N\+\_\+\+F\+I\+L\+T\+ER}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57a25df256c4bcd6cf2c4b38f1810856396}{H\+I\+F\+L\+I\+P\+V\+X\+::\+D\+E\+R\+I\+V\+A\+T\+I\+V\+E\+\_\+X}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57ad32cf674d869d4f22318109995845610}{H\+I\+F\+L\+I\+P\+V\+X\+::\+D\+E\+R\+I\+V\+A\+T\+I\+V\+E\+\_\+Y}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57a2174023cbc38ac6ce9dd82c5395729ba}{H\+I\+F\+L\+I\+P\+V\+X\+::\+C\+U\+S\+T\+O\+M\+\_\+\+C\+O\+N\+V\+O\+L\+U\+T\+I\+ON}, 
+\newline
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57a68ce9bfed16f21766c0024de9b371b96}{H\+I\+F\+L\+I\+P\+V\+X\+::\+B\+O\+X\+\_\+\+F\+I\+L\+T\+ER}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57a2c3ca2832f6da54982232f75ef7b3cc2}{H\+I\+F\+L\+I\+P\+V\+X\+::\+M\+E\+D\+I\+A\+N\+\_\+\+F\+I\+L\+T\+ER}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57abd883d308bb490a8157560b5f5c32bf8}{H\+I\+F\+L\+I\+P\+V\+X\+::\+E\+R\+O\+D\+E\+\_\+\+I\+M\+A\+GE}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57aa0e1ea0f6d13a75a304d4569d4486bfa}{H\+I\+F\+L\+I\+P\+V\+X\+::\+D\+I\+L\+A\+T\+E\+\_\+\+I\+M\+A\+GE}, 
+\newline
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57a0009caddae6040e76893bc5df2399733}{H\+I\+F\+L\+I\+P\+V\+X\+::\+N\+O\+N\+\_\+\+M\+A\+X\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+I\+ON}
+ \}\begin{DoxyCompactList}\small\item\em Perfroms a windowed filter function on an image. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52f}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationA} \{ \newline
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52facaef701582b1fd76031f099488f39b68}{H\+I\+F\+L\+I\+P\+V\+X\+::\+C\+O\+P\+Y\+\_\+\+D\+A\+TA}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fa914bbf18daf970c39f1fa9e71d63380f}{H\+I\+F\+L\+I\+P\+V\+X\+::\+B\+I\+T\+W\+I\+S\+E\+\_\+\+N\+OT}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fa6d9e3db041cfbfc6ee909cf5484c43e8}{H\+I\+F\+L\+I\+P\+V\+X\+::\+B\+I\+T\+W\+I\+S\+E\+\_\+\+A\+ND}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fab67947d81de3bdee5a61833a7f94d6a0}{H\+I\+F\+L\+I\+P\+V\+X\+::\+B\+I\+T\+W\+I\+S\+E\+\_\+\+OR}, 
+\newline
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fae36b17b79dd957cf9597f47bedcb391f}{H\+I\+F\+L\+I\+P\+V\+X\+::\+B\+I\+T\+W\+I\+S\+E\+\_\+\+X\+OR}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fade302c1fddad9eb9f5739bbae58420a6}{H\+I\+F\+L\+I\+P\+V\+X\+::\+M\+AX}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fadb6a27c9912ccdf83211bea142064c36}{H\+I\+F\+L\+I\+P\+V\+X\+::\+M\+IN}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fa473ac54eb06b535d13e6fa6021b47e04}{H\+I\+F\+L\+I\+P\+V\+X\+::\+A\+B\+S\+O\+L\+U\+T\+E\+\_\+\+D\+I\+F\+F\+E\+R\+E\+N\+CE}, 
+\newline
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fa3ea8df901ebf2a4f47a912030009dba0}{H\+I\+F\+L\+I\+P\+V\+X\+::\+A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+A\+D\+D\+I\+T\+I\+ON}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fae1918fb65f7da882f8f13e4652ff55fe}{H\+I\+F\+L\+I\+P\+V\+X\+::\+A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+S\+U\+B\+T\+R\+A\+C\+T\+I\+ON}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fa769feb0ec74a91af549cd6ce1114b405}{H\+I\+F\+L\+I\+P\+V\+X\+::\+M\+A\+G\+N\+I\+T\+U\+DE}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_a29e19d308cbf4e29e9d281f20896d52fa70151511d716e2bf94d64aa8c3fe01e8}{H\+I\+F\+L\+I\+P\+V\+X\+::\+M\+U\+L\+T\+I\+P\+LY}
+ \}\begin{DoxyCompactList}\small\item\em Performs an pixelwise operation on an image (same data type for input/output) \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_h_i_f_l_i_p_v_x_ab5ae0288d37c86d23b5c5a27cb62a0ef}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Pixelwise\+OperationB} \{ \hyperlink{namespace_h_i_f_l_i_p_v_x_ab5ae0288d37c86d23b5c5a27cb62a0efa4c884a3f7267025b2b7dfa1db8b35211}{H\+I\+F\+L\+I\+P\+V\+X\+::\+A\+C\+\_\+\+I\+M\+A\+GE}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_ab5ae0288d37c86d23b5c5a27cb62a0efa08967357cb24cb489c0ccef2b1d45237}{H\+I\+F\+L\+I\+P\+V\+X\+::\+A\+C\+\_\+\+S\+Q\+U\+A\+R\+ED}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_ab5ae0288d37c86d23b5c5a27cb62a0efa6c42bef294db43d54f7280cecfb1c75d}{H\+I\+F\+L\+I\+P\+V\+X\+::\+A\+C\+\_\+\+W\+E\+I\+G\+H\+T\+ED}, 
+\hyperlink{namespace_h_i_f_l_i_p_v_x_ab5ae0288d37c86d23b5c5a27cb62a0efa9293ddb43e3791a833b950f1d266a340}{H\+I\+F\+L\+I\+P\+V\+X\+::\+T\+H\+R\+E\+S\+H\+O\+LD}
+ \}\begin{DoxyCompactList}\small\item\em Performs an pixelwise operation on an image (vary data type for input/output) \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Image\+Type , typename Pixel\+Type , vx\+\_\+uint32 C\+O\+LS, vx\+\_\+uint32 R\+O\+WS$>$ }\\\+\_\+\+\_\+inline Image\+Type $\ast$ \hyperlink{img__helper_8h_aa388836b4d6a4589a21e679965dfafca}{Create\+Image} ()
+\begin{DoxyCompactList}\small\item\em Creates an image object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Image\+Type $>$ }\\\+\_\+\+\_\+inline void \hyperlink{img__helper_8h_a3829e0f6807408f850005aa528d6c61b}{Destroy\+Image} (Image\+Type $\ast$image)
+\begin{DoxyCompactList}\small\item\em Destroys an image object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\Type \hyperlink{img__helper_8h_a7ee945f2c9b765081a5881d4b919fb4d}{Compute\+Max} ()
+\begin{DoxyCompactList}\small\item\em Gets the maximum value of a certain data type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\Type \hyperlink{img__helper_8h_a8e6a61f20c65e64bdd4ed4db78063d9f}{Compute\+Min} ()
+\begin{DoxyCompactList}\small\item\em Gets the minimum value of a certain data type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\Type \hyperlink{img__helper_8h_aa0a5e229e816f95a3a48864a39fe7d0a}{Saturate\+Max\+Min} (Type data, Type max\+\_\+val, Type min\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Saturates a function to a maximum and minimum value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type , bool S\+I\+G\+N\+E\+D\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE$>$ }\\Type \hyperlink{img__helper_8h_adaefb97263f873702a920cb00c2f614d}{Shift\+Arithmetic\+Right} (Type data, \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} shift)
+\begin{DoxyCompactList}\small\item\em An arithmetic right shift that simulates the behavior of division. For signed values there is a different behavior between shift and division when rounding. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Out\+Type , typename In\+Type , bool C\+H\+E\+C\+K\+\_\+\+M\+AX, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ }\\Out\+Type \hyperlink{img__helper_8h_a7d67b448d66bbcc243833e4acab9221e}{Sqrt\+Lester} (In\+Type value)
+\begin{DoxyCompactList}\small\item\em Computes square root\+: Rounding to floor or to nearest integer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} \hyperlink{img__helper_8h_a6e678825ee32feecbfeaf3b5b2c1ffd4}{Compute\+Gaussian\+Kernel\+Sigma} (Scalar\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const double sigma)
+\begin{DoxyCompactList}\small\item\em Computes the Gaussian Kernel using the Sigma values (not compile time in all S\+Dx versions) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+int16 B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__helper_8h_a60441ae34c36953c0f2a4a7a8e547362}{Compute\+Convolution} (Scalar\+Type kernel\+\_\+buffer\mbox{[}B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}{vx\+\_\+int16} cur\+\_\+kernel\+\_\+ptr, const \hyperlink{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}{vx\+\_\+int16} cur\+\_\+kernel\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Convolute an array with the convolution array \mbox{[}1 2 1\mbox{]}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__helper_8h_aa0571688daacb3f887400ccfa9794809}{Compute\+Kernel} (Scalar\+Type src1\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type src2\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type dst\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes 2d kernel from two 1d kernels. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__helper_8h_a614672fdf8c7d2f66be3c88892ff270b}{Compute\+Sobel\+Kernels} (Scalar\+Type sobel\+\_\+x\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type sobel\+\_\+y\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes the 1d kernels for the sobel filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__helper_8h_a7e0a457a473c67626ffa8ba6c587a8d3}{Compute\+Gaussian\+Kernels} (Scalar\+Type gaussian\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes the Gaussian kernel. \end{DoxyCompactList}\item 
+void \hyperlink{img__helper_8h_a4854092b98055d4ca46d3080b78b0fc2}{Compute\+Normalization} (const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+sum, \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} \&norm\+\_\+mult, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&norm\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes the normalization with given sum of kernel coefficients. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Kern\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__helper_8h_a2d4357184d861d9e09242d37ef1824af}{Compute\+Normalization2d} (Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} \&norm\+\_\+mult, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&norm\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes the normalization of a 2d kernel ((a $\ast$ norm\+\_\+mult) $>$$>$ norm\+\_\+shift) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Kern\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__helper_8h_a1c59ab03c3698323d35911141495c863}{Compute\+Normalization1d} (Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} \&norm\+\_\+mult, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&norm\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes the normalization of a 1d kernel ((a $\ast$ norm\+\_\+mult) $>$$>$ norm\+\_\+shift) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description\+:~\newline
+ These are helper functions needed by different functions (e.\+g. static assertion). All own Enumerations, Typedefs, Macros and Namespaces are contained in this file. 
+
+Licence\+: G\+NU G\+P\+Lv3 ~\newline
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) G\+P\+L-\/licensed code must also be made available under the G\+PL along with build \& install instructions.
+
+\begin{DoxyAuthor}{Author}
+Lester Kalms \href{mailto:lester.kalms@tu-dresden.de}{\tt lester.\+kalms@tu-\/dresden.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{img__helper_8h_a4ca94068826728af1654c706a1a76496}\label{img__helper_8h_a4ca94068826728af1654c706a1a76496}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!G\+E\+T\+\_\+\+T\+Y\+PE@{G\+E\+T\+\_\+\+T\+Y\+PE}}
+\index{G\+E\+T\+\_\+\+T\+Y\+PE@{G\+E\+T\+\_\+\+T\+Y\+PE}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{G\+E\+T\+\_\+\+T\+Y\+PE}{GET\_TYPE}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+T\+Y\+PE(\begin{DoxyParamCaption}\item[{}]{T\+Y\+PE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\textcolor{keyword}{const} \hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6}{vx\_type\_e})( \(\backslash\)
+    (std::numeric\_limits<TYPE>::is\_integer == \textcolor{keyword}{true}) ? ( \(\backslash\)
+        (std::numeric\_limits<TYPE>::is\_signed == \textcolor{keyword}{false}) ? ( \(\backslash\)
+            (\textcolor{keyword}{sizeof}(TYPE) == 1) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a8faa6c88aa3597eabb3cc973c4a6ee80}{VX\_TYPE\_UINT8}) : ( \(\backslash\)
+                (\textcolor{keyword}{sizeof}(TYPE) == 2) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a080bd3dd807437832cf3575388911a33}{VX\_TYPE\_UINT16}) : ( \(\backslash\)
+                    (\textcolor{keyword}{sizeof}(TYPE) == 4) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6ac13f27760e4019caaa2d08c731cba38a}{VX\_TYPE\_UINT32}) : ( \(\backslash\)
+                        (\textcolor{keyword}{sizeof}(TYPE) == 8) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a0b6e6769d3f0b762f4f097247c373e38}{VX\_TYPE\_UINT64}) : ( \(\backslash\)
+                            \hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6abf4c9a7d6d689998498573ac247598f8}{VX\_TYPE\_INVALID}))))) :  ( \(\backslash\)
+            (\textcolor{keyword}{sizeof}(TYPE) == 1) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6ade01e330c4f7408377ea16c8cbe887e6}{VX\_TYPE\_INT8}) : ( \(\backslash\)
+                (\textcolor{keyword}{sizeof}(TYPE) == 2) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a7e6fb8f3de4533c7c4afdb94c9b6eaab}{VX\_TYPE\_INT16}) : ( \(\backslash\)
+                    (\textcolor{keyword}{sizeof}(TYPE) == 4) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6ae97bf24e47e1b7bbafccbbccf1daa5ca}{VX\_TYPE\_INT32}) : ( \(\backslash\)
+                        (\textcolor{keyword}{sizeof}(TYPE) == 8) ? (\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a63f3f6f0adfd956a4fe24d52ead1ba60}{VX\_TYPE\_INT64}) : ( \(\backslash\)
+                            VX\_TYPE\_INVALID)))))) : ( \(\backslash\)
+    VX\_TYPE\_INVALID) \(\backslash\)
+)
+\end{DoxyCode}
+
+
+Gets the datatype of an integer\+: 
+
+The output is of type {\ttfamily \hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6}{vx\+\_\+type\+\_\+e}} and is 8, 16, 32, 64 bit signed or unsigned \mbox{\Hypertarget{img__helper_8h_a4fb984a6b42d864a6ad0f60cfcdf3c3a}\label{img__helper_8h_a4fb984a6b42d864a6ad0f60cfcdf3c3a}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT@{S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT}{STATIC\_ASSERT}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{expression,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{struct }CONCATENATE(\_\_static\_assertion\_at\_line\_, \_\_LINE\_\_)\(\backslash\)
+\{\(\backslash\)
+    StaticAssertion<static\_cast<bool>((expression))> CONCATENATE(CONCATENATE(CONCATENATE(
+      STATIC\_ASSERTION\_FAILED\_AT\_LINE\_, \_\_LINE\_\_), \_), message);\(\backslash\)
+\};\(\backslash\)
+typedef 
+      \hyperlink{struct_static_assertion_test}{StaticAssertionTest<sizeof(CONCATENATE(\_\_static\_assertion\_at\_line\_, \_\_LINE\_\_))>}
+       CONCATENATE(\_\_static\_assertion\_test\_at\_line\_, \_\_LINE\_\_)
+\end{DoxyCode}
+
+
+Pre-\/\+C++11 Static Assertions Without Boost. 
+
+\+: from \href{http://stackoverflow.com/questions/1980012/boost-static-assert-without-boost/1980156}{\tt http\+://stackoverflow.\+com/questions/1980012/boost-\/static-\/assert-\/without-\/boost/1980156}
+
+{\ttfamily \hyperlink{img__helper_8h_a4fb984a6b42d864a6ad0f60cfcdf3c3a}{S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T(expression, message)}}
+
+When the static assertion test fails, a compiler error message that somehow contains the \char`\"{}\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+A\+T\+\_\+\+L\+I\+N\+E\+\_\+xxx\+\_\+message\char`\"{} is generated.
+
+/!\textbackslash{} message has to be a valid C++ identifier, that is to say it must not contain space characters, cannot start with a digit, etc.
+
+\hyperlink{img__helper_8h_a4fb984a6b42d864a6ad0f60cfcdf3c3a}{S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T(true, this\+\_\+message\+\_\+will\+\_\+never\+\_\+be\+\_\+displayed)}; \mbox{\Hypertarget{img__helper_8h_aac7fcf42853d48cafadbe2479716c77d}\label{img__helper_8h_aac7fcf42853d48cafadbe2479716c77d}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!V\+E\+C\+T\+O\+R\+\_\+\+P\+I\+X\+E\+LS@{V\+E\+C\+T\+O\+R\+\_\+\+P\+I\+X\+E\+LS}}
+\index{V\+E\+C\+T\+O\+R\+\_\+\+P\+I\+X\+E\+LS@{V\+E\+C\+T\+O\+R\+\_\+\+P\+I\+X\+E\+LS}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{V\+E\+C\+T\+O\+R\+\_\+\+P\+I\+X\+E\+LS}{VECTOR\_PIXELS}}
+{\footnotesize\ttfamily \#define V\+E\+C\+T\+O\+R\+\_\+\+P\+I\+X\+E\+LS(\begin{DoxyParamCaption}\item[{}]{H\+E\+I\+G\+HT,  }\item[{}]{W\+I\+D\+TH,  }\item[{}]{V\+E\+C\+\_\+\+N\+UM }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\textcolor{keyword}{const} \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\_uint32}) \(\backslash\)
+    ((static\_cast<vx\_uint32>(HEIGHT)*static\_cast<vx\_uint32>(WIDTH)) / \textcolor{keyword}{static\_cast<}
+      \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\_uint32}\textcolor{keyword}{>}(VEC\_NUM))
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{img__helper_8h_a60441ae34c36953c0f2a4a7a8e547362}\label{img__helper_8h_a60441ae34c36953c0f2a4a7a8e547362}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Convolution@{Compute\+Convolution}}
+\index{Compute\+Convolution@{Compute\+Convolution}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Convolution()}{ComputeConvolution()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+int16 B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE$>$ \\
+void Compute\+Convolution (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{kernel\+\_\+buffer\mbox{[}\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}{vx\+\_\+int16}}]{cur\+\_\+kernel\+\_\+ptr,  }\item[{const \hyperlink{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}{vx\+\_\+int16}}]{cur\+\_\+kernel\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Convolute an array with the convolution array \mbox{[}1 2 1\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the final kernel \\
+\hline
+{\em B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE} & The amount of kernels that can be stored in \char`\"{}kernel\+\_\+buffer\char`\"{} \\
+\hline
+{\em kernel\+\_\+buffer} & Buffers input and output kernel \\
+\hline
+{\em cur\+\_\+kernel\+\_\+ptr} & Pointer where the input kernel is stored \\
+\hline
+{\em cur\+\_\+kernel\+\_\+size} & The size of the input kernel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_a7e0a457a473c67626ffa8ba6c587a8d3}\label{img__helper_8h_a7e0a457a473c67626ffa8ba6c587a8d3}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Gaussian\+Kernels@{Compute\+Gaussian\+Kernels}}
+\index{Compute\+Gaussian\+Kernels@{Compute\+Gaussian\+Kernels}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Gaussian\+Kernels()}{ComputeGaussianKernels()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Compute\+Gaussian\+Kernels (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{gaussian\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes the Gaussian kernel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em gaussian} & Stores the gaussian kernel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_a6e678825ee32feecbfeaf3b5b2c1ffd4}\label{img__helper_8h_a6e678825ee32feecbfeaf3b5b2c1ffd4}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Gaussian\+Kernel\+Sigma@{Compute\+Gaussian\+Kernel\+Sigma}}
+\index{Compute\+Gaussian\+Kernel\+Sigma@{Compute\+Gaussian\+Kernel\+Sigma}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Gaussian\+Kernel\+Sigma()}{ComputeGaussianKernelSigma()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} Compute\+Gaussian\+Kernel\+Sigma (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const double}]{sigma }\end{DoxyParamCaption})}
+
+
+
+Computes the Gaussian Kernel using the Sigma values (not compile time in all S\+Dx versions) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em kernel} & The computed gaussian kernel \\
+\hline
+{\em sigma} & The input sigma value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fraction size of the fixed-\/point result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__helper_8h_aa0571688daacb3f887400ccfa9794809}\label{img__helper_8h_aa0571688daacb3f887400ccfa9794809}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Kernel@{Compute\+Kernel}}
+\index{Compute\+Kernel@{Compute\+Kernel}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Kernel()}{ComputeKernel()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Compute\+Kernel (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{src1\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{src2\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{dst\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes 2d kernel from two 1d kernels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em src1} & The 1. 1d kernel \\
+\hline
+{\em src2} & The 2. 1d kernel \\
+\hline
+{\em dst} & The resulting 2d kernel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_a7ee945f2c9b765081a5881d4b919fb4d}\label{img__helper_8h_a7ee945f2c9b765081a5881d4b919fb4d}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Max@{Compute\+Max}}
+\index{Compute\+Max@{Compute\+Max}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Max()}{ComputeMax()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type Compute\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the maximum value of a certain data type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type that should be evaluated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The maximum value for \char`\"{}\+Type\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__helper_8h_a8e6a61f20c65e64bdd4ed4db78063d9f}\label{img__helper_8h_a8e6a61f20c65e64bdd4ed4db78063d9f}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Min@{Compute\+Min}}
+\index{Compute\+Min@{Compute\+Min}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Min()}{ComputeMin()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type Compute\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the minimum value of a certain data type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type that should be evaluated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The minimum value for \char`\"{}\+Type\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__helper_8h_a4854092b98055d4ca46d3080b78b0fc2}\label{img__helper_8h_a4854092b98055d4ca46d3080b78b0fc2}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Normalization@{Compute\+Normalization}}
+\index{Compute\+Normalization@{Compute\+Normalization}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Normalization()}{ComputeNormalization()}}
+{\footnotesize\ttfamily void Compute\+Normalization (\begin{DoxyParamCaption}\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+sum,  }\item[{\hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} \&}]{norm\+\_\+mult,  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{norm\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes the normalization with given sum of kernel coefficients. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kernel\+\_\+sum} & Sum of the kernel coefficients \\
+\hline
+{\em norm\+\_\+mult} & For normalization\+: multiply with this value \\
+\hline
+{\em norm\+\_\+shift} & For normalization\+: shift the multiplied result with this value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_a1c59ab03c3698323d35911141495c863}\label{img__helper_8h_a1c59ab03c3698323d35911141495c863}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Normalization1d@{Compute\+Normalization1d}}
+\index{Compute\+Normalization1d@{Compute\+Normalization1d}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Normalization1d()}{ComputeNormalization1d()}}
+{\footnotesize\ttfamily template$<$typename Kern\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Compute\+Normalization1d (\begin{DoxyParamCaption}\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} \&}]{norm\+\_\+mult,  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{norm\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes the normalization of a 1d kernel ((a $\ast$ norm\+\_\+mult) $>$$>$ norm\+\_\+shift) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kern\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em kernel} & The kernel itself \\
+\hline
+{\em norm\+\_\+mult} & For normalization\+: multiply with this value \\
+\hline
+{\em norm\+\_\+shift} & For normalization\+: shift the multiplied result with this value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_a2d4357184d861d9e09242d37ef1824af}\label{img__helper_8h_a2d4357184d861d9e09242d37ef1824af}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Normalization2d@{Compute\+Normalization2d}}
+\index{Compute\+Normalization2d@{Compute\+Normalization2d}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Normalization2d()}{ComputeNormalization2d()}}
+{\footnotesize\ttfamily template$<$typename Kern\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Compute\+Normalization2d (\begin{DoxyParamCaption}\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} \&}]{norm\+\_\+mult,  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{norm\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes the normalization of a 2d kernel ((a $\ast$ norm\+\_\+mult) $>$$>$ norm\+\_\+shift) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kern\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em kernel} & The kernel itself \\
+\hline
+{\em norm\+\_\+mult} & For normalization\+: multiply with this value \\
+\hline
+{\em norm\+\_\+shift} & For normalization\+: shift the multiplied result with this value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_a614672fdf8c7d2f66be3c88892ff270b}\label{img__helper_8h_a614672fdf8c7d2f66be3c88892ff270b}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Compute\+Sobel\+Kernels@{Compute\+Sobel\+Kernels}}
+\index{Compute\+Sobel\+Kernels@{Compute\+Sobel\+Kernels}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Sobel\+Kernels()}{ComputeSobelKernels()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Compute\+Sobel\+Kernels (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{sobel\+\_\+x\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{sobel\+\_\+y\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes the 1d kernels for the sobel filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em sobel\+\_\+x} & Stores the sobel kernel in x-\/direction \\
+\hline
+{\em sobel\+\_\+y} & Stores the sobel kernel in y-\/direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_aa388836b4d6a4589a21e679965dfafca}\label{img__helper_8h_aa388836b4d6a4589a21e679965dfafca}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Create\+Image@{Create\+Image}}
+\index{Create\+Image@{Create\+Image}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Create\+Image()}{CreateImage()}}
+{\footnotesize\ttfamily template$<$typename Image\+Type , typename Pixel\+Type , vx\+\_\+uint32 C\+O\+LS, vx\+\_\+uint32 R\+O\+WS$>$ \\
+\+\_\+\+\_\+inline Image\+Type$\ast$ Create\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an image object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Image\+Type} & The output image type (use \char`\"{}struct vx\+\_\+image$<$...$>$\char`\"{} for vectorization of 2, 4 and 8) \\
+\hline
+{\em Pixel\+Type} & The data type of the image pixels \\
+\hline
+{\em C\+O\+LS} & The image columns \\
+\hline
+{\em R\+O\+WS} & The image rows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the allocated memory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__helper_8h_a3829e0f6807408f850005aa528d6c61b}\label{img__helper_8h_a3829e0f6807408f850005aa528d6c61b}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Destroy\+Image@{Destroy\+Image}}
+\index{Destroy\+Image@{Destroy\+Image}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Destroy\+Image()}{DestroyImage()}}
+{\footnotesize\ttfamily template$<$typename Image\+Type $>$ \\
+\+\_\+\+\_\+inline void Destroy\+Image (\begin{DoxyParamCaption}\item[{Image\+Type $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+Destroys an image object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Image\+Type} & The image type \\
+\hline
+{\em image} & The image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__helper_8h_aa0a5e229e816f95a3a48864a39fe7d0a}\label{img__helper_8h_aa0a5e229e816f95a3a48864a39fe7d0a}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Saturate\+Max\+Min@{Saturate\+Max\+Min}}
+\index{Saturate\+Max\+Min@{Saturate\+Max\+Min}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Saturate\+Max\+Min()}{SaturateMaxMin()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+Type Saturate\+Max\+Min (\begin{DoxyParamCaption}\item[{Type}]{data,  }\item[{Type}]{max\+\_\+val,  }\item[{Type}]{min\+\_\+val }\end{DoxyParamCaption})}
+
+
+
+Saturates a function to a maximum and minimum value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the value \\
+\hline
+{\em data} & The input value \\
+\hline
+{\em max\+\_\+val} & The maximum value \\
+\hline
+{\em min\+\_\+val} & The minimum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The saturated value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__helper_8h_adaefb97263f873702a920cb00c2f614d}\label{img__helper_8h_adaefb97263f873702a920cb00c2f614d}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Shift\+Arithmetic\+Right@{Shift\+Arithmetic\+Right}}
+\index{Shift\+Arithmetic\+Right@{Shift\+Arithmetic\+Right}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Shift\+Arithmetic\+Right()}{ShiftArithmeticRight()}}
+{\footnotesize\ttfamily template$<$typename Type , bool S\+I\+G\+N\+E\+D\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE$>$ \\
+Type Shift\+Arithmetic\+Right (\begin{DoxyParamCaption}\item[{Type}]{data,  }\item[{\hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{shift }\end{DoxyParamCaption})}
+
+
+
+An arithmetic right shift that simulates the behavior of division. For signed values there is a different behavior between shift and division when rounding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the value \\
+\hline
+{\em S\+I\+G\+N\+E\+D\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE} & If value is signed \\
+\hline
+{\em data} & The input value \\
+\hline
+{\em shift} & The shift value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__helper_8h_a7d67b448d66bbcc243833e4acab9221e}\label{img__helper_8h_a7d67b448d66bbcc243833e4acab9221e}} 
+\index{img\+\_\+helper.\+h@{img\+\_\+helper.\+h}!Sqrt\+Lester@{Sqrt\+Lester}}
+\index{Sqrt\+Lester@{Sqrt\+Lester}!img\+\_\+helper.\+h@{img\+\_\+helper.\+h}}
+\subsubsection{\texorpdfstring{Sqrt\+Lester()}{SqrtLester()}}
+{\footnotesize\ttfamily template$<$typename Out\+Type , typename In\+Type , bool C\+H\+E\+C\+K\+\_\+\+M\+AX, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ \\
+Out\+Type Sqrt\+Lester (\begin{DoxyParamCaption}\item[{In\+Type}]{value }\end{DoxyParamCaption})}
+
+
+
+Computes square root\+: Rounding to floor or to nearest integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Out\+Type} & The data type of the output \\
+\hline
+{\em In\+Type} & The data type of the input \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & Rounding policy (to zero \& nearest even) \\
+\hline
+{\em C\+H\+E\+C\+K\+\_\+\+M\+AX} & Is true, if the maximum value should be checked (needed for rounding to nearest even) \\
+\hline
+{\em value} & The input value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The square root of the input value 
+\end{DoxyReturn}

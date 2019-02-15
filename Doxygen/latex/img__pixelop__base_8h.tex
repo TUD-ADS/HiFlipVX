@@ -1,0 +1,412 @@
+\hypertarget{img__pixelop__base_8h}{}\section{img\+\_\+pixelop\+\_\+base.\+h File Reference}
+\label{img__pixelop__base_8h}\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+
+
+Description\+:~\newline
+ These are all pixel operation functions (Call from here)  
+
+
+{\ttfamily \#include \char`\"{}img\+\_\+pixelop\+\_\+core.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void \hyperlink{img__pixelop__base_8h_abf3d2eca779ce7daf31ff8cda85071ff}{Img\+Copy} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Copy data from an input data object into another data object. The input and output object must have the same object type and meta data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_a67195812b8030bf0c8482ed1ae58830d}\label{img__pixelop__base_8h_a67195812b8030bf0c8482ed1ae58830d}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void {\bfseries Img\+Copy} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void \hyperlink{img__pixelop__base_8h_a9db2d4ad99a5f9d53d9a4959ba884665}{Img\+Not} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs a bitwise N\+OT operation on a input image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_a9030469d99ad0c1f84db2ce87b3cdd57}\label{img__pixelop__base_8h_a9030469d99ad0c1f84db2ce87b3cdd57}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void {\bfseries Img\+Not} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void \hyperlink{img__pixelop__base_8h_ae3ee208dc4de59579b3dcdaffe9aefb4}{Img\+And} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs a bitwise A\+ND operation between two images.\+The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_a7136bbf568d6f4890f7efdafa78b3ee9}\label{img__pixelop__base_8h_a7136bbf568d6f4890f7efdafa78b3ee9}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void {\bfseries Img\+And} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void \hyperlink{img__pixelop__base_8h_ae1d4956a94cd08717e1765eed350a4a6}{Img\+Or} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs a bitwise I\+N\+C\+L\+U\+S\+I\+VE OR operation between two images. The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_ad97494c7976d4a2d74e56b1978c657bc}\label{img__pixelop__base_8h_ad97494c7976d4a2d74e56b1978c657bc}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void {\bfseries Img\+Or} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void \hyperlink{img__pixelop__base_8h_a9ff166ba30836374fd436530b6427e9b}{Img\+Xor} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs a bitwise E\+X\+C\+L\+U\+S\+I\+VE OR (X\+OR) operation between two images. The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_ac5da1ce8e528872136440ceb66fccbde}\label{img__pixelop__base_8h_ac5da1ce8e528872136440ceb66fccbde}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void {\bfseries Img\+Xor} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void \hyperlink{img__pixelop__base_8h_abe877677eec5f88b7df9ed56f8d7aacd}{Img\+Max} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements a pixel-\/wise maximum kernel. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_aab8435e1d1c044a06fec4f57fe7e849b}\label{img__pixelop__base_8h_aab8435e1d1c044a06fec4f57fe7e849b}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void {\bfseries Img\+Max} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void \hyperlink{img__pixelop__base_8h_a965d672ae716cbc1174d71fbf2aa7c4e}{Img\+Min} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements a pixel-\/wise minimum kernel. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_a65c0e0eedb9225f82a0f39a661a3b926}\label{img__pixelop__base_8h_a65c0e0eedb9225f82a0f39a661a3b926}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\void {\bfseries Img\+Min} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void \hyperlink{img__pixelop__base_8h_a23289a5e57f4f4ace7bce57a51ef7b41}{Img\+Abs\+Diff} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes the absolute difference between two images. The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_a9fcf40390a74535ec405e5ac9b77df3c}\label{img__pixelop__base_8h_a9fcf40390a74535ec405e5ac9b77df3c}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void {\bfseries Img\+Abs\+Diff} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void \hyperlink{img__pixelop__base_8h_a98ac37220de2b1c1897a1ce53bc7a26e}{Img\+Add} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs addition between two images. The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_a460fb1829e5154ac2424fdc2eef3e8d7}\label{img__pixelop__base_8h_a460fb1829e5154ac2424fdc2eef3e8d7}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void {\bfseries Img\+Add} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void \hyperlink{img__pixelop__base_8h_ab12429c2ce7dbdeee3135234d053c494}{Img\+Subtract} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs subtraction between two images.\+The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_aa646712d9618946feab8ddf5773a4d79}\label{img__pixelop__base_8h_aa646712d9618946feab8ddf5773a4d79}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void {\bfseries Img\+Subtract} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void \hyperlink{img__pixelop__base_8h_a0dfcdec323175aaab958537966c8649b}{Img\+Magnitude} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Gradient Magnitude Computation Kernel. The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_ac0c88d8b748bd6acb327f8caccf8ec9e}\label{img__pixelop__base_8h_ac0c88d8b748bd6acb327f8caccf8ec9e}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ }\\void {\bfseries Img\+Magnitude} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ }\\void \hyperlink{img__pixelop__base_8h_a55bf7718a672a17c3f073141b3443f55}{Img\+Multiply} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Performs element-\/wise multiplication between two images and a scalar value. The output image dimensions should be the same as the dimensions of the input images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__pixelop__base_8h_afac617bfcbe26ee4647f294c87b4728d}\label{img__pixelop__base_8h_afac617bfcbe26ee4647f294c87b4728d}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ }\\void {\bfseries Img\+Multiply} (Data\+Type input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL/V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description\+:~\newline
+ These are all pixel operation functions (Call from here) 
+
+Licence\+: G\+NU G\+P\+Lv3 ~\newline
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) G\+P\+L-\/licensed code must also be made available under the G\+PL along with build \& install instructions.
+
+\begin{DoxyAuthor}{Author}
+Lester Kalms \href{mailto:lester.kalms@tu-dresden.de}{\tt lester.\+kalms@tu-\/dresden.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{img__pixelop__base_8h_a23289a5e57f4f4ace7bce57a51ef7b41}\label{img__pixelop__base_8h_a23289a5e57f4f4ace7bce57a51ef7b41}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Abs\+Diff@{Img\+Abs\+Diff}}
+\index{Img\+Abs\+Diff@{Img\+Abs\+Diff}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Abs\+Diff()}{ImgAbsDiff()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ \\
+void Img\+Abs\+Diff (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes the absolute difference between two images. The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & The round conversion {\ttfamily \hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}{vx\+\_\+convert\+\_\+policy\+\_\+e}} \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_a98ac37220de2b1c1897a1ce53bc7a26e}\label{img__pixelop__base_8h_a98ac37220de2b1c1897a1ce53bc7a26e}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Add@{Img\+Add}}
+\index{Img\+Add@{Img\+Add}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Add()}{ImgAdd()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ \\
+void Img\+Add (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs addition between two images. The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & The round conversion {\ttfamily \hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}{vx\+\_\+convert\+\_\+policy\+\_\+e}} \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_ae3ee208dc4de59579b3dcdaffe9aefb4}\label{img__pixelop__base_8h_ae3ee208dc4de59579b3dcdaffe9aefb4}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+And@{Img\+And}}
+\index{Img\+And@{Img\+And}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+And()}{ImgAnd()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+void Img\+And (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs a bitwise A\+ND operation between two images.\+The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_abf3d2eca779ce7daf31ff8cda85071ff}\label{img__pixelop__base_8h_abf3d2eca779ce7daf31ff8cda85071ff}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Copy@{Img\+Copy}}
+\index{Img\+Copy@{Img\+Copy}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Copy()}{ImgCopy()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+void Img\+Copy (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Copy data from an input data object into another data object. The input and output object must have the same object type and meta data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_a0dfcdec323175aaab958537966c8649b}\label{img__pixelop__base_8h_a0dfcdec323175aaab958537966c8649b}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Magnitude@{Img\+Magnitude}}
+\index{Img\+Magnitude@{Img\+Magnitude}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Magnitude()}{ImgMagnitude()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY$>$ \\
+void Img\+Magnitude (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Gradient Magnitude Computation Kernel. The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & The round policy {\ttfamily \hyperlink{vx__types_8h_abb9dfa7effd06920db3377f0eba611fe}{vx\+\_\+round\+\_\+policy\+\_\+e}} \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_abe877677eec5f88b7df9ed56f8d7aacd}\label{img__pixelop__base_8h_abe877677eec5f88b7df9ed56f8d7aacd}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Max@{Img\+Max}}
+\index{Img\+Max@{Img\+Max}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Max()}{ImgMax()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+void Img\+Max (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements a pixel-\/wise maximum kernel. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_a965d672ae716cbc1174d71fbf2aa7c4e}\label{img__pixelop__base_8h_a965d672ae716cbc1174d71fbf2aa7c4e}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Min@{Img\+Min}}
+\index{Img\+Min@{Img\+Min}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Min()}{ImgMin()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+void Img\+Min (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements a pixel-\/wise minimum kernel. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_a55bf7718a672a17c3f073141b3443f55}\label{img__pixelop__base_8h_a55bf7718a672a17c3f073141b3443f55}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Multiply@{Img\+Multiply}}
+\index{Img\+Multiply@{Img\+Multiply}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Multiply()}{ImgMultiply()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+round\+\_\+policy\+\_\+e R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY, vx\+\_\+uint32 S\+C\+A\+LE$>$ \\
+void Img\+Multiply (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs element-\/wise multiplication between two images and a scalar value. The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & The round conversion {\ttfamily \hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}{vx\+\_\+convert\+\_\+policy\+\_\+e}} \\
+\hline
+{\em R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} & The round policy {\ttfamily \hyperlink{vx__types_8h_abb9dfa7effd06920db3377f0eba611fe}{vx\+\_\+round\+\_\+policy\+\_\+e}} \\
+\hline
+{\em S\+C\+A\+LE} & A number multiplied to each product before overflow handling. \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_a9db2d4ad99a5f9d53d9a4959ba884665}\label{img__pixelop__base_8h_a9db2d4ad99a5f9d53d9a4959ba884665}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Not@{Img\+Not}}
+\index{Img\+Not@{Img\+Not}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Not()}{ImgNot()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+void Img\+Not (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs a bitwise N\+OT operation on a input image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_ae1d4956a94cd08717e1765eed350a4a6}\label{img__pixelop__base_8h_ae1d4956a94cd08717e1765eed350a4a6}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Or@{Img\+Or}}
+\index{Img\+Or@{Img\+Or}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Or()}{ImgOr()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+void Img\+Or (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs a bitwise I\+N\+C\+L\+U\+S\+I\+VE OR operation between two images. The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_ab12429c2ce7dbdeee3135234d053c494}\label{img__pixelop__base_8h_ab12429c2ce7dbdeee3135234d053c494}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Subtract@{Img\+Subtract}}
+\index{Img\+Subtract@{Img\+Subtract}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Subtract()}{ImgSubtract()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY$>$ \\
+void Img\+Subtract (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs subtraction between two images.\+The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & The round conversion {\ttfamily \hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}{vx\+\_\+convert\+\_\+policy\+\_\+e}} \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__pixelop__base_8h_a9ff166ba30836374fd436530b6427e9b}\label{img__pixelop__base_8h_a9ff166ba30836374fd436530b6427e9b}} 
+\index{img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}!Img\+Xor@{Img\+Xor}}
+\index{Img\+Xor@{Img\+Xor}!img\+\_\+pixelop\+\_\+base.\+h@{img\+\_\+pixelop\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Xor()}{ImgXor()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+void Img\+Xor (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L/\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Performs a bitwise E\+X\+C\+L\+U\+S\+I\+VE OR (X\+OR) operation between two images. The output image dimensions should be the same as the dimensions of the input images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the image pixels \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & Amount of pixels computed in parallel \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & Amount of pixels in the image \\
+\hline
+{\em input1} & Input image \\
+\hline
+{\em input2} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}

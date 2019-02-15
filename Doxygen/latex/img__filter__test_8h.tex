@@ -1,0 +1,283 @@
+\hypertarget{img__filter__test_8h}{}\section{img\+\_\+filter\+\_\+test.\+h File Reference}
+\label{img__filter__test_8h}\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+
+
+Description\+:~\newline
+ These functions have been implemented to test the functionality and accuracy of the sdsoc functions.  
+
+
+{\ttfamily \#include \char`\"{}img\+\_\+filter\+\_\+base.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_a686d88e5711bdc8bce03e1439c2193d1}{Sw\+Box} (Type $\ast$input, Type $\ast$output)
+\begin{DoxyCompactList}\small\item\em Computes a Box filter over a window of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_a2e8a3d5ffa3e8ecf04d360684246176b}{Sw\+Convolve} (Type $\ast$input, Type $\ast$output, const Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convolves the input with the client supplied convolution matrix. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_a93b9a6dc3f204f80b70671cdb567d08a}{Sw\+Dilate} (Type $\ast$input, Type $\ast$output)
+\begin{DoxyCompactList}\small\item\em Implements Dilation, which grows the white space in an image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_a9c34e7aa1789b01d507ee8488e857c9d}{Sw\+Erode} (Type $\ast$input, Type $\ast$output)
+\begin{DoxyCompactList}\small\item\em Implements Erosion, which shrinks the white space in an image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_af548421851de61d2813bdd705b83667e}{Sw\+Gaussian} (Type $\ast$input, Type $\ast$output)
+\begin{DoxyCompactList}\small\item\em Computes a Gaussian filter over a window of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_af4e9ad73032f77c1d6d75269f24491dd}{Sw\+Median} (Type $\ast$input, Type $\ast$output)
+\begin{DoxyCompactList}\small\item\em Computes a median pixel value over a window of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_a5adbff25f597fb1ce958c7010fe9549f}{Sw\+Scharr3x3} (In\+Type $\ast$input, Out\+Type $\ast$output\+\_\+x, Out\+Type $\ast$output\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Implements the Scharr Image Filter Kernel. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__test_8h_a73c2c039c192d1e8cd34137ad9ed2bbd}{Sw\+Sobel} (In\+Type $\ast$input, Out\+Type $\ast$output\+\_\+x, Out\+Type $\ast$output\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Implements the Sobel Image Filter Kernel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__test_8h_afad0456fe751bdd5d9cdd8782c822778}\label{img__filter__test_8h_afad0456fe751bdd5d9cdd8782c822778}} 
+{\footnotesize template$<$typename Type\+Uint , typename Type\+Int , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+F\+HD, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+F\+HD, vx\+\_\+uint16 F\+I\+L\+T\+E\+R\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void {\bfseries Sw\+Filters} (Type\+Uint convolve\+\_\+kernel\mbox{[}F\+I\+L\+T\+E\+R\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}F\+I\+L\+T\+E\+R\+\_\+\+S\+I\+ZE\mbox{]}, Type\+Uint $\ast$input, Type\+Uint $\ast$output\+\_\+sw, Type\+Uint $\ast$output\+\_\+hw, Type\+Int $\ast$output\+\_\+sw\+\_\+x, Type\+Int $\ast$output\+\_\+sw\+\_\+y, Type\+Int $\ast$output\+\_\+hw\+\_\+x, Type\+Int $\ast$output\+\_\+hw\+\_\+y)
+\item 
+\mbox{\Hypertarget{img__filter__test_8h_a74d1832f94e46eccc935fc8611c6ddec}\label{img__filter__test_8h_a74d1832f94e46eccc935fc8611c6ddec}} 
+{\footnotesize template$<$typename Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+C\+O\+LS, const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint32 B\+O\+R\+D\+E\+R\+\_\+\+R\+A\+D\+I\+US$>$ }\\void \hyperlink{img__filter__test_8h_a74d1832f94e46eccc935fc8611c6ddec}{Check\+Error} (Type $\ast$output\+\_\+sw, Type $\ast$output\+\_\+hw)
+\begin{DoxyCompactList}\small\item\em SW\+: Computes the maximum absolute error between two images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__test_8h_a3da681e8c2174b1540940c6d256e2a90}\label{img__filter__test_8h_a3da681e8c2174b1540940c6d256e2a90}} 
+void \hyperlink{img__filter__test_8h_a3da681e8c2174b1540940c6d256e2a90}{Test\+Filter\+Main} (void)
+\begin{DoxyCompactList}\small\item\em Test all filter functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description\+:~\newline
+ These functions have been implemented to test the functionality and accuracy of the sdsoc functions. 
+
+Licence\+: G\+NU G\+P\+Lv3 ~\newline
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) G\+P\+L-\/licensed code must also be made available under the G\+PL along with build \& install instructions.
+
+\begin{DoxyAuthor}{Author}
+Lester Kalms \href{mailto:lester.kalms@tu-dresden.de}{\tt lester.\+kalms@tu-\/dresden.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{img__filter__test_8h_a686d88e5711bdc8bce03e1439c2193d1}\label{img__filter__test_8h_a686d88e5711bdc8bce03e1439c2193d1}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Box@{Sw\+Box}}
+\index{Sw\+Box@{Sw\+Box}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Box()}{SwBox()}}
+{\footnotesize\ttfamily template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Box (\begin{DoxyParamCaption}\item[{Type $\ast$}]{input,  }\item[{Type $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Computes a Box filter over a window of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The kernel size of the filter \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__test_8h_a2e8a3d5ffa3e8ecf04d360684246176b}\label{img__filter__test_8h_a2e8a3d5ffa3e8ecf04d360684246176b}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Convolve@{Sw\+Convolve}}
+\index{Sw\+Convolve@{Sw\+Convolve}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Convolve()}{SwConvolve()}}
+{\footnotesize\ttfamily template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Convolve (\begin{DoxyParamCaption}\item[{Type $\ast$}]{input,  }\item[{Type $\ast$}]{output,  }\item[{const Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convolves the input with the client supplied convolution matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The kernel size of the filter \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+{\em output} & The convolve kernel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__test_8h_a93b9a6dc3f204f80b70671cdb567d08a}\label{img__filter__test_8h_a93b9a6dc3f204f80b70671cdb567d08a}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Dilate@{Sw\+Dilate}}
+\index{Sw\+Dilate@{Sw\+Dilate}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Dilate()}{SwDilate()}}
+{\footnotesize\ttfamily template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Dilate (\begin{DoxyParamCaption}\item[{Type $\ast$}]{input,  }\item[{Type $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Implements Dilation, which grows the white space in an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The kernel size of the filter \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__test_8h_a9c34e7aa1789b01d507ee8488e857c9d}\label{img__filter__test_8h_a9c34e7aa1789b01d507ee8488e857c9d}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Erode@{Sw\+Erode}}
+\index{Sw\+Erode@{Sw\+Erode}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Erode()}{SwErode()}}
+{\footnotesize\ttfamily template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Erode (\begin{DoxyParamCaption}\item[{Type $\ast$}]{input,  }\item[{Type $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Implements Erosion, which shrinks the white space in an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The kernel size of the filter \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__test_8h_af548421851de61d2813bdd705b83667e}\label{img__filter__test_8h_af548421851de61d2813bdd705b83667e}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Gaussian@{Sw\+Gaussian}}
+\index{Sw\+Gaussian@{Sw\+Gaussian}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Gaussian()}{SwGaussian()}}
+{\footnotesize\ttfamily template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Gaussian (\begin{DoxyParamCaption}\item[{Type $\ast$}]{input,  }\item[{Type $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Computes a Gaussian filter over a window of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The kernel size of the filter \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__test_8h_af4e9ad73032f77c1d6d75269f24491dd}\label{img__filter__test_8h_af4e9ad73032f77c1d6d75269f24491dd}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Median@{Sw\+Median}}
+\index{Sw\+Median@{Sw\+Median}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Median()}{SwMedian()}}
+{\footnotesize\ttfamily template$<$typename Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Median (\begin{DoxyParamCaption}\item[{Type $\ast$}]{input,  }\item[{Type $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Computes a median pixel value over a window of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The kernel size of the filter \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__test_8h_a5adbff25f597fb1ce958c7010fe9549f}\label{img__filter__test_8h_a5adbff25f597fb1ce958c7010fe9549f}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Scharr3x3@{Sw\+Scharr3x3}}
+\index{Sw\+Scharr3x3@{Sw\+Scharr3x3}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Scharr3x3()}{SwScharr3x3()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Scharr3x3 (\begin{DoxyParamCaption}\item[{In\+Type $\ast$}]{input,  }\item[{Out\+Type $\ast$}]{output\+\_\+x,  }\item[{Out\+Type $\ast$}]{output\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Implements the Scharr Image Filter Kernel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output\+\_\+x} & The output x image \\
+\hline
+{\em output\+\_\+y} & The output y image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__test_8h_a73c2c039c192d1e8cd34137ad9ed2bbd}\label{img__filter__test_8h_a73c2c039c192d1e8cd34137ad9ed2bbd}} 
+\index{img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}!Sw\+Sobel@{Sw\+Sobel}}
+\index{Sw\+Sobel@{Sw\+Sobel}!img\+\_\+filter\+\_\+test.\+h@{img\+\_\+filter\+\_\+test.\+h}}
+\subsubsection{\texorpdfstring{Sw\+Sobel()}{SwSobel()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 W\+I\+D\+TH, const vx\+\_\+uint16 H\+E\+I\+G\+HT, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sw\+Sobel (\begin{DoxyParamCaption}\item[{In\+Type $\ast$}]{input,  }\item[{Out\+Type $\ast$}]{output\+\_\+x,  }\item[{Out\+Type $\ast$}]{output\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Implements the Sobel Image Filter Kernel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type} & The data type of the input and output \\
+\hline
+{\em W\+I\+D\+TH} & The image height \\
+\hline
+{\em H\+E\+I\+G\+HT} & The image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The kernel size of the filter \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type if filter exceeds border \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output\+\_\+x} & The output x image \\
+\hline
+{\em output\+\_\+y} & The output y image \\
+\hline
+\end{DoxyParams}

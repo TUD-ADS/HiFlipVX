@@ -1,0 +1,745 @@
+\hypertarget{img__other__core_8h}{}\section{img\+\_\+other\+\_\+core.\+h File Reference}
+\label{img__other__core_8h}\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+
+
+Description\+:~\newline
+ These are all core functions needed for the remaining image processing functions (Do not call functions from here)  
+
+
+{\ttfamily \#include \char`\"{}img\+\_\+helper.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, const vx\+\_\+uint16 S\+H\+I\+FT$>$ }\\void \hyperlink{img__other__core_8h_ab6dcf23750704744812db52e2da17775}{Convert\+Depth\+Single} (Src\+Type src, Dst\+Type \&dst)
+\begin{DoxyCompactList}\small\item\em Converts image bit depth. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ }\\\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \hyperlink{img__other__core_8h_a58f93cc69f9907f63486f624a47c9909}{Convert\+Bit\+Depth\+Check} ()
+\begin{DoxyCompactList}\small\item\em Checks the data type to converts image bit depth. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, const vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, const vx\+\_\+uint16 S\+H\+I\+FT$>$ }\\void \hyperlink{img__other__core_8h_a308ebd8f2840323c607957bc95d8b9da}{Convert\+Bit\+Depth} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Src\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$ output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL\mbox{]})
+\begin{DoxyCompactList}\small\item\em Converts image bit depth. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__other__core_8h_a2081bb23c518368600b4a0b9cb08f916}\label{img__other__core_8h_a2081bb23c518368600b4a0b9cb08f916}} 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, const vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, const vx\+\_\+uint16 S\+H\+I\+FT$>$ }\\void {\bfseries Convert\+Bit\+Depth} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+EL\mbox{]})
+\item 
+{\footnotesize template$<$typename Src\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_ab2901b599834ffcbe22256cfcadc6d96}{Input\+Gray} (\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} ptr, Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} \&input\+\_\+data, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Read from Gray Input. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a908a9d846f249b2bd8cfcb95e0c86ee3}{Input\+Rgb} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} cases, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&ptr, Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&input\+\_\+data, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Read from R\+GB Input. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a0ea03a62e19204945745ea35bc7b0c96}{Input\+Rgbx} (\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} ptr, Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&input\+\_\+data, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Read from R\+G\+BX Input. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a5cc0370bceb8e198b34cb1ba828f2ef1}{Output\+Gray} (\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&ptr, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}3\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Write to Gray output (B\+T.\+601) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a0f2d4a4494dde4a31848113d3fa1aae3}{Output\+Rgb} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} cases, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&ptr, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}4\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Write to R\+GB output. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a8c1ae72bb2401c51a741094c89d8451e}{Output\+Rgbx} (\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&ptr, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}3\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Write to R\+G\+BX output. \end{DoxyCompactList}\item 
+void \hyperlink{img__other__core_8h_abbeafa092b1873e428c4b04ddead3435}{Convert\+To\+Rgb} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} \&cases, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} internal\+\_\+data\mbox{[}3\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} buffer\+\_\+data\mbox{[}2\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}4\mbox{]})
+\begin{DoxyCompactList}\small\item\em Converts to R\+GB. \end{DoxyCompactList}\item 
+void \hyperlink{img__other__core_8h_a5a9b8ffbf65328b98727a52ed94a63b1}{Convert\+From\+Rgb} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} \&cases, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} internal\+\_\+data\mbox{[}4\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} buffer\+\_\+data\mbox{[}3\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\+\_\+data\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Converts from R\+GB. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a6b8ca5113005d3690a56549b91ef9a0d}{Convert\+Gray\+To\+Rgb} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert from Grayscale to R\+GB. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a796fb2416633c0cc0a8872f162fe4e02}{Convert\+Gray\+To\+Rgbx} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert from Grayscale to R\+G\+BX. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a10e1bfed071144397f6614add58b2875}{Convert\+Rgb\+To\+Gray} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert from R\+GB to Grayscale. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_abd8465643746bc265b37deffbb7e161a}{Convert\+Rgb\+To\+Rgbx} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert from R\+GB to R\+G\+BX. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a7b9c57cc94e66ff6a94cea60fcf4a071}{Convert\+Rgbx\+To\+Gray} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert from R\+G\+BX to Grayscale. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ }\\void \hyperlink{img__other__core_8h_a3cc0c2fbf4a50b2df1a45dd252dcb331}{Convert\+Rgbx\+To\+Rgb} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convert from R\+G\+BX to R\+GB. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, vx\+\_\+df\+\_\+image\+\_\+e I\+N\+P\+U\+T\+\_\+\+T\+Y\+PE, vx\+\_\+df\+\_\+image\+\_\+e O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__other__core_8h_aeaed77c914412ebcf1aabe0f3c5f54ae}{Convert\+Color} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Converts the Color of an image between V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB / V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX / V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8 (grayscale) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , const vx\+\_\+uint16 C\+H\+A\+N\+N\+E\+L\+\_\+\+ID, const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, vx\+\_\+df\+\_\+image\+\_\+e I\+N\+P\+U\+T\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__other__core_8h_a7eae34e121ae63368e6e9cc9d867602c}{Channel\+Extract} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Channel Extraction Kernel. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Dst\+Type , vx\+\_\+uint16 C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+M\+O\+U\+NT, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, vx\+\_\+df\+\_\+image\+\_\+e O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__other__core_8h_ab5ec56323000f48e2fe4912718f340e7}{Channel\+Combine} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input0\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input1\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input2\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input3\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Dst\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Channel Combine Kernel. \end{DoxyCompactList}\item 
+{\footnotesize template$<$vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+IN, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+IN, vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+O\+UT, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+O\+UT$>$ }\\void \hyperlink{img__other__core_8h_a629bbcff025ae5d8d6554f38dfaebe3d}{Scale\+Down\+Nearest} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input\mbox{[}C\+O\+L\+S\+\_\+\+IN $\ast$R\+O\+W\+S\+\_\+\+IN\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\mbox{[}C\+O\+L\+S\+\_\+\+O\+UT $\ast$R\+O\+W\+S\+\_\+\+O\+UT\mbox{]})
+\begin{DoxyCompactList}\small\item\em Resize the image down to nearest neighbor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+IN, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+IN, vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+O\+UT, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+O\+UT$>$ }\\void \hyperlink{img__other__core_8h_adbaa47dbaa3ed6909d3165f4db852750}{Scale\+Down\+Bilinear} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input\mbox{[}C\+O\+L\+S\+\_\+\+IN $\ast$R\+O\+W\+S\+\_\+\+IN\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\mbox{[}C\+O\+L\+S\+\_\+\+O\+UT $\ast$R\+O\+W\+S\+\_\+\+O\+UT\mbox{]})
+\begin{DoxyCompactList}\small\item\em Resize the image down using bilinear interpolation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+IN, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+IN, vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+O\+UT, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+O\+UT, vx\+\_\+interpolation\+\_\+type\+\_\+e S\+C\+A\+L\+E\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__other__core_8h_a7c4f1deb9b163f77ef7f158c9cb3953e}{Scale\+Image} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input\mbox{[}C\+O\+L\+S\+\_\+\+IN $\ast$R\+O\+W\+S\+\_\+\+IN\mbox{]}, \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} output\mbox{[}C\+O\+L\+S\+\_\+\+O\+UT $\ast$R\+O\+W\+S\+\_\+\+O\+UT\mbox{]})
+\begin{DoxyCompactList}\small\item\em Scale an image down using bilinear or nearest neighbor interpolation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$const vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS$>$ }\\void \hyperlink{img__other__core_8h_a90006d8eabb41f3c876c59acba9a16f1}{Integral} (\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} input\mbox{[}I\+M\+G\+\_\+\+C\+O\+LS $\ast$I\+M\+G\+\_\+\+R\+O\+WS\mbox{]}, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} output\mbox{[}I\+M\+G\+\_\+\+C\+O\+LS $\ast$I\+M\+G\+\_\+\+R\+O\+WS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes the integral image of the input. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Src\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, const vx\+\_\+uint32 D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+B\+I\+NS, const vx\+\_\+uint32 D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+R\+A\+N\+GE, const Src\+Type D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+O\+F\+F\+S\+ET$>$ }\\void \hyperlink{img__other__core_8h_a1d57becb035acce67c2508649dca48cf}{Histogram} (Src\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Generates a distribution from an image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Data\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, const vx\+\_\+uint32 L\+U\+T\+\_\+\+C\+O\+U\+NT, const vx\+\_\+uint32 L\+U\+T\+\_\+\+O\+F\+F\+S\+ET$>$ }\\void \hyperlink{img__other__core_8h_a90afb352fc32f3bb79453bf0d36ff815}{Table\+Lookup} (Data\+Type input\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]}, Data\+Type lut\mbox{[}L\+U\+T\+\_\+\+C\+O\+U\+NT\mbox{]}, Data\+Type output\mbox{[}I\+M\+G\+\_\+\+P\+I\+X\+E\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Table Lookup Image Kernel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description\+:~\newline
+ These are all core functions needed for the remaining image processing functions (Do not call functions from here) 
+
+Licence\+: G\+NU G\+P\+Lv3 ~\newline
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) G\+P\+L-\/licensed code must also be made available under the G\+PL along with build \& install instructions.
+
+\begin{DoxyAuthor}{Author}
+Lester Kalms \href{mailto:lester.kalms@tu-dresden.de}{\tt lester.\+kalms@tu-\/dresden.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{img__other__core_8h_ab5ec56323000f48e2fe4912718f340e7}\label{img__other__core_8h_ab5ec56323000f48e2fe4912718f340e7}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Channel\+Combine@{Channel\+Combine}}
+\index{Channel\+Combine@{Channel\+Combine}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Channel\+Combine()}{ChannelCombine()}}
+{\footnotesize\ttfamily template$<$typename Dst\+Type , vx\+\_\+uint16 C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+M\+O\+U\+NT, vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, vx\+\_\+df\+\_\+image\+\_\+e O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE$>$ \\
+void Channel\+Combine (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input0\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input1\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input2\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input3\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Channel Combine Kernel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dst\+Type} & The datatype of the $>$ image (vx\+\_\+uint16 (U16), vx\+\_\+uint32 (U32, R\+GB, R\+G\+BX)) \\
+\hline
+{\em C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+M\+O\+U\+NT} & The amount of channels to combine \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixels of the image \\
+\hline
+{\em O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE} & The color type of the $>$ image (V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16, V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32, V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB, V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX) \\
+\hline
+{\em input0} & The 1. plane of the input image \\
+\hline
+{\em input1} & The 2. plane of the input image \\
+\hline
+{\em input2} & The 3. plane of the input image (optional) \\
+\hline
+{\em input3} & The 4. plane of the input image (optional) \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a7eae34e121ae63368e6e9cc9d867602c}\label{img__other__core_8h_a7eae34e121ae63368e6e9cc9d867602c}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Channel\+Extract@{Channel\+Extract}}
+\index{Channel\+Extract@{Channel\+Extract}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Channel\+Extract()}{ChannelExtract()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , const vx\+\_\+uint16 C\+H\+A\+N\+N\+E\+L\+\_\+\+ID, const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, vx\+\_\+df\+\_\+image\+\_\+e I\+N\+P\+U\+T\+\_\+\+T\+Y\+PE$>$ \\
+void Channel\+Extract (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Channel Extraction Kernel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image (vx\+\_\+uint16 (U16), vx\+\_\+uint32 (U32, R\+GB, R\+G\+BX)) \\
+\hline
+{\em C\+H\+A\+N\+N\+E\+L\+\_\+\+ID} & The id of the channel to extract \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixels of the image \\
+\hline
+{\em I\+N\+P\+U\+T\+\_\+\+T\+Y\+PE} & The color type of the input image (V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16, V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32, V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB, V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a308ebd8f2840323c607957bc95d8b9da}\label{img__other__core_8h_a308ebd8f2840323c607957bc95d8b9da}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Bit\+Depth@{Convert\+Bit\+Depth}}
+\index{Convert\+Bit\+Depth@{Convert\+Bit\+Depth}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Bit\+Depth()}{ConvertBitDepth()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL, const vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, const vx\+\_\+uint16 S\+H\+I\+FT$>$ \\
+void Convert\+Bit\+Depth (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Src\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+S\+I\+ZE $>$}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Converts image bit depth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image (8, 16, 32 bit unsigned/signed) \\
+\hline
+{\em Dst\+Type} & The datatype of the output image (8, 16, 32 bit unsigned/signed) \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The vector size \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & The amount of image pixels \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & The conversion policy for overflow (V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP or V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE) \\
+\hline
+{\em S\+H\+I\+FT} & Bits are shifted by this amount (e.\+g. up for u8-\/$>$s16, down for s16-\/$>$u8), maximum shift is abs(in\+Bit\+Depth -\/ out\+Bit\+Depth) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a58f93cc69f9907f63486f624a47c9909}\label{img__other__core_8h_a58f93cc69f9907f63486f624a47c9909}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Bit\+Depth\+Check@{Convert\+Bit\+Depth\+Check}}
+\index{Convert\+Bit\+Depth\+Check@{Convert\+Bit\+Depth\+Check}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Bit\+Depth\+Check()}{ConvertBitDepthCheck()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+EL$>$ \\
+\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} Convert\+Bit\+Depth\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks the data type to converts image bit depth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image (8, 16, 32 bit unsigned/signed) \\
+\hline
+{\em Dst\+Type} & The datatype of the output image (8, 16, 32 bit unsigned/signed) \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The vector size \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+EL} & The amount of image pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_aeaed77c914412ebcf1aabe0f3c5f54ae}\label{img__other__core_8h_aeaed77c914412ebcf1aabe0f3c5f54ae}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Color@{Convert\+Color}}
+\index{Convert\+Color@{Convert\+Color}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Color()}{ConvertColor()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, vx\+\_\+df\+\_\+image\+\_\+e I\+N\+P\+U\+T\+\_\+\+T\+Y\+PE, vx\+\_\+df\+\_\+image\+\_\+e O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE$>$ \\
+void Convert\+Color (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Converts the Color of an image between V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB / V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX / V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8 (grayscale) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image (uint8 (Gray), uint32 (R\+GB, R\+G\+BX)) \\
+\hline
+{\em Dst\+Type} & The datatype of the output image (uint8 (Gray), uint32 (R\+GB, R\+G\+BX)) \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em I\+N\+P\+U\+T\+\_\+\+T\+Y\+PE} & The color type of the input image (R\+GB, R\+G\+BX, Gray) \\
+\hline
+{\em O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE} & The color type of the output image (R\+GB, R\+G\+BX, Gray) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_ab6dcf23750704744812db52e2da17775}\label{img__other__core_8h_ab6dcf23750704744812db52e2da17775}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Depth\+Single@{Convert\+Depth\+Single}}
+\index{Convert\+Depth\+Single@{Convert\+Depth\+Single}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Depth\+Single()}{ConvertDepthSingle()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , const vx\+\_\+convert\+\_\+policy\+\_\+e C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY, const vx\+\_\+uint16 S\+H\+I\+FT$>$ \\
+void Convert\+Depth\+Single (\begin{DoxyParamCaption}\item[{Src\+Type}]{src,  }\item[{Dst\+Type \&}]{dst }\end{DoxyParamCaption})}
+
+
+
+Converts image bit depth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image (8, 16, 32 bit unsigned/signed) \\
+\hline
+{\em Dst\+Type} & The datatype of the output image (8, 16, 32 bit unsigned/signed) \\
+\hline
+{\em C\+O\+N\+V\+\_\+\+P\+O\+L\+I\+CY} & The conversion policy for overflow (V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP or V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE) \\
+\hline
+{\em S\+H\+I\+FT} & Bits are shifted by this amount (e.\+g. up for u8-\/$>$s16, down for s16-\/$>$u8), maximum shift is abs(in\+Bit\+Depth -\/ out\+Bit\+Depth) \\
+\hline
+{\em src} & The input pixel \\
+\hline
+{\em dst} & The output pixel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a5a9b8ffbf65328b98727a52ed94a63b1}\label{img__other__core_8h_a5a9b8ffbf65328b98727a52ed94a63b1}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+From\+Rgb@{Convert\+From\+Rgb}}
+\index{Convert\+From\+Rgb@{Convert\+From\+Rgb}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+From\+Rgb()}{ConvertFromRgb()}}
+{\footnotesize\ttfamily void Convert\+From\+Rgb (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} \&}]{cases,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{internal\+\_\+data\mbox{[}4\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{buffer\+\_\+data\mbox{[}3\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Converts from R\+GB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cases} & Different cases how the 3 rgb pixels are distributed among the 4 input pixels \\
+\hline
+{\em internal\+\_\+data} & The input pixels \\
+\hline
+{\em buffer\+\_\+data} & Internal buffers \\
+\hline
+{\em output\+\_\+data} & The output pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a6b8ca5113005d3690a56549b91ef9a0d}\label{img__other__core_8h_a6b8ca5113005d3690a56549b91ef9a0d}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Gray\+To\+Rgb@{Convert\+Gray\+To\+Rgb}}
+\index{Convert\+Gray\+To\+Rgb@{Convert\+Gray\+To\+Rgb}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Gray\+To\+Rgb()}{ConvertGrayToRgb()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Convert\+Gray\+To\+Rgb (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convert from Grayscale to R\+GB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input imag \\
+\hline
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a796fb2416633c0cc0a8872f162fe4e02}\label{img__other__core_8h_a796fb2416633c0cc0a8872f162fe4e02}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Gray\+To\+Rgbx@{Convert\+Gray\+To\+Rgbx}}
+\index{Convert\+Gray\+To\+Rgbx@{Convert\+Gray\+To\+Rgbx}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Gray\+To\+Rgbx()}{ConvertGrayToRgbx()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Convert\+Gray\+To\+Rgbx (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convert from Grayscale to R\+G\+BX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input imag \\
+\hline
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a10e1bfed071144397f6614add58b2875}\label{img__other__core_8h_a10e1bfed071144397f6614add58b2875}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Rgb\+To\+Gray@{Convert\+Rgb\+To\+Gray}}
+\index{Convert\+Rgb\+To\+Gray@{Convert\+Rgb\+To\+Gray}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Rgb\+To\+Gray()}{ConvertRgbToGray()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Convert\+Rgb\+To\+Gray (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convert from R\+GB to Grayscale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input imag \\
+\hline
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_abd8465643746bc265b37deffbb7e161a}\label{img__other__core_8h_abd8465643746bc265b37deffbb7e161a}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Rgb\+To\+Rgbx@{Convert\+Rgb\+To\+Rgbx}}
+\index{Convert\+Rgb\+To\+Rgbx@{Convert\+Rgb\+To\+Rgbx}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Rgb\+To\+Rgbx()}{ConvertRgbToRgbx()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Convert\+Rgb\+To\+Rgbx (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convert from R\+GB to R\+G\+BX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input imag \\
+\hline
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a7b9c57cc94e66ff6a94cea60fcf4a071}\label{img__other__core_8h_a7b9c57cc94e66ff6a94cea60fcf4a071}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Rgbx\+To\+Gray@{Convert\+Rgbx\+To\+Gray}}
+\index{Convert\+Rgbx\+To\+Gray@{Convert\+Rgbx\+To\+Gray}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Rgbx\+To\+Gray()}{ConvertRgbxToGray()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Convert\+Rgbx\+To\+Gray (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convert from R\+G\+BX to Grayscale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input imag \\
+\hline
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a3cc0c2fbf4a50b2df1a45dd252dcb331}\label{img__other__core_8h_a3cc0c2fbf4a50b2df1a45dd252dcb331}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+Rgbx\+To\+Rgb@{Convert\+Rgbx\+To\+Rgb}}
+\index{Convert\+Rgbx\+To\+Rgb@{Convert\+Rgbx\+To\+Rgb}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+Rgbx\+To\+Rgb()}{ConvertRgbxToRgb()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Convert\+Rgbx\+To\+Rgb (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convert from R\+G\+BX to R\+GB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input imag \\
+\hline
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_abbeafa092b1873e428c4b04ddead3435}\label{img__other__core_8h_abbeafa092b1873e428c4b04ddead3435}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Convert\+To\+Rgb@{Convert\+To\+Rgb}}
+\index{Convert\+To\+Rgb@{Convert\+To\+Rgb}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Convert\+To\+Rgb()}{ConvertToRgb()}}
+{\footnotesize\ttfamily void Convert\+To\+Rgb (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} \&}]{cases,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{internal\+\_\+data\mbox{[}3\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{buffer\+\_\+data\mbox{[}2\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Converts to R\+GB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cases} & Different cases how the 3 rgb pixels are distributed among the 4 input pixels \\
+\hline
+{\em internal\+\_\+data} & The input pixels \\
+\hline
+{\em buffer\+\_\+data} & Internal buffers \\
+\hline
+{\em output\+\_\+data} & The output pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a1d57becb035acce67c2508649dca48cf}\label{img__other__core_8h_a1d57becb035acce67c2508649dca48cf}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Histogram()}{Histogram()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, const vx\+\_\+uint32 D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+B\+I\+NS, const vx\+\_\+uint32 D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+R\+A\+N\+GE, const Src\+Type D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+O\+F\+F\+S\+ET$>$ \\
+void Histogram (\begin{DoxyParamCaption}\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Generates a distribution from an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The Input Type can be vx\+\_\+uint8 and vx\+\_\+uint16 \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The amount of pixels for input and output image \\
+\hline
+{\em D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+B\+I\+NS} & Indicates the number of bins. \\
+\hline
+{\em D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+R\+A\+NG} & Indicates the total number of the consecutive values of the distribution interval. \\
+\hline
+{\em D\+I\+S\+T\+R\+I\+B\+U\+T\+I\+O\+N\+\_\+\+O\+F\+F\+S\+ET} & Indicates the start of the values to use (inclusive). \\
+\hline
+{\em input} & The input image (vx\+\_\+uint8, vx\+\_\+uint16) \\
+\hline
+{\em output} & The output image (vx\+\_\+uint32) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_ab2901b599834ffcbe22256cfcadc6d96}\label{img__other__core_8h_ab2901b599834ffcbe22256cfcadc6d96}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Input\+Gray@{Input\+Gray}}
+\index{Input\+Gray@{Input\+Gray}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Input\+Gray()}{InputGray()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Input\+Gray (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{ptr,  }\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8} \&}]{input\+\_\+data,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Read from Gray Input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em ptr} & The pointer to the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em input\+\_\+data} & The input pixel \\
+\hline
+{\em output\+\_\+data} & The output pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a908a9d846f249b2bd8cfcb95e0c86ee3}\label{img__other__core_8h_a908a9d846f249b2bd8cfcb95e0c86ee3}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Input\+Rgb@{Input\+Rgb}}
+\index{Input\+Rgb@{Input\+Rgb}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Input\+Rgb()}{InputRgb()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Input\+Rgb (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{cases,  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{ptr,  }\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{input\+\_\+data,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Read from R\+GB Input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em cases} & Different cases how the 3 rgb pixels are distributed among the 4 input pixels \\
+\hline
+{\em ptr} & The pointer to the image pixel \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em input\+\_\+data} & The input pixel \\
+\hline
+{\em output\+\_\+data} & The output pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a0ea03a62e19204945745ea35bc7b0c96}\label{img__other__core_8h_a0ea03a62e19204945745ea35bc7b0c96}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Input\+Rgbx@{Input\+Rgbx}}
+\index{Input\+Rgbx@{Input\+Rgbx}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Input\+Rgbx()}{InputRgbx()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Input\+Rgbx (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{ptr,  }\item[{Src\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{input\+\_\+data,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Read from R\+G\+BX Input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & The datatype of the input image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em ptr} & The pointer to the image pixel \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em input\+\_\+data} & The input pixel \\
+\hline
+{\em output\+\_\+data} & The output pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a90006d8eabb41f3c876c59acba9a16f1}\label{img__other__core_8h_a90006d8eabb41f3c876c59acba9a16f1}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Integral@{Integral}}
+\index{Integral@{Integral}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Integral()}{Integral()}}
+{\footnotesize\ttfamily template$<$const vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS$>$ \\
+void Integral (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input\mbox{[}\+I\+M\+G\+\_\+\+C\+O\+L\+S $\ast$\+I\+M\+G\+\_\+\+R\+O\+W\+S\mbox{]},  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{output\mbox{[}\+I\+M\+G\+\_\+\+C\+O\+L\+S $\ast$\+I\+M\+G\+\_\+\+R\+O\+W\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes the integral image of the input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+M\+G\+\_\+\+C\+O\+LS} & The columns of the image \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & The rows of the image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a5cc0370bceb8e198b34cb1ba828f2ef1}\label{img__other__core_8h_a5cc0370bceb8e198b34cb1ba828f2ef1}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Output\+Gray@{Output\+Gray}}
+\index{Output\+Gray@{Output\+Gray}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Output\+Gray()}{OutputGray()}}
+{\footnotesize\ttfamily template$<$typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Output\+Gray (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{ptr,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}3\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Write to Gray output (B\+T.\+601) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em ptr} & The pointer to the image pixel \\
+\hline
+{\em output\+\_\+data} & The input pixels (after conversion) \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a0f2d4a4494dde4a31848113d3fa1aae3}\label{img__other__core_8h_a0f2d4a4494dde4a31848113d3fa1aae3}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Output\+Rgb@{Output\+Rgb}}
+\index{Output\+Rgb@{Output\+Rgb}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Output\+Rgb()}{OutputRgb()}}
+{\footnotesize\ttfamily template$<$typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Output\+Rgb (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{cases,  }\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{ptr,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}4\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Write to R\+GB output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em cases} & Different cases how the 3 rgb pixels are distributed among the 4 input pixels \\
+\hline
+{\em ptr} & The pointer to the image pixel \\
+\hline
+{\em output\+\_\+data} & The input pixels (after conversion) \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a8c1ae72bb2401c51a741094c89d8451e}\label{img__other__core_8h_a8c1ae72bb2401c51a741094c89d8451e}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Output\+Rgbx@{Output\+Rgbx}}
+\index{Output\+Rgbx@{Output\+Rgbx}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Output\+Rgbx()}{OutputRgbx()}}
+{\footnotesize\ttfamily template$<$typename Dst\+Type , vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS$>$ \\
+void Output\+Rgbx (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} \&}]{ptr,  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\+\_\+data\mbox{[}3\mbox{]},  }\item[{Dst\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Write to R\+G\+BX output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Dst\+Type} & The datatype of the output image \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The pixel amount of the image \\
+\hline
+{\em ptr} & The pointer to the image pixel \\
+\hline
+{\em output\+\_\+data} & The input pixels (after conversion) \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_adbaa47dbaa3ed6909d3165f4db852750}\label{img__other__core_8h_adbaa47dbaa3ed6909d3165f4db852750}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Scale\+Down\+Bilinear@{Scale\+Down\+Bilinear}}
+\index{Scale\+Down\+Bilinear@{Scale\+Down\+Bilinear}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Scale\+Down\+Bilinear()}{ScaleDownBilinear()}}
+{\footnotesize\ttfamily template$<$vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+IN, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+IN, vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+O\+UT, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+O\+UT$>$ \\
+void Scale\+Down\+Bilinear (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input\mbox{[}\+C\+O\+L\+S\+\_\+\+I\+N $\ast$\+R\+O\+W\+S\+\_\+\+I\+N\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\mbox{[}\+C\+O\+L\+S\+\_\+\+O\+U\+T $\ast$\+R\+O\+W\+S\+\_\+\+O\+U\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Resize the image down using bilinear interpolation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+O\+L\+S\+\_\+\+IN} & The columns of the input image \\
+\hline
+{\em R\+O\+W\+S\+\_\+\+IN} & The rows of the input image \\
+\hline
+{\em C\+O\+L\+S\+\_\+\+O\+UT} & The columns of the output image \\
+\hline
+{\em R\+O\+W\+S\+\_\+\+O\+UT} & The rows of the output image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a629bbcff025ae5d8d6554f38dfaebe3d}\label{img__other__core_8h_a629bbcff025ae5d8d6554f38dfaebe3d}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Scale\+Down\+Nearest@{Scale\+Down\+Nearest}}
+\index{Scale\+Down\+Nearest@{Scale\+Down\+Nearest}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Scale\+Down\+Nearest()}{ScaleDownNearest()}}
+{\footnotesize\ttfamily template$<$vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+IN, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+IN, vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+O\+UT, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+O\+UT$>$ \\
+void Scale\+Down\+Nearest (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input\mbox{[}\+C\+O\+L\+S\+\_\+\+I\+N $\ast$\+R\+O\+W\+S\+\_\+\+I\+N\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\mbox{[}\+C\+O\+L\+S\+\_\+\+O\+U\+T $\ast$\+R\+O\+W\+S\+\_\+\+O\+U\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Resize the image down to nearest neighbor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+O\+L\+S\+\_\+\+IN} & The columns of the input image \\
+\hline
+{\em R\+O\+W\+S\+\_\+\+IN} & The rows of the input image \\
+\hline
+{\em C\+O\+L\+S\+\_\+\+O\+UT} & The columns of the output image \\
+\hline
+{\em R\+O\+W\+S\+\_\+\+O\+UT} & The rows of the output image \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a7c4f1deb9b163f77ef7f158c9cb3953e}\label{img__other__core_8h_a7c4f1deb9b163f77ef7f158c9cb3953e}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Scale\+Image@{Scale\+Image}}
+\index{Scale\+Image@{Scale\+Image}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Scale\+Image()}{ScaleImage()}}
+{\footnotesize\ttfamily template$<$vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+IN, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+IN, vx\+\_\+uint16 C\+O\+L\+S\+\_\+\+O\+UT, vx\+\_\+uint16 R\+O\+W\+S\+\_\+\+O\+UT, vx\+\_\+interpolation\+\_\+type\+\_\+e S\+C\+A\+L\+E\+\_\+\+T\+Y\+PE$>$ \\
+void Scale\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{input\mbox{[}\+C\+O\+L\+S\+\_\+\+I\+N $\ast$\+R\+O\+W\+S\+\_\+\+I\+N\mbox{]},  }\item[{\hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}]{output\mbox{[}\+C\+O\+L\+S\+\_\+\+O\+U\+T $\ast$\+R\+O\+W\+S\+\_\+\+O\+U\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Scale an image down using bilinear or nearest neighbor interpolation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+O\+L\+S\+\_\+\+IN} & The columns of the input image \\
+\hline
+{\em R\+O\+W\+S\+\_\+\+IN} & The rows of the input image \\
+\hline
+{\em C\+O\+L\+S\+\_\+\+O\+UT} & The columns of the output image \\
+\hline
+{\em R\+O\+W\+S\+\_\+\+O\+UT} & The rows of the output image \\
+\hline
+{\em S\+C\+A\+L\+E\+\_\+\+T\+Y\+PE} & The type of interpolation (V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+B\+I\+L\+I\+N\+E\+AR or V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+A\+R\+EA) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output} & The output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__other__core_8h_a90afb352fc32f3bb79453bf0d36ff815}\label{img__other__core_8h_a90afb352fc32f3bb79453bf0d36ff815}} 
+\index{img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}!Table\+Lookup@{Table\+Lookup}}
+\index{Table\+Lookup@{Table\+Lookup}!img\+\_\+other\+\_\+core.\+h@{img\+\_\+other\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Table\+Lookup()}{TableLookup()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+P\+I\+X\+E\+LS, const vx\+\_\+uint32 L\+U\+T\+\_\+\+C\+O\+U\+NT, const vx\+\_\+uint32 L\+U\+T\+\_\+\+O\+F\+F\+S\+ET$>$ \\
+void Table\+Lookup (\begin{DoxyParamCaption}\item[{Data\+Type}]{input\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]},  }\item[{Data\+Type}]{lut\mbox{[}\+L\+U\+T\+\_\+\+C\+O\+U\+N\+T\mbox{]},  }\item[{Data\+Type}]{output\mbox{[}\+I\+M\+G\+\_\+\+P\+I\+X\+E\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Table Lookup Image Kernel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & The data type can be vx\+\_\+uint8 and vx\+\_\+int16 \\
+\hline
+{\em I\+M\+G\+\_\+\+P\+I\+X\+E\+LS} & The amount of pixels for input and output image \\
+\hline
+{\em L\+U\+T\+\_\+\+C\+O\+U\+NT} & Indicates the number of elements in the L\+UT. \\
+\hline
+{\em L\+U\+T\+\_\+\+O\+F\+F\+S\+ET} & Indicates the index of the input value = 0. \\
+\hline
+{\em input} & The input image (vx\+\_\+uint8, vx\+\_\+int16) \\
+\hline
+{\em output} & The output image (vx\+\_\+uint8, vx\+\_\+int16) \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,1357 @@
+\hypertarget{img__filter__core_8h}{}\section{img\+\_\+filter\+\_\+core.\+h File Reference}
+\label{img__filter__core_8h}\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+
+
+Description\+:~\newline
+ These are the core functions used for the hardware accelerated image processing functions (Do not call functions from here)  
+
+
+{\ttfamily \#include \char`\"{}img\+\_\+helper.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename In\+Type , typename Buffer\+Type , const vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS$>$ }\\void \hyperlink{img__filter__core_8h_a5b48b69811855843d9fe0db9f4443c54}{Read\+From\+Line\+Buffer} (In\+Type input\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, Buffer\+Type linebuffer\mbox{[}B\+U\+F\+F\+E\+R\+\_\+\+N\+UM\mbox{]}\mbox{[}V\+E\+C\+\_\+\+C\+O\+LS\mbox{]}, In\+Type output\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} x)
+\begin{DoxyCompactList}\small\item\em Reads data from line buffers. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Buffer\+Type , const vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS$>$ }\\void \hyperlink{img__filter__core_8h_a50cb9a458b9e8e20f79dbe82ed848b6a}{Write\+To\+Line\+Buffer} (In\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, Buffer\+Type linebuffer\mbox{[}B\+U\+F\+F\+E\+R\+\_\+\+N\+UM\mbox{]}\mbox{[}V\+E\+C\+\_\+\+C\+O\+LS\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} x)
+\begin{DoxyCompactList}\small\item\em Writes data to line buffers. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__filter__core_8h_a9f2c62e32b8a27cf9a5d6690a9482cc3}{Sliding\+Window\+ReplicatedY} (const In\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, In\+Type output\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} y)
+\begin{DoxyCompactList}\small\item\em Replicates the y borders if needed for the sliding window. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+A, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ }\\void \hyperlink{img__filter__core_8h_a62f02a90be4b06ddb6b9e54d045bf82a}{Sliding\+Window\+ReplicatedX} (Scalar\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}W\+I\+N\+\_\+\+C\+O\+LS\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} x)
+\begin{DoxyCompactList}\small\item\em Moves sliding window and a replicated border in x direction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__filter__core_8h_aece63feb79db70d820c9499f9eaf73ff}{Sliding\+Window\+ConstantY} (const In\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, In\+Type output\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} y)
+\begin{DoxyCompactList}\small\item\em Sets a constant border of 0 for the sliding window. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+A, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ }\\void \hyperlink{img__filter__core_8h_a314355adffc03dffef83a0a6b77ace85}{Sliding\+Window\+ConstantX} (Scalar\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}W\+I\+N\+\_\+\+C\+O\+LS\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} x)
+\begin{DoxyCompactList}\small\item\em Moves sliding window and a constant border in x direction. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ }\\void \hyperlink{img__filter__core_8h_a55520c544bc62c5bb51960d786ff6420}{Sliding\+Window\+Unchanged} (const Scalar\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}W\+I\+N\+\_\+\+C\+O\+LS\mbox{]})
+\begin{DoxyCompactList}\small\item\em Moves sliding window without considering borders. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_ada374569e9379c47762cd1b045ad0d8b}{Sliding\+Window\+Horizontal} (const Scalar\+Type input\mbox{[}V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type window\mbox{[}1\mbox{]}\mbox{[}W\+I\+N\+\_\+\+C\+O\+LS\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} x)
+\begin{DoxyCompactList}\small\item\em Sliding window horizontal main function / considers different border types. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_ade514b8577997f53702d0a436fd43830}{Sliding\+Window\+Vertical} (const Scalar\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} y)
+\begin{DoxyCompactList}\small\item\em Sliding window main function / considers different border types. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_a5806cd491ac1bb6d29f40a871707145e}{Sliding\+Window} (const In\+Type input\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}W\+I\+N\+\_\+\+C\+O\+LS\mbox{]}, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} x, const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16} y)
+\begin{DoxyCompactList}\small\item\em Sliding window main function / considers different border types. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type $>$ }\\void \hyperlink{img__filter__core_8h_adc14c5eb8d4e724f5aba88e0f82e2ae6}{Compare\+And\+Swap} (In\+Type A, In\+Type B, In\+Type \&L, In\+Type \&H)
+\begin{DoxyCompactList}\small\item\em Compares and swaps 2 elements. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Scalar\+Type \hyperlink{img__filter__core_8h_a6656b1025b9c59fdc9dd71d316ecd8bb}{Compute\+Box1d} (Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes a 1d box filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Out\+Type \hyperlink{img__filter__core_8h_a04e99eb03e1606493ccd8669c9247891}{Compute\+Box2d} (In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes a 2d box filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Comp\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Out\+Type \hyperlink{img__filter__core_8h_aab6606fcc767ee86da53f6dc86e03d1a}{Compute\+Convolve2d} (Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes a 2d convolution filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Scalar\+Type \hyperlink{img__filter__core_8h_a93b8b6527b6d106e9956670b30b00e8e}{Compute\+Dilate1d} (Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a 1d dilate filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Scalar\+Type \hyperlink{img__filter__core_8h_a54c4019d12239c2e3742161e3bdda6e1}{Compute\+Erode1d} (Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a 1d erode filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , typename Kernel\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Scalar\+Type \hyperlink{img__filter__core_8h_a4a6127b3170a807faf14c4dcdbadb88b}{Compute\+Gaussian1d} (Kernel\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes a gaussian 1d filter (optimized to the kernel symmetry) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Out\+Type \hyperlink{img__filter__core_8h_aeca17ad5722bd423b795b0d4b684fd3a}{Compute\+Gaussian2d} (Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes a gaussian 2d filter (optimized to the kernel symmetry) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Out\+Type \hyperlink{img__filter__core_8h_a93b03cfcfb8a15a5960b5404c5467c32}{Compute\+Median3x3} (In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a median filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Out\+Type \hyperlink{img__filter__core_8h_a66387f8c951c2c5a73888cf46cfca10f}{Compute\+Median} (In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a median filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Out\+Type \hyperlink{img__filter__core_8h_a1bb7f8f0cb5497f3d7079b456e29ec77}{Compute\+DerivativeX} (Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes the x derivative (optimized for kernel symmetry) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\Out\+Type \hyperlink{img__filter__core_8h_ac3106b7a93d2fb64366d7b88890d5f57}{Compute\+DerivativeY} (Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift)
+\begin{DoxyCompactList}\small\item\em Computes the y derivative (optimized for kernel symmetry) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , typename Kernel\+Type , vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM$>$ }\\void \hyperlink{img__filter__core_8h_af3e54a17bb01f20d3bc0d3bf9913886a}{Compute\+Filter\+Horizontal} (Scalar\+Type window\mbox{[}W\+I\+N\+\_\+\+C\+O\+LS\mbox{]}, Kernel\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift, const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} kernel\+\_\+type, Scalar\+Type output\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Selects and computes a 1d horizontal filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , typename Kernel\+Type , vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM$>$ }\\void \hyperlink{img__filter__core_8h_ac497ff1fb131c326a2af5340d9f12821}{Compute\+Filter\+Vertical} (Scalar\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}V\+E\+C\+\_\+\+N\+UM\mbox{]}, Kernel\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift, const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} kernel\+\_\+type, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ \&output)
+\begin{DoxyCompactList}\small\item\em Selects and computes a 1d vertical filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ }\\void \hyperlink{img__filter__core_8h_a26dfa0d71a88c13a312821cea7350efb}{Compute\+Filter} (In\+Type window\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}W\+I\+N\+\_\+\+C\+O\+LS\mbox{]}, Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+N\+UM\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift, const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} kernel\+\_\+type\mbox{[}K\+E\+R\+N\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}K\+E\+R\+N\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Selects and computes a filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ }\\void \hyperlink{img__filter__core_8h_a21d7d42ff5d82bf1d30be65a1b9eaad4}{Check\+Filter\+Parameters} ()
+\begin{DoxyCompactList}\small\item\em Checks the input parameters of the convolution filter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , typename Kernel\+Type , typename Buffer\+Type , vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_a61063be9428a6614b83d04e667a2b679}{Compute\+Filter1d\+Func} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, Kernel\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift, const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} kernel\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Computes multiple 1d convolution filter of kernel\+\_\+type type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , typename Kernel\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_a861c3197569016022c05552ec2eac2aa}{Compute\+Filter1d} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(I\+M\+G\+\_\+\+R\+O\+WS $\ast$I\+M\+G\+\_\+\+C\+O\+LS)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ $\ast$output, Kernel\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift, const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} kernel\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Computes multiple 1d convolution filter of kernel\+\_\+type type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , typename Buffer\+Type , vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_acc94d29a8940966fd29c2451c1cfeb8c}{Compute\+Filter2d\+Func} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output1\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output2\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+N\+UM\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift, const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} kernel\+\_\+type\mbox{[}K\+E\+R\+N\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes multiple 2d convolution filter of kernel\+\_\+type type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_aac9859db452f9d7928b92a6b1f3c38bb}{Compute\+Filter2d} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output1\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output2\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, Kern\+Type kernel\mbox{[}K\+E\+R\+N\+\_\+\+N\+UM\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}, const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64} kernel\+\_\+mult, const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32} kernel\+\_\+shift, const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation} kernel\+\_\+type\mbox{[}K\+E\+R\+N\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes multiple 2d convolution filter of kernel\+\_\+type type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ }\\void \hyperlink{img__filter__core_8h_ab71331d17ba2116c8ae61de104887df1}{Hw\+Box} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a Box filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_a41c6fa3637bf79c84015f3c6310786d6}{Hw\+Convolve} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, const Scalar\+Type conv\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convolves the input with the client supplied convolution matrix. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_adfc4afacb4bdb50b30de882eb8100b69}{Hw\+Dilate} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements Dilation, which grows the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_afab3761d77553ea88aa83e52dc77ebf2}{Hw\+Erode} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements Erosion, which shrinks the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ }\\void \hyperlink{img__filter__core_8h_a2da69e6324cd3a25a329da271c0445e7}{Hw\+Gaussian} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a Gaussian filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_af62ed0be072b6f3b1173c0b2926ba8b6}{Hw\+Median} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a median pixel value over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_a64400c3c144e0bcb297fa7e330f2443b}{Hw\+Scharr3x3} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output1\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output2\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Scharr Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename In\+Type , typename Out\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__core_8h_ad36cb5a55f410a6cd411aad13b079b47}{Hw\+Sobel} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output1\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output2\mbox{[}V\+E\+C\+\_\+\+P\+IX\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Sobel Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description\+:~\newline
+ These are the core functions used for the hardware accelerated image processing functions (Do not call functions from here) 
+
+Licence\+: G\+NU G\+P\+Lv3 ~\newline
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) G\+P\+L-\/licensed code must also be made available under the G\+PL along with build \& install instructions.
+
+\begin{DoxyAuthor}{Author}
+Lester Kalms \href{mailto:lester.kalms@tu-dresden.de}{\tt lester.\+kalms@tu-\/dresden.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{img__filter__core_8h_a21d7d42ff5d82bf1d30be65a1b9eaad4}\label{img__filter__core_8h_a21d7d42ff5d82bf1d30be65a1b9eaad4}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Check\+Filter\+Parameters@{Check\+Filter\+Parameters}}
+\index{Check\+Filter\+Parameters@{Check\+Filter\+Parameters}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Check\+Filter\+Parameters()}{CheckFilterParameters()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Check\+Filter\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks the input parameters of the convolution filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & Data type of the input image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Out\+Type} & Data type of the output image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2) \\
+\hline
+{\em I\+M\+G\+\_\+\+C\+O\+LS} & Image width \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_adc14c5eb8d4e724f5aba88e0f82e2ae6}\label{img__filter__core_8h_adc14c5eb8d4e724f5aba88e0f82e2ae6}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compare\+And\+Swap@{Compare\+And\+Swap}}
+\index{Compare\+And\+Swap@{Compare\+And\+Swap}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compare\+And\+Swap()}{CompareAndSwap()}}
+{\footnotesize\ttfamily template$<$typename In\+Type $>$ \\
+void Compare\+And\+Swap (\begin{DoxyParamCaption}\item[{In\+Type}]{A,  }\item[{In\+Type}]{B,  }\item[{In\+Type \&}]{L,  }\item[{In\+Type \&}]{H }\end{DoxyParamCaption})}
+
+
+
+Compares and swaps 2 elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & Data type of the image pixels \\
+\hline
+{\em A} & 1. element to be compared \\
+\hline
+{\em B} & 2. element to be compared \\
+\hline
+{\em H} & smaller element \\
+\hline
+{\em L} & bigger element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a6656b1025b9c59fdc9dd71d316ecd8bb}\label{img__filter__core_8h_a6656b1025b9c59fdc9dd71d316ecd8bb}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Box1d@{Compute\+Box1d}}
+\index{Compute\+Box1d@{Compute\+Box1d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Box1d()}{ComputeBox1d()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Scalar\+Type Compute\+Box1d (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes a 1d box filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+{\em kernel\+\_\+mult} & Multiplier for normalization \\
+\hline
+{\em kernel\+\_\+shift} & Shifter For normalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the box filter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_a04e99eb03e1606493ccd8669c9247891}\label{img__filter__core_8h_a04e99eb03e1606493ccd8669c9247891}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Box2d@{Compute\+Box2d}}
+\index{Compute\+Box2d@{Compute\+Box2d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Box2d()}{ComputeBox2d()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Out\+Type Compute\+Box2d (\begin{DoxyParamCaption}\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes a 2d box filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+{\em kernel\+\_\+mult} & Multiplier for normalization \\
+\hline
+{\em kernel\+\_\+shift} & Shifter For normalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the box filter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_aab6606fcc767ee86da53f6dc86e03d1a}\label{img__filter__core_8h_aab6606fcc767ee86da53f6dc86e03d1a}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Convolve2d@{Compute\+Convolve2d}}
+\index{Compute\+Convolve2d@{Compute\+Convolve2d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Convolve2d()}{ComputeConvolve2d()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Comp\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Out\+Type Compute\+Convolve2d (\begin{DoxyParamCaption}\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes a 2d convolution filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Comp\+Type} & Data type for internal computation (uint64 or int64) \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em Kern\+Type} & The kernel scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em in\+Kernel} & The costum kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+{\em kernel\+\_\+mult} & Multiplier for normalization \\
+\hline
+{\em kernel\+\_\+shift} & Shifter For normalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the convolution filter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_a1bb7f8f0cb5497f3d7079b456e29ec77}\label{img__filter__core_8h_a1bb7f8f0cb5497f3d7079b456e29ec77}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+DerivativeX@{Compute\+DerivativeX}}
+\index{Compute\+DerivativeX@{Compute\+DerivativeX}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Derivative\+X()}{ComputeDerivativeX()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Out\+Type Compute\+DerivativeX (\begin{DoxyParamCaption}\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes the x derivative (optimized for kernel symmetry) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em Kern\+Type} & The kernel scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em kernel} & The sobel/scharr kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+{\em kernel\+\_\+mult} & Multiplier for normalization \\
+\hline
+{\em kernel\+\_\+shift} & Shifter For normalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the x derivative computation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_ac3106b7a93d2fb64366d7b88890d5f57}\label{img__filter__core_8h_ac3106b7a93d2fb64366d7b88890d5f57}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+DerivativeY@{Compute\+DerivativeY}}
+\index{Compute\+DerivativeY@{Compute\+DerivativeY}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Derivative\+Y()}{ComputeDerivativeY()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Out\+Type Compute\+DerivativeY (\begin{DoxyParamCaption}\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes the y derivative (optimized for kernel symmetry) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em Kern\+Type} & The kernel scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em kernel} & The sobel/scharr kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+{\em kernel\+\_\+mult} & Multiplier for normalization \\
+\hline
+{\em kernel\+\_\+shift} & Shifter For normalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the y derivative computation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_a93b8b6527b6d106e9956670b30b00e8e}\label{img__filter__core_8h_a93b8b6527b6d106e9956670b30b00e8e}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Dilate1d@{Compute\+Dilate1d}}
+\index{Compute\+Dilate1d@{Compute\+Dilate1d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Dilate1d()}{ComputeDilate1d()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Scalar\+Type Compute\+Dilate1d (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a 1d dilate filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & The Scalar Data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the dilate filter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_a54c4019d12239c2e3742161e3bdda6e1}\label{img__filter__core_8h_a54c4019d12239c2e3742161e3bdda6e1}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Erode1d@{Compute\+Erode1d}}
+\index{Compute\+Erode1d@{Compute\+Erode1d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Erode1d()}{ComputeErode1d()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Scalar\+Type Compute\+Erode1d (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a 1d erode filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & The Scalar Data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the erode filter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_a26dfa0d71a88c13a312821cea7350efb}\label{img__filter__core_8h_a26dfa0d71a88c13a312821cea7350efb}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Filter@{Compute\+Filter}}
+\index{Compute\+Filter@{Compute\+Filter}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Filter()}{ComputeFilter()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ \\
+void Compute\+Filter (\begin{DoxyParamCaption}\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+W\+I\+N\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+N\+U\+M\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift,  }\item[{const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation}}]{kernel\+\_\+type\mbox{[}\+K\+E\+R\+N\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+K\+E\+R\+N\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Selects and computes a filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & Data type of the input image \\
+\hline
+{\em Out\+Type} & Data type of the output image \\
+\hline
+{\em Kern\+Type} & Data type of the kernel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Vector size \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+N\+UM} & Amount of filter kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Filter kernel size \\
+\hline
+{\em W\+I\+N\+\_\+\+C\+O\+LS} & Columns of the sliding window \\
+\hline
+{\em window} & The sliding window \\
+\hline
+{\em kernel} & The convolution kernels \\
+\hline
+{\em kernel\+\_\+mult} & Resulting pixels are 1. multiplied by this amount \\
+\hline
+{\em kernel\+\_\+shift} & Resulting pixels are 2. shifted to the right by this amount \\
+\hline
+{\em kernel\+\_\+type} & The type of convolution \\
+\hline
+{\em output} & The results (vector) (per clock cycle) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a861c3197569016022c05552ec2eac2aa}\label{img__filter__core_8h_a861c3197569016022c05552ec2eac2aa}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Filter1d@{Compute\+Filter1d}}
+\index{Compute\+Filter1d@{Compute\+Filter1d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Filter1d()}{ComputeFilter1d()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , typename Kernel\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Compute\+Filter1d (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+I\+M\+G\+\_\+\+R\+O\+W\+S $\ast$\+I\+M\+G\+\_\+\+C\+O\+L\+S)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ $\ast$}]{output,  }\item[{Kernel\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift,  }\item[{const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation}}]{kernel\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Computes multiple 1d convolution filter of kernel\+\_\+type type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the input/output image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Kern\+Type} & Data type of the kernel (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em I\+M\+G\+\_\+\+C\+O\+LS} & Image width \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+{\em kernel} & The convolution kernel \\
+\hline
+{\em kernel\+\_\+mult} & Resulting pixels are 1. multiplied by this amount \\
+\hline
+{\em kernel\+\_\+shift} & Resulting pixels are 2. shifted to the right by this amount \\
+\hline
+{\em kernel\+\_\+type} & The type of convolution \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a61063be9428a6614b83d04e667a2b679}\label{img__filter__core_8h_a61063be9428a6614b83d04e667a2b679}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Filter1d\+Func@{Compute\+Filter1d\+Func}}
+\index{Compute\+Filter1d\+Func@{Compute\+Filter1d\+Func}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Filter1d\+Func()}{ComputeFilter1dFunc()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , typename Kernel\+Type , typename Buffer\+Type , vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Compute\+Filter1d\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{Kernel\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift,  }\item[{const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation}}]{kernel\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Computes multiple 1d convolution filter of kernel\+\_\+type type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the input/output image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Kernel\+Type} & Data type of the kernel (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Buffer\+Type} & (sizeof(\+In\+Type) $\ast$ V\+E\+C\+\_\+\+N\+UM $\ast$ (K\+E\+R\+N\+\_\+\+S\+I\+ZE -\/ 1)) == (sizeof(\+Buffer\+Type) $\ast$ B\+U\+F\+F\+E\+R\+\_\+\+N\+UM) \\
+\hline
+{\em B\+U\+F\+F\+E\+R\+\_\+\+N\+UM} & (sizeof(\+In\+Type) $\ast$ V\+E\+C\+\_\+\+N\+UM $\ast$ (K\+E\+R\+N\+\_\+\+S\+I\+ZE -\/ 1)) == (sizeof(\+Buffer\+Type) $\ast$ B\+U\+F\+F\+E\+R\+\_\+\+N\+UM) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2) \\
+\hline
+{\em I\+M\+G\+\_\+\+C\+O\+LS} & Image width \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+{\em kernel} & The convolution kernel \\
+\hline
+{\em kernel\+\_\+mult} & Resulting pixels are 1. multiplied by this amount \\
+\hline
+{\em kernel\+\_\+shift} & Resulting pixels are 2. shifted to the right by this amount \\
+\hline
+{\em kernel\+\_\+type} & The type of convolution \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_aac9859db452f9d7928b92a6b1f3c38bb}\label{img__filter__core_8h_aac9859db452f9d7928b92a6b1f3c38bb}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Filter2d@{Compute\+Filter2d}}
+\index{Compute\+Filter2d@{Compute\+Filter2d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Filter2d()}{ComputeFilter2d()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Compute\+Filter2d (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output1\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output2\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+N\+U\+M\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift,  }\item[{const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation}}]{kernel\+\_\+type\mbox{[}\+K\+E\+R\+N\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes multiple 2d convolution filter of kernel\+\_\+type type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & Data type of the input image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Out\+Type} & Data type of the output image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Kern\+Type} & Data type of the kernel (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2) \\
+\hline
+{\em I\+M\+G\+\_\+\+C\+O\+LS} & Image width \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output1} & 1. Output image \\
+\hline
+{\em output2} & 2. Output image \\
+\hline
+{\em kernel} & The convolution kernel \\
+\hline
+{\em kernel\+\_\+mult} & Resulting pixels are 1. multiplied by this amount \\
+\hline
+{\em kernel\+\_\+shift} & Resulting pixels are 2. shifted to the right by this amount \\
+\hline
+{\em kernel\+\_\+type} & The type of convolution \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_acc94d29a8940966fd29c2451c1cfeb8c}\label{img__filter__core_8h_acc94d29a8940966fd29c2451c1cfeb8c}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Filter2d\+Func@{Compute\+Filter2d\+Func}}
+\index{Compute\+Filter2d\+Func@{Compute\+Filter2d\+Func}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Filter2d\+Func()}{ComputeFilter2dFunc()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , typename Buffer\+Type , vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+N\+UM, vx\+\_\+uint16 I\+M\+G\+\_\+\+C\+O\+LS, vx\+\_\+uint16 I\+M\+G\+\_\+\+R\+O\+WS, vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Compute\+Filter2d\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output1\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output2\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+N\+U\+M\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift,  }\item[{const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation}}]{kernel\+\_\+type\mbox{[}\+K\+E\+R\+N\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes multiple 2d convolution filter of kernel\+\_\+type type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & Data type of the input image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Out\+Type} & Data type of the output image (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Kern\+Type} & Data type of the kernel (8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Buffer\+Type} & (sizeof(\+In\+Type) $\ast$ V\+E\+C\+\_\+\+N\+UM $\ast$ (K\+E\+R\+N\+\_\+\+S\+I\+ZE -\/ 1)) == (sizeof(\+Buffer\+Type) $\ast$ B\+U\+F\+F\+E\+R\+\_\+\+N\+UM) \\
+\hline
+{\em B\+U\+F\+F\+E\+R\+\_\+\+N\+UM} & (sizeof(\+In\+Type) $\ast$ V\+E\+C\+\_\+\+N\+UM $\ast$ (K\+E\+R\+N\+\_\+\+S\+I\+ZE -\/ 1)) == (sizeof(\+Buffer\+Type) $\ast$ B\+U\+F\+F\+E\+R\+\_\+\+N\+UM) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2) \\
+\hline
+{\em I\+M\+G\+\_\+\+C\+O\+LS} & Image width \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output1} & 1. Output image \\
+\hline
+{\em output2} & 2. Output image \\
+\hline
+{\em kernel} & The convolution kernel \\
+\hline
+{\em kernel\+\_\+mult} & Resulting pixels are 1. multiplied by this amount \\
+\hline
+{\em kernel\+\_\+shift} & Resulting pixels are 2. shifted to the right by this amount \\
+\hline
+{\em kernel\+\_\+type} & The type of convolution \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_af3e54a17bb01f20d3bc0d3bf9913886a}\label{img__filter__core_8h_af3e54a17bb01f20d3bc0d3bf9913886a}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Filter\+Horizontal@{Compute\+Filter\+Horizontal}}
+\index{Compute\+Filter\+Horizontal@{Compute\+Filter\+Horizontal}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Filter\+Horizontal()}{ComputeFilterHorizontal()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , typename Kernel\+Type , vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM$>$ \\
+void Compute\+Filter\+Horizontal (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{window\mbox{[}\+W\+I\+N\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{Kernel\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift,  }\item[{const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation}}]{kernel\+\_\+type,  }\item[{Scalar\+Type}]{output\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Selects and computes a 1d horizontal filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the input/output image \\
+\hline
+{\em Kernel\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Filter kernel size \\
+\hline
+{\em W\+I\+N\+\_\+\+C\+O\+LS} & Columns of the sliding window \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Vector size \\
+\hline
+{\em window} & The sliding window \\
+\hline
+{\em kernel} & The convolution kernels \\
+\hline
+{\em kernel\+\_\+mult} & Resulting pixels are 1. multiplied by this amount \\
+\hline
+{\em kernel\+\_\+shift} & Resulting pixels are 2. shifted to the right by this amount \\
+\hline
+{\em kernel\+\_\+type} & The type of convolution \\
+\hline
+{\em output} & The results (vector) (per clock cycle) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_ac497ff1fb131c326a2af5340d9f12821}\label{img__filter__core_8h_ac497ff1fb131c326a2af5340d9f12821}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Filter\+Vertical@{Compute\+Filter\+Vertical}}
+\index{Compute\+Filter\+Vertical@{Compute\+Filter\+Vertical}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Filter\+Vertical()}{ComputeFilterVertical()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , typename Kernel\+Type , vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+uint16 V\+E\+C\+\_\+\+N\+UM$>$ \\
+void Compute\+Filter\+Vertical (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{Kernel\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift,  }\item[{const \hyperlink{namespace_h_i_f_l_i_p_v_x_a62626da15d80d073221df1590163df57}{H\+I\+F\+L\+I\+P\+V\+X\+::\+Filter\+Operation}}]{kernel\+\_\+type,  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$ \&}]{output }\end{DoxyParamCaption})}
+
+
+
+Selects and computes a 1d vertical filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & Data type of the input/output image \\
+\hline
+{\em Kernel\+Type} & Data type of the kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Filter kernel size \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Vector size \\
+\hline
+{\em window} & The sliding window \\
+\hline
+{\em kernel} & The convolution kernels \\
+\hline
+{\em kernel\+\_\+mult} & Resulting pixels are 1. multiplied by this amount \\
+\hline
+{\em kernel\+\_\+shift} & Resulting pixels are 2. shifted to the right by this amount \\
+\hline
+{\em kernel\+\_\+type} & The type of convolution \\
+\hline
+{\em output} & The results (vector) (per clock cycle) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a4a6127b3170a807faf14c4dcdbadb88b}\label{img__filter__core_8h_a4a6127b3170a807faf14c4dcdbadb88b}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Gaussian1d@{Compute\+Gaussian1d}}
+\index{Compute\+Gaussian1d@{Compute\+Gaussian1d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Gaussian1d()}{ComputeGaussian1d()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , typename Kernel\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Scalar\+Type Compute\+Gaussian1d (\begin{DoxyParamCaption}\item[{Kernel\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes a gaussian 1d filter (optimized to the kernel symmetry) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & The input/output data type \\
+\hline
+{\em Kern\+Type} & The kernel scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em kernel} & The gaussian kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+{\em kernel\+\_\+mult} & Multiplier for normalization \\
+\hline
+{\em kernel\+\_\+shift} & Shifter For normalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the gaussian convolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_aeca17ad5722bd423b795b0d4b684fd3a}\label{img__filter__core_8h_aeca17ad5722bd423b795b0d4b684fd3a}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Gaussian2d@{Compute\+Gaussian2d}}
+\index{Compute\+Gaussian2d@{Compute\+Gaussian2d}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Gaussian2d()}{ComputeGaussian2d()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , typename Kern\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Out\+Type Compute\+Gaussian2d (\begin{DoxyParamCaption}\item[{Kern\+Type}]{kernel\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}]{kernel\+\_\+mult,  }\item[{const \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}]{kernel\+\_\+shift }\end{DoxyParamCaption})}
+
+
+
+Computes a gaussian 2d filter (optimized to the kernel symmetry) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em Kern\+Type} & The kernel scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em kernel} & The gaussian kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+{\em kernel\+\_\+mult} & Multiplier for normalization \\
+\hline
+{\em kernel\+\_\+shift} & Shifter For normalization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the gaussian convolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_a66387f8c951c2c5a73888cf46cfca10f}\label{img__filter__core_8h_a66387f8c951c2c5a73888cf46cfca10f}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Median@{Compute\+Median}}
+\index{Compute\+Median@{Compute\+Median}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Median()}{ComputeMedian()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Out\+Type Compute\+Median (\begin{DoxyParamCaption}\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a median filter. 
+
+Algorithm taken from the the following book\+: Knuth in The Art of Computer Programming, vol 3 (algorithm 5.\+2.\+2M) 
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the median filter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_a93b03cfcfb8a15a5960b5404c5467c32}\label{img__filter__core_8h_a93b03cfcfb8a15a5960b5404c5467c32}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Compute\+Median3x3@{Compute\+Median3x3}}
+\index{Compute\+Median3x3@{Compute\+Median3x3}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Compute\+Median3x3()}{ComputeMedian3x3()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+Out\+Type Compute\+Median3x3 (\begin{DoxyParamCaption}\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a median filter. 
+
+Algorithm taken from the the following paper\+: A fault-\/tolerant implementation of the median filter from L. A. Aranda and P. Reviriego and J. A. Maestro 
+\begin{DoxyParams}{Parameters}
+{\em In\+Type} & The input scalar data type \\
+\hline
+{\em Out\+Type} & The output scalar data type \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the kernel \\
+\hline
+{\em window} & The sliding window of this scalar computation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the median filter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{img__filter__core_8h_ab71331d17ba2116c8ae61de104887df1}\label{img__filter__core_8h_ab71331d17ba2116c8ae61de104887df1}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Box@{Hw\+Box}}
+\index{Hw\+Box@{Hw\+Box}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Box()}{HwBox()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ \\
+void Hw\+Box (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a Box filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em S\+E\+P\+A\+R\+A\+B\+LE} & Is true, if separable filter should be used \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a41c6fa3637bf79c84015f3c6310786d6}\label{img__filter__core_8h_a41c6fa3637bf79c84015f3c6310786d6}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Convolve@{Hw\+Convolve}}
+\index{Hw\+Convolve@{Hw\+Convolve}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Convolve()}{HwConvolve()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Hw\+Convolve (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{const Scalar\+Type}]{conv\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convolves the input with the client supplied convolution matrix. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned, signed)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+{\em conv} & The custom convolution kernel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_adfc4afacb4bdb50b30de882eb8100b69}\label{img__filter__core_8h_adfc4afacb4bdb50b30de882eb8100b69}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Dilate@{Hw\+Dilate}}
+\index{Hw\+Dilate@{Hw\+Dilate}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Dilate()}{HwDilate()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Hw\+Dilate (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements Dilation, which grows the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_afab3761d77553ea88aa83e52dc77ebf2}\label{img__filter__core_8h_afab3761d77553ea88aa83e52dc77ebf2}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Erode@{Hw\+Erode}}
+\index{Hw\+Erode@{Hw\+Erode}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Erode()}{HwErode()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Hw\+Erode (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements Erosion, which shrinks the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a2da69e6324cd3a25a329da271c0445e7}\label{img__filter__core_8h_a2da69e6324cd3a25a329da271c0445e7}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Gaussian@{Hw\+Gaussian}}
+\index{Hw\+Gaussian@{Hw\+Gaussian}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Gaussian()}{HwGaussian()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ \\
+void Hw\+Gaussian (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a Gaussian filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em S\+E\+P\+A\+R\+A\+B\+LE} & Is true, if separable filter should be used \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_af62ed0be072b6f3b1173c0b2926ba8b6}\label{img__filter__core_8h_af62ed0be072b6f3b1173c0b2926ba8b6}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Median@{Hw\+Median}}
+\index{Hw\+Median@{Hw\+Median}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Median()}{HwMedian()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Hw\+Median (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Scalar\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a median pixel value over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a64400c3c144e0bcb297fa7e330f2443b}\label{img__filter__core_8h_a64400c3c144e0bcb297fa7e330f2443b}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Scharr3x3@{Hw\+Scharr3x3}}
+\index{Hw\+Scharr3x3@{Hw\+Scharr3x3}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Scharr3x3()}{HwScharr3x3()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Hw\+Scharr3x3 (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output1\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output2\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Scharr Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & Data type of the input image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Dst\+Type} & Data type of the output image (signed)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output1} & The output image (x derivative) \\
+\hline
+{\em output2} & The output image (y derivative) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_ad36cb5a55f410a6cd411aad13b079b47}\label{img__filter__core_8h_ad36cb5a55f410a6cd411aad13b079b47}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Hw\+Sobel@{Hw\+Sobel}}
+\index{Hw\+Sobel@{Hw\+Sobel}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Hw\+Sobel()}{HwSobel()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Out\+Type , vx\+\_\+uint32 V\+E\+C\+\_\+\+P\+IX, vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Hw\+Sobel (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ In\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output1\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Out\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output2\mbox{[}\+V\+E\+C\+\_\+\+P\+I\+X\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Sobel Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & Data type of the input image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Dst\+Type} & Data type of the output image (signed)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+P\+IX} & The amount of pixels diveded by the pixels computed in parallel \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output1} & The output image (x derivative) \\
+\hline
+{\em output2} & The output image (y derivative) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a5b48b69811855843d9fe0db9f4443c54}\label{img__filter__core_8h_a5b48b69811855843d9fe0db9f4443c54}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Read\+From\+Line\+Buffer@{Read\+From\+Line\+Buffer}}
+\index{Read\+From\+Line\+Buffer@{Read\+From\+Line\+Buffer}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Read\+From\+Line\+Buffer()}{ReadFromLineBuffer()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Buffer\+Type , const vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS$>$ \\
+void Read\+From\+Line\+Buffer (\begin{DoxyParamCaption}\item[{In\+Type}]{input\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{Buffer\+Type}]{linebuffer\mbox{[}\+B\+U\+F\+F\+E\+R\+\_\+\+N\+U\+M\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{In\+Type}]{output\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{x }\end{DoxyParamCaption})}
+
+
+
+Reads data from line buffers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vec\+Type} & 1 vector is 1 linebuffer element \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the filter kernel \\
+\hline
+{\em V\+E\+C\+\_\+\+C\+O\+LS} & The amount of columns in the vectorized image \\
+\hline
+{\em input} & New image data to be stored into the linebuffer \\
+\hline
+{\em linebuffer} & Linebuffers to store (K\+E\+R\+N\+\_\+\+S\+I\+Z\+E-\/1) image rows \\
+\hline
+{\em output} & Data at x coordinates in the linebuffers \\
+\hline
+{\em x} & The x coordinate in the vectorized image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a5806cd491ac1bb6d29f40a871707145e}\label{img__filter__core_8h_a5806cd491ac1bb6d29f40a871707145e}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window@{Sliding\+Window}}
+\index{Sliding\+Window@{Sliding\+Window}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window()}{SlidingWindow()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sliding\+Window (\begin{DoxyParamCaption}\item[{const In\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{In\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+W\+I\+N\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{x,  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{y }\end{DoxyParamCaption})}
+
+
+
+Sliding window main function / considers different border types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vec\+Type} & 1 vector is processed in each clock cycle \\
+\hline
+{\em Scalar\+Type} & 1 vector contains N scalar elements \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Amount of rows in the image \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+R\+AD} & Radius of the filter kernel \\
+\hline
+{\em V\+E\+C\+\_\+\+C\+O\+LS} & The amount of columns in the vectorized image \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The number of elements in a vector \\
+\hline
+{\em W\+I\+N\+\_\+\+C\+O\+LS} & The number of columns in a row \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Total amount of rows in the sliding window \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type that is considered in the sliding window \\
+\hline
+{\em input} & The input buffer \\
+\hline
+{\em window} & The output sliding window \\
+\hline
+{\em x} & The x current coordinate \\
+\hline
+{\em y} & The y current coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a314355adffc03dffef83a0a6b77ace85}\label{img__filter__core_8h_a314355adffc03dffef83a0a6b77ace85}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window\+ConstantX@{Sliding\+Window\+ConstantX}}
+\index{Sliding\+Window\+ConstantX@{Sliding\+Window\+ConstantX}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window\+Constant\+X()}{SlidingWindowConstantX()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+A, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ \\
+void Sliding\+Window\+ConstantX (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+W\+I\+N\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{x }\end{DoxyParamCaption})}
+
+
+
+Moves sliding window and a constant border in x direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & The data type of the image elements \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Total amount of rows in the sliding window \\
+\hline
+{\em V\+E\+C\+\_\+\+C\+O\+LS} & The amount of columns in the vectorized image \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The number of elements in a vector \\
+\hline
+{\em W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+A} & Internal vertical border for the sliding window \\
+\hline
+{\em W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B} & Internal vertical border for the sliding window \\
+\hline
+{\em W\+I\+N\+\_\+\+C\+O\+LS} & The number of columns in a row \\
+\hline
+{\em input} & An array of input data for each row \\
+\hline
+{\em window} & The sliding window \\
+\hline
+{\em x} & x coordinate of the vectorized image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_aece63feb79db70d820c9499f9eaf73ff}\label{img__filter__core_8h_aece63feb79db70d820c9499f9eaf73ff}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window\+ConstantY@{Sliding\+Window\+ConstantY}}
+\index{Sliding\+Window\+ConstantY@{Sliding\+Window\+ConstantY}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window\+Constant\+Y()}{SlidingWindowConstantY()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Sliding\+Window\+ConstantY (\begin{DoxyParamCaption}\item[{const In\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{In\+Type}]{output\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets a constant border of 0 for the sliding window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vec\+Type} & 1 vector is 1 linebuffer element \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Amount of rows in the image \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+R\+AD} & Radius of the filter kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Total amount of rows in the sliding window \\
+\hline
+{\em input} & Output of the linebuffers \\
+\hline
+{\em output} & Input with replicated borders if needed \\
+\hline
+{\em y} & y coordinate of the image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_ada374569e9379c47762cd1b045ad0d8b}\label{img__filter__core_8h_ada374569e9379c47762cd1b045ad0d8b}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window\+Horizontal@{Sliding\+Window\+Horizontal}}
+\index{Sliding\+Window\+Horizontal@{Sliding\+Window\+Horizontal}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window\+Horizontal()}{SlidingWindowHorizontal()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sliding\+Window\+Horizontal (\begin{DoxyParamCaption}\item[{const Scalar\+Type}]{input\mbox{[}\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{window\mbox{[}1\mbox{]}\mbox{[}\+W\+I\+N\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{x }\end{DoxyParamCaption})}
+
+
+
+Sliding window horizontal main function / considers different border types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vec\+Type} & 1 vector is processed in each clock cycle \\
+\hline
+{\em Scalar\+Type} & 1 vector contains N scalar elements \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+R\+AD} & Radius of the filter kernel \\
+\hline
+{\em V\+E\+C\+\_\+\+C\+O\+LS} & The amount of columns in the vectorized image \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The number of elements in a vector \\
+\hline
+{\em W\+I\+N\+\_\+\+C\+O\+LS} & The number of columns in a row \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type that is considered in the sliding window \\
+\hline
+{\em input} & The input buffer \\
+\hline
+{\em window} & The output sliding window \\
+\hline
+{\em x} & The x current coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a62f02a90be4b06ddb6b9e54d045bf82a}\label{img__filter__core_8h_a62f02a90be4b06ddb6b9e54d045bf82a}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window\+ReplicatedX@{Sliding\+Window\+ReplicatedX}}
+\index{Sliding\+Window\+ReplicatedX@{Sliding\+Window\+ReplicatedX}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window\+Replicated\+X()}{SlidingWindowReplicatedX()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+A, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ \\
+void Sliding\+Window\+ReplicatedX (\begin{DoxyParamCaption}\item[{Scalar\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+W\+I\+N\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{x }\end{DoxyParamCaption})}
+
+
+
+Moves sliding window and a replicated border in x direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & The data type of the image elements \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Total amount of rows in the sliding window \\
+\hline
+{\em V\+E\+C\+\_\+\+C\+O\+LS} & The amount of columns in the vectorized image \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The number of elements in a vector \\
+\hline
+{\em W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+A} & Internal vertical border for the sliding window \\
+\hline
+{\em W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B} & Internal vertical border for the sliding window \\
+\hline
+{\em W\+I\+N\+\_\+\+C\+O\+LS} & The number of columns in a row \\
+\hline
+{\em input} & An array of input data for each row \\
+\hline
+{\em window} & The sliding window \\
+\hline
+{\em x} & x coordinate of the vectorized image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a9f2c62e32b8a27cf9a5d6690a9482cc3}\label{img__filter__core_8h_a9f2c62e32b8a27cf9a5d6690a9482cc3}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window\+ReplicatedY@{Sliding\+Window\+ReplicatedY}}
+\index{Sliding\+Window\+ReplicatedY@{Sliding\+Window\+ReplicatedY}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window\+Replicated\+Y()}{SlidingWindowReplicatedY()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE$>$ \\
+void Sliding\+Window\+ReplicatedY (\begin{DoxyParamCaption}\item[{const In\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{In\+Type}]{output\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{y }\end{DoxyParamCaption})}
+
+
+
+Replicates the y borders if needed for the sliding window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vec\+Type} & 1 vector is 1 linebuffer element \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Amount of rows in the image \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+R\+AD} & Radius of the filter kernel \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Total amount of rows in the sliding window \\
+\hline
+{\em input} & Output of the linebuffers \\
+\hline
+{\em output} & Input with replicated borders if needed \\
+\hline
+{\em y} & y coordinate of the image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a55520c544bc62c5bb51960d786ff6420}\label{img__filter__core_8h_a55520c544bc62c5bb51960d786ff6420}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window\+Unchanged@{Sliding\+Window\+Unchanged}}
+\index{Sliding\+Window\+Unchanged@{Sliding\+Window\+Unchanged}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window\+Unchanged()}{SlidingWindowUnchanged()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B, const vx\+\_\+uint16 W\+I\+N\+\_\+\+C\+O\+LS$>$ \\
+void Sliding\+Window\+Unchanged (\begin{DoxyParamCaption}\item[{const Scalar\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+W\+I\+N\+\_\+\+C\+O\+L\+S\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Moves sliding window without considering borders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scalar\+Type} & The data type of the image elements \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Total amount of rows in the sliding window \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The number of elements in a vector \\
+\hline
+{\em W\+I\+N\+\_\+\+B\+O\+R\+D\+\_\+B} & Internal vertical border for the sliding window \\
+\hline
+{\em W\+I\+N\+\_\+\+C\+O\+LS} & The number of columns in a row \\
+\hline
+{\em input} & An array of input data for each row \\
+\hline
+{\em window} & The sliding window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_ade514b8577997f53702d0a436fd43830}\label{img__filter__core_8h_ade514b8577997f53702d0a436fd43830}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Sliding\+Window\+Vertical@{Sliding\+Window\+Vertical}}
+\index{Sliding\+Window\+Vertical@{Sliding\+Window\+Vertical}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Sliding\+Window\+Vertical()}{SlidingWindowVertical()}}
+{\footnotesize\ttfamily template$<$typename Scalar\+Type , const vx\+\_\+uint32 I\+M\+G\+\_\+\+R\+O\+WS, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+R\+AD, const vx\+\_\+uint16 V\+E\+C\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Sliding\+Window\+Vertical (\begin{DoxyParamCaption}\item[{const Scalar\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{Scalar\+Type}]{window\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+S\+I\+Z\+E\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{y }\end{DoxyParamCaption})}
+
+
+
+Sliding window main function / considers different border types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vec\+Type} & 1 vector is processed in each clock cycle \\
+\hline
+{\em Scalar\+Type} & 1 vector contains N scalar elements \\
+\hline
+{\em I\+M\+G\+\_\+\+R\+O\+WS} & Amount of rows in the image \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+R\+AD} & Radius of the filter kernel \\
+\hline
+{\em V\+E\+C\+\_\+\+S\+I\+ZE} & The number of elements in a vector \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Total amount of rows in the sliding window \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & The border type that is considered in the sliding window \\
+\hline
+{\em input} & The input buffer \\
+\hline
+{\em window} & The output sliding window \\
+\hline
+{\em y} & The y current coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__core_8h_a50cb9a458b9e8e20f79dbe82ed848b6a}\label{img__filter__core_8h_a50cb9a458b9e8e20f79dbe82ed848b6a}} 
+\index{img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}!Write\+To\+Line\+Buffer@{Write\+To\+Line\+Buffer}}
+\index{Write\+To\+Line\+Buffer@{Write\+To\+Line\+Buffer}!img\+\_\+filter\+\_\+core.\+h@{img\+\_\+filter\+\_\+core.\+h}}
+\subsubsection{\texorpdfstring{Write\+To\+Line\+Buffer()}{WriteToLineBuffer()}}
+{\footnotesize\ttfamily template$<$typename In\+Type , typename Buffer\+Type , const vx\+\_\+uint16 B\+U\+F\+F\+E\+R\+\_\+\+N\+UM, const vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, const vx\+\_\+uint16 K\+E\+R\+N\+\_\+\+S\+I\+ZE, const vx\+\_\+uint16 V\+E\+C\+\_\+\+C\+O\+LS$>$ \\
+void Write\+To\+Line\+Buffer (\begin{DoxyParamCaption}\item[{In\+Type}]{input\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{Buffer\+Type}]{linebuffer\mbox{[}\+B\+U\+F\+F\+E\+R\+\_\+\+N\+U\+M\mbox{]}\mbox{[}\+V\+E\+C\+\_\+\+C\+O\+L\+S\mbox{]},  }\item[{const \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}]{x }\end{DoxyParamCaption})}
+
+
+
+Writes data to line buffers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vec\+Type} & 1 vector is 1 linebuffer element \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & The size of the filter kernel \\
+\hline
+{\em V\+E\+C\+\_\+\+C\+O\+LS} & The amount of columns in the vectorized image \\
+\hline
+{\em input} & Stores data at the x coordinates of the linebuffers \\
+\hline
+{\em linebuffer} & Linebuffers to store (K\+E\+R\+N\+\_\+\+S\+I\+Z\+E-\/1) image rows \\
+\hline
+{\em x} & The x coordinate in the vectorized image \\
+\hline
+\end{DoxyParams}

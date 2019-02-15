@@ -1,0 +1,322 @@
+\hypertarget{img__filter__base_8h}{}\section{img\+\_\+filter\+\_\+base.\+h File Reference}
+\label{img__filter__base_8h}\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+
+
+Description\+:~\newline
+ These are all accelerated image filter functions (Call from here)  
+
+
+{\ttfamily \#include \char`\"{}img\+\_\+filter\+\_\+core.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ }\\void \hyperlink{img__filter__base_8h_a4517748e34cb4364365526619bc219ab}{Img\+Box} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a Box filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_a8400f784e47eadd4bda5552c02ccb6fd}\label{img__filter__base_8h_a8400f784e47eadd4bda5552c02ccb6fd}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ }\\void {\bfseries Img\+Box} (Data\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Data\+Type output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__base_8h_a4edcf9c049e2f628d9cf9f47fdd3f203}{Img\+Convolve} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, const Data\+Type conv\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\begin{DoxyCompactList}\small\item\em Convolves the input with the client supplied convolution matrix. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_a0e56df3fc8c950e65b23b5c6320203bb}\label{img__filter__base_8h_a0e56df3fc8c950e65b23b5c6320203bb}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void {\bfseries Img\+Convolve} (Data\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Data\+Type output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, const Data\+Type conv\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}K\+E\+R\+N\+\_\+\+S\+I\+ZE\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__base_8h_a105907254f5d6921d5719d3346fc43f9}{Img\+Dilate} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements Dilation, which grows the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_a4c9819363c585643016d45f0bab8f4cc}\label{img__filter__base_8h_a4c9819363c585643016d45f0bab8f4cc}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void {\bfseries Img\+Dilate} (Data\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Data\+Type output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__base_8h_a7cfdce486e922f8405a1bdeb7e0d5304}{Img\+Erode} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements Erosion, which shrinks the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_ab6bb89a23c3b9883849385f0b9832ea3}\label{img__filter__base_8h_ab6bb89a23c3b9883849385f0b9832ea3}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void {\bfseries Img\+Erode} (Data\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Data\+Type output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ }\\void \hyperlink{img__filter__base_8h_a67e1967328e71dff1996c183a14d0a8f}{Img\+Gaussian} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a Gaussian filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_a716b60a37c7cef399457acef61879aa8}\label{img__filter__base_8h_a716b60a37c7cef399457acef61879aa8}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ }\\void {\bfseries Img\+Gaussian} (Data\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Data\+Type output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\item 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__base_8h_ae30976c42f79bf00684ec3123faec4f8}{Img\+Median} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Computes a median pixel value over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_aeddcc95f6ab07cc307534fcf5d7374f0}\label{img__filter__base_8h_aeddcc95f6ab07cc307534fcf5d7374f0}} 
+{\footnotesize template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void {\bfseries Img\+Median} (Data\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Data\+Type output\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__base_8h_ae6d571f8ca02d5da3f2d68a3f183b9ba}{Img\+Scharr3x3} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Src\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output1\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output2\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Scharr Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_a5027694c5089be1bb2e7a85a6158bce4}\label{img__filter__base_8h_a5027694c5089be1bb2e7a85a6158bce4}} 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void {\bfseries Img\+Scharr3x3} (Src\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Dst\+Type output1\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Dst\+Type output2\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\item 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void \hyperlink{img__filter__base_8h_a6791fe542a0515ad3503bbc74a3e6af7}{Img\+Sobel} (\hyperlink{structvx__image}{vx\+\_\+image}$<$ Src\+Type, V\+E\+C\+\_\+\+N\+UM $>$ input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output1\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, \hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$ output2\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\begin{DoxyCompactList}\small\item\em Implements the Sobel Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{img__filter__base_8h_a90c62b12ad7429735e83f27a5bf58879}\label{img__filter__base_8h_a90c62b12ad7429735e83f27a5bf58879}} 
+{\footnotesize template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ }\\void {\bfseries Img\+Sobel} (Src\+Type input\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Dst\+Type output1\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]}, Dst\+Type output2\mbox{[}(H\+E\+I\+G\+HT $\ast$W\+I\+D\+TH)/V\+E\+C\+\_\+\+N\+UM\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Description\+:~\newline
+ These are all accelerated image filter functions (Call from here) 
+
+Licence\+: G\+NU G\+P\+Lv3 ~\newline
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) G\+P\+L-\/licensed code must also be made available under the G\+PL along with build \& install instructions.
+
+\begin{DoxyAuthor}{Author}
+Lester Kalms \href{mailto:lester.kalms@tu-dresden.de}{\tt lester.\+kalms@tu-\/dresden.\+de} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{img__filter__base_8h_a4517748e34cb4364365526619bc219ab}\label{img__filter__base_8h_a4517748e34cb4364365526619bc219ab}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Box@{Img\+Box}}
+\index{Img\+Box@{Img\+Box}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Box()}{ImgBox()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ \\
+void Img\+Box (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a Box filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em S\+E\+P\+A\+R\+A\+B\+LE} & Is true, if separable filter should be used \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__base_8h_a4edcf9c049e2f628d9cf9f47fdd3f203}\label{img__filter__base_8h_a4edcf9c049e2f628d9cf9f47fdd3f203}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Convolve@{Img\+Convolve}}
+\index{Img\+Convolve@{Img\+Convolve}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Convolve()}{ImgConvolve()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Img\+Convolve (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{const Data\+Type}]{conv\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}\+K\+E\+R\+N\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Convolves the input with the client supplied convolution matrix. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned, signed)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+{\em conv} & The custom convolution kernel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__base_8h_a105907254f5d6921d5719d3346fc43f9}\label{img__filter__base_8h_a105907254f5d6921d5719d3346fc43f9}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Dilate@{Img\+Dilate}}
+\index{Img\+Dilate@{Img\+Dilate}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Dilate()}{ImgDilate()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Img\+Dilate (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements Dilation, which grows the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__base_8h_a7cfdce486e922f8405a1bdeb7e0d5304}\label{img__filter__base_8h_a7cfdce486e922f8405a1bdeb7e0d5304}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Erode@{Img\+Erode}}
+\index{Img\+Erode@{Img\+Erode}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Erode()}{ImgErode()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Img\+Erode (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements Erosion, which shrinks the white space in a Boolean image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__base_8h_a67e1967328e71dff1996c183a14d0a8f}\label{img__filter__base_8h_a67e1967328e71dff1996c183a14d0a8f}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Gaussian@{Img\+Gaussian}}
+\index{Img\+Gaussian@{Img\+Gaussian}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Gaussian()}{ImgGaussian()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE, vx\+\_\+bool S\+E\+P\+A\+R\+A\+B\+LE$>$ \\
+void Img\+Gaussian (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a Gaussian filter over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em S\+E\+P\+A\+R\+A\+B\+LE} & Is true, if separable filter should be used \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__base_8h_ae30976c42f79bf00684ec3123faec4f8}\label{img__filter__base_8h_ae30976c42f79bf00684ec3123faec4f8}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Median@{Img\+Median}}
+\index{Img\+Median@{Img\+Median}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Median()}{ImgMedian()}}
+{\footnotesize\ttfamily template$<$typename Data\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Img\+Median (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Data\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Computes a median pixel value over a window of the input image. The output image dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & Data type of the input/output image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & Input image \\
+\hline
+{\em output} & Output image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__base_8h_ae6d571f8ca02d5da3f2d68a3f183b9ba}\label{img__filter__base_8h_ae6d571f8ca02d5da3f2d68a3f183b9ba}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Scharr3x3@{Img\+Scharr3x3}}
+\index{Img\+Scharr3x3@{Img\+Scharr3x3}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Scharr3x3()}{ImgScharr3x3()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Img\+Scharr3x3 (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Src\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output1\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output2\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Scharr Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & Data type of the input image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Dst\+Type} & Data type of the output image (signed)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output1} & The output image (x derivative) \\
+\hline
+{\em output2} & The output image (y derivative) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{img__filter__base_8h_a6791fe542a0515ad3503bbc74a3e6af7}\label{img__filter__base_8h_a6791fe542a0515ad3503bbc74a3e6af7}} 
+\index{img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}!Img\+Sobel@{Img\+Sobel}}
+\index{Img\+Sobel@{Img\+Sobel}!img\+\_\+filter\+\_\+base.\+h@{img\+\_\+filter\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{Img\+Sobel()}{ImgSobel()}}
+{\footnotesize\ttfamily template$<$typename Src\+Type , typename Dst\+Type , vx\+\_\+uint8 V\+E\+C\+\_\+\+N\+UM, vx\+\_\+uint16 W\+I\+D\+TH, vx\+\_\+uint16 H\+E\+I\+G\+HT, vx\+\_\+uint8 K\+E\+R\+N\+\_\+\+S\+I\+ZE, vx\+\_\+border\+\_\+e B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE$>$ \\
+void Img\+Sobel (\begin{DoxyParamCaption}\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Src\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{input\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output1\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]},  }\item[{\hyperlink{structvx__image}{vx\+\_\+image}$<$ Dst\+Type, V\+E\+C\+\_\+\+N\+UM $>$}]{output2\mbox{[}(\+H\+E\+I\+G\+H\+T $\ast$\+W\+I\+D\+T\+H)/\+V\+E\+C\+\_\+\+N\+U\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Implements the Sobel Image Filter Kernel. The output images dimensions should be the same as the dimensions of the input image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Src\+Type} & Data type of the input image (unsigned)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em Dst\+Type} & Data type of the output image (signed)(8-\/bit, 16-\/bit, 32-\/bit) \\
+\hline
+{\em V\+E\+C\+\_\+\+N\+UM} & Amount of pixels computed in parallel (1, 2, 4, 8) \\
+\hline
+{\em W\+I\+D\+TH} & Image width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Image height \\
+\hline
+{\em K\+E\+R\+N\+\_\+\+S\+I\+ZE} & Kernel size (3, 5, 7, 9, 11) \\
+\hline
+{\em B\+O\+R\+D\+E\+R\+\_\+\+T\+Y\+PE} & Type of border (Constant, Replicated or Undefined) \\
+\hline
+{\em input} & The input image \\
+\hline
+{\em output1} & The output image (x derivative) \\
+\hline
+{\em output2} & The output image (y derivative) \\
+\hline
+\end{DoxyParams}

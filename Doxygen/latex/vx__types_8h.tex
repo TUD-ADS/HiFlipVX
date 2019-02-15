@@ -1,0 +1,543 @@
+\hypertarget{vx__types_8h}{}\section{vx\+\_\+types.\+h File Reference}
+\label{vx__types_8h}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+
+
+The type definitions required by Open\+VX Library.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvx__coordinates2d__t}{vx\+\_\+coordinates2d\+\_\+t$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em The 2D Coordinates structure. H\+I\+NT\+: Updated by template parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vx__types_8h_aba1ab5885e373ec34614ec06ed787801}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE}(a,  b,  c,  d)~((a) $\vert$ (b $<$$<$ 8) $\vert$ (c $<$$<$ 16) $\vert$ (d $<$$<$ 24))
+\begin{DoxyCompactList}\small\item\em Converts a set of four chars into a {\ttfamily uint32\+\_\+t} container of a V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_aa3d7c5da21e23c3b0747091591fe1afa}\label{vx__types_8h_aa3d7c5da21e23c3b0747091591fe1afa}} 
+\#define \hyperlink{vx__types_8h_aa3d7c5da21e23c3b0747091591fe1afa}{V\+X\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+B\+A\+SE}(vendor,  object)~(((vendor) $<$$<$ 20) $\vert$ (object $<$$<$ 8))
+\begin{DoxyCompactList}\small\item\em Defines the manner in which to combine the Vendor and Object I\+Ds to get the base value of the enumeration. \end{DoxyCompactList}\item 
+\#define \hyperlink{vx__types_8h_a79c86535e7d15b833aa40fb068887a46}{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE}(vendor,  id)~(((vendor) $<$$<$ 20) $\vert$ (id $<$$<$ 12))
+\begin{DoxyCompactList}\small\item\em Defines the manner in which to combine the Vendor and Object I\+Ds to get the base value of the enumeration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vx__types_8h_a9ce3f44bccc95f52b9897df2b3620713}\label{vx__types_8h_a9ce3f44bccc95f52b9897df2b3620713}} 
+typedef char \hyperlink{vx__types_8h_a9ce3f44bccc95f52b9897df2b3620713}{vx\+\_\+char}
+\begin{DoxyCompactList}\small\item\em An 8 bit A\+S\+C\+II character. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}\label{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}} 
+typedef uint8\+\_\+t \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}
+\begin{DoxyCompactList}\small\item\em An 8-\/bit unsigned value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}\label{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}} 
+typedef uint16\+\_\+t \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}
+\begin{DoxyCompactList}\small\item\em A 16-\/bit unsigned value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}\label{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}} 
+typedef uint32\+\_\+t \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}
+\begin{DoxyCompactList}\small\item\em A 32-\/bit unsigned value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}\label{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}} 
+typedef uint64\+\_\+t \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}
+\begin{DoxyCompactList}\small\item\em A 64-\/bit unsigned value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a4bb9840db3fea374224e831b2d3d868a}\label{vx__types_8h_a4bb9840db3fea374224e831b2d3d868a}} 
+typedef int8\+\_\+t \hyperlink{vx__types_8h_a4bb9840db3fea374224e831b2d3d868a}{vx\+\_\+int8}
+\begin{DoxyCompactList}\small\item\em An 8-\/bit signed value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}\label{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}} 
+typedef int16\+\_\+t \hyperlink{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}{vx\+\_\+int16}
+\begin{DoxyCompactList}\small\item\em A 16-\/bit signed value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a822fc495cb9045d45893eed297d48737}\label{vx__types_8h_a822fc495cb9045d45893eed297d48737}} 
+typedef int32\+\_\+t \hyperlink{vx__types_8h_a822fc495cb9045d45893eed297d48737}{vx\+\_\+int32}
+\begin{DoxyCompactList}\small\item\em A 32-\/bit signed value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_ae1aa1cc6d0a77ddc362add072ef6a9b2}\label{vx__types_8h_ae1aa1cc6d0a77ddc362add072ef6a9b2}} 
+typedef int64\+\_\+t \hyperlink{vx__types_8h_ae1aa1cc6d0a77ddc362add072ef6a9b2}{vx\+\_\+int64}
+\begin{DoxyCompactList}\small\item\em A 64-\/bit signed value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_af14ad5e46a20640307420a745d199e1d}\label{vx__types_8h_af14ad5e46a20640307420a745d199e1d}} 
+typedef float \hyperlink{vx__types_8h_af14ad5e46a20640307420a745d199e1d}{vx\+\_\+float32}
+\begin{DoxyCompactList}\small\item\em A 32-\/bit float value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a3718da3659bf64bccb45830294edc59e}\label{vx__types_8h_a3718da3659bf64bccb45830294edc59e}} 
+typedef double \hyperlink{vx__types_8h_a3718da3659bf64bccb45830294edc59e}{vx\+\_\+float64}
+\begin{DoxyCompactList}\small\item\em A 64-\/bit float value (aka double). \end{DoxyCompactList}\item 
+typedef int32\+\_\+t \hyperlink{vx__types_8h_a73d23cb932d31a69f44182054a987c85}{vx\+\_\+enum}
+\begin{DoxyCompactList}\small\item\em Sets the standard enumeration type size to be a fixed quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a46d89d47ad9a2de1de723d0db861d324}\label{vx__types_8h_a46d89d47ad9a2de1de723d0db861d324}} 
+typedef size\+\_\+t \hyperlink{vx__types_8h_a46d89d47ad9a2de1de723d0db861d324}{vx\+\_\+size}
+\begin{DoxyCompactList}\small\item\em A wrapper of {\ttfamily size\+\_\+t} to keep the naming convention uniform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vx__types_8h_a371968e3355d6f9e413d836ccc14d5b8}\label{vx__types_8h_a371968e3355d6f9e413d836ccc14d5b8}} 
+typedef uint32\+\_\+t \hyperlink{vx__types_8h_a371968e3355d6f9e413d836ccc14d5b8}{vx\+\_\+df\+\_\+image}
+\begin{DoxyCompactList}\small\item\em Used to hold a V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE code to describe the pixel format and color space. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0}{\+\_\+vx\+\_\+bool\+\_\+e} \hyperlink{vx__types_8h_a024b285f161ef15a0f56b12175dd668b}{vx\+\_\+bool}
+\begin{DoxyCompactList}\small\item\em A Boolean value. This allows 0 to be F\+A\+L\+SE, as it is in C, and any non-\/zero to be T\+R\+UE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0}{\+\_\+vx\+\_\+bool\+\_\+e} \{ \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0afb2a8f065f221fda7ecac976517a28f3}{vx\+\_\+false\+\_\+e} = 0, 
+\hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0a2a695a4d881a8c863881d4f1f88d6442}{vx\+\_\+true\+\_\+e}
+ \}\begin{DoxyCompactList}\small\item\em A Boolean value. This allows 0 to be F\+A\+L\+SE, as it is in C, and any non-\/zero to be T\+R\+UE. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6}{vx\+\_\+type\+\_\+e} \{ \newline
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6abf4c9a7d6d689998498573ac247598f8}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+V\+A\+L\+ID} = 0x000, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6af927f497e65117e26cdc34f66c41bcf8}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+AR} = 0x001, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6ade01e330c4f7408377ea16c8cbe887e6}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T8} = 0x002, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a8faa6c88aa3597eabb3cc973c4a6ee80}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8} = 0x003, 
+\newline
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a7e6fb8f3de4533c7c4afdb94c9b6eaab}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T16} = 0x004, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a080bd3dd807437832cf3575388911a33}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T16} = 0x005, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6ae97bf24e47e1b7bbafccbbccf1daa5ca}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T32} = 0x006, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6ac13f27760e4019caaa2d08c731cba38a}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T32} = 0x007, 
+\newline
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a63f3f6f0adfd956a4fe24d52ead1ba60}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T64} = 0x008, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a0b6e6769d3f0b762f4f097247c373e38}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T64} = 0x009, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6aaa36bdf0ca05d4e93b1d5a4946570e16}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T32} = 0x00A, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6aa91493fa84ebc83fe838e875dbc2d67c}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T64} = 0x00B, 
+\newline
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6ab65ac087a1fbe31c6cb3f49dd25bb064}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+UM} = 0x00C, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a46abaab8e11a3846b2774c6c6b5f32c2}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+ZE} = 0x00D, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a4d029fb0f491fef7574d8bf6698f5aa9}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE} = 0x00E, 
+\hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6a7feade3dbc0b0206502f8339d1617cc9}{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL} = 0x010
+ \}\begin{DoxyCompactList}\small\item\em The type enumeration lists all the known types in Open\+VX. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_a49682f34339161ba7594f52aa8d59c1c}{vx\+\_\+vendor\+\_\+id\+\_\+e} \{ \hyperlink{vx__types_8h_a49682f34339161ba7594f52aa8d59c1ca18e689a3807616bbbc61283ec8a9ea60}{V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS} = 0x000
+ \}\begin{DoxyCompactList}\small\item\em The Vendor ID of the Implementation. As new vendors submit their implementations, this enumeration will grow. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940e}{vx\+\_\+enum\+\_\+e} \{ \newline
+\hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940eaf8e9e920c9c7bea1bd9921b4d25f45e5}{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON} = 0x04, 
+\hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea75980553abf1b97d7405b0c03bb34384}{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY} = 0x0A, 
+\hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea8d5158d1911652b24bd081c07a8c22af}{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE} = 0x0B, 
+\hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea9fb6b70e632a97c92e1966960bbbe01f}{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER} = 0x0C, 
+\newline
+\hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea617729720870cc646d5ec911b87b0f3d}{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY} = 0x12
+ \}\begin{DoxyCompactList}\small\item\em The set of supported enumerations in Open\+VX. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}{vx\+\_\+convert\+\_\+policy\+\_\+e} \{ \hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490a83d8a3e0712b2d99befd918ada4b0c3c}{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY) + 0x0, 
+\hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490aef8cf8a698d1064ccb97ba82603b3351}{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY) + 0x1
+ \}\begin{DoxyCompactList}\small\item\em The Conversion Policy Enumeration. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1}{vx\+\_\+df\+\_\+image\+\_\+e} \{ \newline
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1aa792374c21de4bad1da6959916b0cd95}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}R\textquotesingle{}, \textquotesingle{}G\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}2\textquotesingle{}), 
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ae483f00a6479575e647e471d029f9469}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}R\textquotesingle{}, \textquotesingle{}G\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}A\textquotesingle{}), 
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ad57c5881488a19029a9ce095f13932cb}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}U\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}8\textquotesingle{}), 
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ac57ce0e86d9641d83621aa69e4dafa97}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S8} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}S\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}8\textquotesingle{}), 
+\newline
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a2706f1cf5a5bf6d38e70f548d03748b9}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}U\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}6\textquotesingle{}), 
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a43c0bbfeef4963204af1ece7cc70649e}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S16} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}S\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}6\textquotesingle{}), 
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a3d3d9ba200df0c33fd81edaf0a9dd069}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}U\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}3\textquotesingle{}, \textquotesingle{}2\textquotesingle{}), 
+\hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a2936be4f59f560a00aef62021957bb1b}{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S32} = V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\textquotesingle{}S\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}3\textquotesingle{}, \textquotesingle{}2\textquotesingle{})
+ \}\begin{DoxyCompactList}\small\item\em Based on the V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE definition. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77c}{vx\+\_\+threshold\+\_\+type\+\_\+e} \{ \hyperlink{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77cacf8b83a9b7533af7ebb58dda41e190a4}{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+I\+N\+A\+RY} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE) + 0x0, 
+\hyperlink{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77ca08b9dc8416f33e8e6ff90f072a8c4977}{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+A\+N\+GE} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE) + 0x1
+ \}\begin{DoxyCompactList}\small\item\em The Threshold types. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_ac555ac52751b27887146d41144e02d60}{vx\+\_\+interpolation\+\_\+type\+\_\+e} \{ \hyperlink{vx__types_8h_ac555ac52751b27887146d41144e02d60ac705e72aaf534a0f363136a1524a4bd9}{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+N\+E\+I\+G\+H\+B\+OR} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON) + 0x0, 
+\hyperlink{vx__types_8h_ac555ac52751b27887146d41144e02d60a99cdf27764b259e6d7e4b63cbd194d12}{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+B\+I\+L\+I\+N\+E\+AR} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON) + 0x1, 
+\hyperlink{vx__types_8h_ac555ac52751b27887146d41144e02d60a39e8fc1c70acaa7c043d3d2fc5a7a9b0}{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+A\+R\+EA} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON) + 0x2
+ \}\begin{DoxyCompactList}\small\item\em The image reconstruction filters supported by image resampling operations. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4}{vx\+\_\+border\+\_\+e} \{ \hyperlink{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4aef25f2567896eb2dda48c2869030664f}{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER) + 0x0, 
+\hyperlink{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4ad828d514964d86c5b82f1e900db2ecef}{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+NT} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER) + 0x1, 
+\hyperlink{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4a53d07d57e8b9b61974eea5eeed3df5be}{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+R\+E\+P\+L\+I\+C\+A\+TE} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER) + 0x2
+ \}\begin{DoxyCompactList}\small\item\em The border mode list. \end{DoxyCompactList}
+\item 
+enum \hyperlink{vx__types_8h_abb9dfa7effd06920db3377f0eba611fe}{vx\+\_\+round\+\_\+policy\+\_\+e} \{ \hyperlink{vx__types_8h_abb9dfa7effd06920db3377f0eba611fea91199b2872fc9db92e85cc49b5a1bf94}{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+Z\+E\+RO} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY) + 0x1, 
+\hyperlink{vx__types_8h_abb9dfa7effd06920db3377f0eba611feaa11156ba79a345587832a1997568b408}{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+E\+V\+EN} = V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS, V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY) + 0x2
+ \}\begin{DoxyCompactList}\small\item\em The Round Policy Enumeration. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The type definitions required by Open\+VX Library. 
+
+Copyright (c) 2012-\/2017 The Khronos Group Inc.
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vx__types_8h_aba1ab5885e373ec34614ec06ed787801}\label{vx__types_8h_aba1ab5885e373ec34614ec06ed787801}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE}}
+\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE}{VX\_DF\_IMAGE}}
+{\footnotesize\ttfamily \#define V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d }\end{DoxyParamCaption})~((a) $\vert$ (b $<$$<$ 8) $\vert$ (c $<$$<$ 16) $\vert$ (d $<$$<$ 24))}
+
+
+
+Converts a set of four chars into a {\ttfamily uint32\+\_\+t} container of a V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE code. 
+
+\begin{DoxyNote}{Note}
+Use a {\ttfamily \hyperlink{vx__types_8h_a371968e3355d6f9e413d836ccc14d5b8}{vx\+\_\+df\+\_\+image}} variable to hold the value. 
+\end{DoxyNote}
+\mbox{\Hypertarget{vx__types_8h_a79c86535e7d15b833aa40fb068887a46}\label{vx__types_8h_a79c86535e7d15b833aa40fb068887a46}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE}}
+\index{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE}{VX\_ENUM\_BASE}}
+{\footnotesize\ttfamily \#define V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+A\+SE(\begin{DoxyParamCaption}\item[{}]{vendor,  }\item[{}]{id }\end{DoxyParamCaption})~(((vendor) $<$$<$ 20) $\vert$ (id $<$$<$ 12))}
+
+
+
+Defines the manner in which to combine the Vendor and Object I\+Ds to get the base value of the enumeration. 
+
+From any enumerated value (with exceptions), the vendor, and enumeration type should be extractable. Those types that are exceptions are {\ttfamily \hyperlink{vx__types_8h_a49682f34339161ba7594f52aa8d59c1c}{vx\+\_\+vendor\+\_\+id\+\_\+e}}, {\ttfamily \hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6}{vx\+\_\+type\+\_\+e}}, {\ttfamily \hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940e}{vx\+\_\+enum\+\_\+e}}, {\ttfamily \hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1}{vx\+\_\+df\+\_\+image\+\_\+e}}, and {\ttfamily vx\+\_\+bool}. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vx__types_8h_a024b285f161ef15a0f56b12175dd668b}\label{vx__types_8h_a024b285f161ef15a0f56b12175dd668b}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+bool@{vx\+\_\+bool}}
+\index{vx\+\_\+bool@{vx\+\_\+bool}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+bool}{vx\_bool}}
+{\footnotesize\ttfamily typedef enum \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0}{\+\_\+vx\+\_\+bool\+\_\+e}  \hyperlink{vx__types_8h_a024b285f161ef15a0f56b12175dd668b}{vx\+\_\+bool}}
+
+
+
+A Boolean value. This allows 0 to be F\+A\+L\+SE, as it is in C, and any non-\/zero to be T\+R\+UE. 
+
+
+\begin{DoxyCode}
+\hyperlink{vx__types_8h_a024b285f161ef15a0f56b12175dd668b}{vx\_bool} ret = \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0a2a695a4d881a8c863881d4f1f88d6442}{vx\_true\_e};
+\textcolor{keywordflow}{if} (ret) printf(\textcolor{stringliteral}{"true!\(\backslash\)n"});
+ret = \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0afb2a8f065f221fda7ecac976517a28f3}{vx\_false\_e};
+\textcolor{keywordflow}{if} (!ret) printf(\textcolor{stringliteral}{"false!\(\backslash\)n"});
+\end{DoxyCode}
+ This would print both strings. \mbox{\Hypertarget{vx__types_8h_a73d23cb932d31a69f44182054a987c85}\label{vx__types_8h_a73d23cb932d31a69f44182054a987c85}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+enum@{vx\+\_\+enum}}
+\index{vx\+\_\+enum@{vx\+\_\+enum}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+enum}{vx\_enum}}
+{\footnotesize\ttfamily typedef int32\+\_\+t \hyperlink{vx__types_8h_a73d23cb932d31a69f44182054a987c85}{vx\+\_\+enum}}
+
+
+
+Sets the standard enumeration type size to be a fixed quantity. 
+
+All enumerable fields must use this type as the container to enforce enumeration ranges and sizeof() operations. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0}\label{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!\+\_\+vx\+\_\+bool\+\_\+e@{\+\_\+vx\+\_\+bool\+\_\+e}}
+\index{\+\_\+vx\+\_\+bool\+\_\+e@{\+\_\+vx\+\_\+bool\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+vx\+\_\+bool\+\_\+e}{\_vx\_bool\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0}{\+\_\+vx\+\_\+bool\+\_\+e}}
+
+
+
+A Boolean value. This allows 0 to be F\+A\+L\+SE, as it is in C, and any non-\/zero to be T\+R\+UE. 
+
+
+\begin{DoxyCode}
+\hyperlink{vx__types_8h_a024b285f161ef15a0f56b12175dd668b}{vx\_bool} ret = \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0a2a695a4d881a8c863881d4f1f88d6442}{vx\_true\_e};
+\textcolor{keywordflow}{if} (ret) printf(\textcolor{stringliteral}{"true!\(\backslash\)n"});
+ret = \hyperlink{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0afb2a8f065f221fda7ecac976517a28f3}{vx\_false\_e};
+\textcolor{keywordflow}{if} (!ret) printf(\textcolor{stringliteral}{"false!\(\backslash\)n"});
+\end{DoxyCode}
+ This would print both strings. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vx\+\_\+false\+\_\+e@{vx\+\_\+false\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+false\+\_\+e@{vx\+\_\+false\+\_\+e}}}\mbox{\Hypertarget{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0afb2a8f065f221fda7ecac976517a28f3}\label{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0afb2a8f065f221fda7ecac976517a28f3}} 
+vx\+\_\+false\+\_\+e&The \char`\"{}false\char`\"{} value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vx\+\_\+true\+\_\+e@{vx\+\_\+true\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+true\+\_\+e@{vx\+\_\+true\+\_\+e}}}\mbox{\Hypertarget{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0a2a695a4d881a8c863881d4f1f88d6442}\label{vx__types_8h_a3d1d62481cbe3b7a08eb09a59b3a48a0a2a695a4d881a8c863881d4f1f88d6442}} 
+vx\+\_\+true\+\_\+e&The \char`\"{}true\char`\"{} value. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4}\label{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+border\+\_\+e@{vx\+\_\+border\+\_\+e}}
+\index{vx\+\_\+border\+\_\+e@{vx\+\_\+border\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+border\+\_\+e}{vx\_border\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4}{vx\+\_\+border\+\_\+e}}
+
+
+
+The border mode list. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED@{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED@{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED}}}\mbox{\Hypertarget{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4aef25f2567896eb2dda48c2869030664f}\label{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4aef25f2567896eb2dda48c2869030664f}} 
+V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED&No defined border mode behavior is given. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+NT@{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+NT}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+NT@{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+NT}}}\mbox{\Hypertarget{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4ad828d514964d86c5b82f1e900db2ecef}\label{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4ad828d514964d86c5b82f1e900db2ecef}} 
+V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+NT&For nodes that support this behavior, a constant value is {\itshape filled-\/in} when accessing out-\/of-\/bounds pixels. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+R\+E\+P\+L\+I\+C\+A\+TE@{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+R\+E\+P\+L\+I\+C\+A\+TE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+R\+E\+P\+L\+I\+C\+A\+TE@{V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+R\+E\+P\+L\+I\+C\+A\+TE}}}\mbox{\Hypertarget{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4a53d07d57e8b9b61974eea5eeed3df5be}\label{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4a53d07d57e8b9b61974eea5eeed3df5be}} 
+V\+X\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+R\+E\+P\+L\+I\+C\+A\+TE&For nodes that support this behavior, a replication of the nearest edge pixels value is given for out-\/of-\/bounds pixels. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}\label{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+convert\+\_\+policy\+\_\+e@{vx\+\_\+convert\+\_\+policy\+\_\+e}}
+\index{vx\+\_\+convert\+\_\+policy\+\_\+e@{vx\+\_\+convert\+\_\+policy\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+convert\+\_\+policy\+\_\+e}{vx\_convert\_policy\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490}{vx\+\_\+convert\+\_\+policy\+\_\+e}}
+
+
+
+The Conversion Policy Enumeration. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP@{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP@{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP}}}\mbox{\Hypertarget{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490a83d8a3e0712b2d99befd918ada4b0c3c}\label{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490a83d8a3e0712b2d99befd918ada4b0c3c}} 
+V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+W\+R\+AP&Results are the least significant bits of the output operand, as if stored in two\textquotesingle{}s complement binary format in the size of its bit-\/depth. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE@{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE@{V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE}}}\mbox{\Hypertarget{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490aef8cf8a698d1064ccb97ba82603b3351}\label{vx__types_8h_a4906e37bb7a3d678e83d624da09a7490aef8cf8a698d1064ccb97ba82603b3351}} 
+V\+X\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+S\+A\+T\+U\+R\+A\+TE&Results are saturated to the bit depth of the output operand. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+df\+\_\+image\+\_\+e@{vx\+\_\+df\+\_\+image\+\_\+e}}
+\index{vx\+\_\+df\+\_\+image\+\_\+e@{vx\+\_\+df\+\_\+image\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+df\+\_\+image\+\_\+e}{vx\_df\_image\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1}{vx\+\_\+df\+\_\+image\+\_\+e}}
+
+
+
+Based on the V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE definition. 
+
+\begin{DoxyNote}{Note}
+Use {\ttfamily \hyperlink{vx__types_8h_a371968e3355d6f9e413d836ccc14d5b8}{vx\+\_\+df\+\_\+image}} to contain these values. 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1aa792374c21de4bad1da6959916b0cd95}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1aa792374c21de4bad1da6959916b0cd95}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+GB&A single plane of 24-\/bit pixel as 3 interleaved 8-\/bit units of R then G then B data. This uses the B\+T709 full range by default. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ae483f00a6479575e647e471d029f9469}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ae483f00a6479575e647e471d029f9469}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+R\+G\+BX&A single plane of 32-\/bit pixel as 4 interleaved 8-\/bit units of R then G then B data, then a {\itshape don\textquotesingle{}t care} byte. This uses the B\+T709 full range by default. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ad57c5881488a19029a9ce095f13932cb}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ad57c5881488a19029a9ce095f13932cb}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U8&A single plane of unsigned 8-\/bit data. The range of data is not specified, as it may be extracted from a Y\+UV or generated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S8@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S8}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S8@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S8}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ac57ce0e86d9641d83621aa69e4dafa97}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1ac57ce0e86d9641d83621aa69e4dafa97}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S8&A single plane of unsigned 8-\/bit data. The range of data is not specified, as it may be extracted from a Y\+UV or generated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a2706f1cf5a5bf6d38e70f548d03748b9}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a2706f1cf5a5bf6d38e70f548d03748b9}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U16&A single plane of signed 16-\/bit data. The range of data is not specified, as it may be extracted from a Y\+UV or generated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S16@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S16}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S16@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S16}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a43c0bbfeef4963204af1ece7cc70649e}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a43c0bbfeef4963204af1ece7cc70649e}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S16&A single plane of signed 16-\/bit data. The range of data is not specified, as it may be extracted from a Y\+UV or generated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a3d3d9ba200df0c33fd81edaf0a9dd069}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a3d3d9ba200df0c33fd81edaf0a9dd069}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+U32&A single plane of unsigned 32-\/bit data. The range of data is not specified, as it may be extracted from a Y\+UV or generated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S32@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S32}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S32@{V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S32}}}\mbox{\Hypertarget{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a2936be4f59f560a00aef62021957bb1b}\label{vx__types_8h_a249dd49823433ffa16cf2e60ed25b7f1a2936be4f59f560a00aef62021957bb1b}} 
+V\+X\+\_\+\+D\+F\+\_\+\+I\+M\+A\+G\+E\+\_\+\+S32&A single plane of unsigned 32-\/bit data. The range of data is not specified, as it may be extracted from a Y\+UV or generated. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940e}\label{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940e}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+enum\+\_\+e@{vx\+\_\+enum\+\_\+e}}
+\index{vx\+\_\+enum\+\_\+e@{vx\+\_\+enum\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+enum\+\_\+e}{vx\_enum\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940e}{vx\+\_\+enum\+\_\+e}}
+
+
+
+The set of supported enumerations in Open\+VX. 
+
+These can be extracted from enumerated values using {\ttfamily V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+Y\+PE}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON}}}\mbox{\Hypertarget{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940eaf8e9e920c9c7bea1bd9921b4d25f45e5}\label{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940eaf8e9e920c9c7bea1bd9921b4d25f45e5}} 
+V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON&Interpolation Types. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY}}}\mbox{\Hypertarget{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea75980553abf1b97d7405b0c03bb34384}\label{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea75980553abf1b97d7405b0c03bb34384}} 
+V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+C\+O\+N\+V\+E\+R\+T\+\_\+\+P\+O\+L\+I\+CY&Convert Policy. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE}}}\mbox{\Hypertarget{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea8d5158d1911652b24bd081c07a8c22af}\label{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea8d5158d1911652b24bd081c07a8c22af}} 
+V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+PE&Threshold Type List. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER}}}\mbox{\Hypertarget{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea9fb6b70e632a97c92e1966960bbbe01f}\label{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea9fb6b70e632a97c92e1966960bbbe01f}} 
+V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+B\+O\+R\+D\+ER&Border Mode List. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY@{V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY}}}\mbox{\Hypertarget{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea617729720870cc646d5ec911b87b0f3d}\label{vx__types_8h_a64bbf073b67ff3b5398d271fe49f940ea617729720870cc646d5ec911b87b0f3d}} 
+V\+X\+\_\+\+E\+N\+U\+M\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+CY&Rounding Policy. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_ac555ac52751b27887146d41144e02d60}\label{vx__types_8h_ac555ac52751b27887146d41144e02d60}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+interpolation\+\_\+type\+\_\+e@{vx\+\_\+interpolation\+\_\+type\+\_\+e}}
+\index{vx\+\_\+interpolation\+\_\+type\+\_\+e@{vx\+\_\+interpolation\+\_\+type\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+interpolation\+\_\+type\+\_\+e}{vx\_interpolation\_type\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_ac555ac52751b27887146d41144e02d60}{vx\+\_\+interpolation\+\_\+type\+\_\+e}}
+
+
+
+The image reconstruction filters supported by image resampling operations. 
+
+The edge of a pixel is interpreted as being aligned to the edge of the image. The value for an output pixel is evaluated at the center of that pixel.
+
+This means, for example, that an even enlargement of a factor of two in nearest-\/neighbor interpolation will replicate every source pixel into a 2x2 quad in the destination, and that an even shrink by a factor of two in bilinear interpolation will create each destination pixel by average a 2x2 quad of source pixels.
+
+Samples that cross the boundary of the source image have values determined by the border mode -\/ see {\ttfamily \hyperlink{vx__types_8h_a2430709469c374c6fadfac72abbbcbb4}{vx\+\_\+border\+\_\+e}} and {\ttfamily V\+X\+\_\+\+N\+O\+D\+E\+\_\+\+B\+O\+R\+D\+ER}. \begin{DoxySeeAlso}{See also}
+vxu\+Scale\+Image 
+
+vx\+Scale\+Image\+Node 
+
+V\+X\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+S\+C\+A\+L\+E\+\_\+\+I\+M\+A\+GE 
+
+vxu\+Warp\+Affine 
+
+vx\+Warp\+Affine\+Node 
+
+V\+X\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+W\+A\+R\+P\+\_\+\+A\+F\+F\+I\+NE 
+
+vxu\+Warp\+Perspective 
+
+vx\+Warp\+Perspective\+Node 
+
+V\+X\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+W\+A\+R\+P\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+N\+E\+I\+G\+H\+B\+OR@{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+N\+E\+I\+G\+H\+B\+OR}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+N\+E\+I\+G\+H\+B\+OR@{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+N\+E\+I\+G\+H\+B\+OR}}}\mbox{\Hypertarget{vx__types_8h_ac555ac52751b27887146d41144e02d60ac705e72aaf534a0f363136a1524a4bd9}\label{vx__types_8h_ac555ac52751b27887146d41144e02d60ac705e72aaf534a0f363136a1524a4bd9}} 
+V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+N\+E\+I\+G\+H\+B\+OR&Output values are defined to match the source pixel whose center is nearest to the sample position. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+B\+I\+L\+I\+N\+E\+AR@{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+B\+I\+L\+I\+N\+E\+AR}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+B\+I\+L\+I\+N\+E\+AR@{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+B\+I\+L\+I\+N\+E\+AR}}}\mbox{\Hypertarget{vx__types_8h_ac555ac52751b27887146d41144e02d60a99cdf27764b259e6d7e4b63cbd194d12}\label{vx__types_8h_ac555ac52751b27887146d41144e02d60a99cdf27764b259e6d7e4b63cbd194d12}} 
+V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+B\+I\+L\+I\+N\+E\+AR&Output values are defined by bilinear interpolation between the pixels whose centers are closest to the sample position, weighted linearly by the distance of the sample from the pixel centers. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+A\+R\+EA@{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+A\+R\+EA}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+A\+R\+EA@{V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+A\+R\+EA}}}\mbox{\Hypertarget{vx__types_8h_ac555ac52751b27887146d41144e02d60a39e8fc1c70acaa7c043d3d2fc5a7a9b0}\label{vx__types_8h_ac555ac52751b27887146d41144e02d60a39e8fc1c70acaa7c043d3d2fc5a7a9b0}} 
+V\+X\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+A\+R\+EA&Output values are determined by averaging the source pixels whose areas fall under the area of the destination pixel, projected onto the source image. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_abb9dfa7effd06920db3377f0eba611fe}\label{vx__types_8h_abb9dfa7effd06920db3377f0eba611fe}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+round\+\_\+policy\+\_\+e@{vx\+\_\+round\+\_\+policy\+\_\+e}}
+\index{vx\+\_\+round\+\_\+policy\+\_\+e@{vx\+\_\+round\+\_\+policy\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+round\+\_\+policy\+\_\+e}{vx\_round\_policy\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_abb9dfa7effd06920db3377f0eba611fe}{vx\+\_\+round\+\_\+policy\+\_\+e}}
+
+
+
+The Round Policy Enumeration. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+Z\+E\+RO@{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+Z\+E\+RO}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+Z\+E\+RO@{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+Z\+E\+RO}}}\mbox{\Hypertarget{vx__types_8h_abb9dfa7effd06920db3377f0eba611fea91199b2872fc9db92e85cc49b5a1bf94}\label{vx__types_8h_abb9dfa7effd06920db3377f0eba611fea91199b2872fc9db92e85cc49b5a1bf94}} 
+V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+Z\+E\+RO&When scaling, this truncates the least significant values that are lost in operations. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+E\+V\+EN@{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+E\+V\+EN}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+E\+V\+EN@{V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+E\+V\+EN}}}\mbox{\Hypertarget{vx__types_8h_abb9dfa7effd06920db3377f0eba611feaa11156ba79a345587832a1997568b408}\label{vx__types_8h_abb9dfa7effd06920db3377f0eba611feaa11156ba79a345587832a1997568b408}} 
+V\+X\+\_\+\+R\+O\+U\+N\+D\+\_\+\+P\+O\+L\+I\+C\+Y\+\_\+\+T\+O\+\_\+\+N\+E\+A\+R\+E\+S\+T\+\_\+\+E\+V\+EN&When scaling, this rounds to nearest even output value. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77c}\label{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77c}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+threshold\+\_\+type\+\_\+e@{vx\+\_\+threshold\+\_\+type\+\_\+e}}
+\index{vx\+\_\+threshold\+\_\+type\+\_\+e@{vx\+\_\+threshold\+\_\+type\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+threshold\+\_\+type\+\_\+e}{vx\_threshold\_type\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77c}{vx\+\_\+threshold\+\_\+type\+\_\+e}}
+
+
+
+The Threshold types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+I\+N\+A\+RY@{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+I\+N\+A\+RY}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+I\+N\+A\+RY@{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+I\+N\+A\+RY}}}\mbox{\Hypertarget{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77cacf8b83a9b7533af7ebb58dda41e190a4}\label{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77cacf8b83a9b7533af7ebb58dda41e190a4}} 
+V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+I\+N\+A\+RY&A threshold with only 1 value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+A\+N\+GE@{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+A\+N\+GE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+A\+N\+GE@{V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+A\+N\+GE}}}\mbox{\Hypertarget{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77ca08b9dc8416f33e8e6ff90f072a8c4977}\label{vx__types_8h_a8bb2a727990f9ef6512bac10b331e77ca08b9dc8416f33e8e6ff90f072a8c4977}} 
+V\+X\+\_\+\+T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+A\+N\+GE&A threshold with 2 values (upper/lower). Use with Canny Edge Detection. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+type\+\_\+e@{vx\+\_\+type\+\_\+e}}
+\index{vx\+\_\+type\+\_\+e@{vx\+\_\+type\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+type\+\_\+e}{vx\_type\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a44aa67e15168e5912a0800090a120be6}{vx\+\_\+type\+\_\+e}}
+
+
+
+The type enumeration lists all the known types in Open\+VX. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+V\+A\+L\+ID@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+V\+A\+L\+ID}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+V\+A\+L\+ID@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+V\+A\+L\+ID}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6abf4c9a7d6d689998498573ac247598f8}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6abf4c9a7d6d689998498573ac247598f8}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+V\+A\+L\+ID&An invalid type value. When passed an error must be returned. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+AR@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+AR}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+AR@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+AR}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6af927f497e65117e26cdc34f66c41bcf8}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6af927f497e65117e26cdc34f66c41bcf8}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+H\+AR&A {\ttfamily \hyperlink{vx__types_8h_a9ce3f44bccc95f52b9897df2b3620713}{vx\+\_\+char}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T8@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T8}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T8@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T8}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6ade01e330c4f7408377ea16c8cbe887e6}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6ade01e330c4f7408377ea16c8cbe887e6}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T8&A {\ttfamily \hyperlink{vx__types_8h_a4bb9840db3fea374224e831b2d3d868a}{vx\+\_\+int8}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a8faa6c88aa3597eabb3cc973c4a6ee80}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a8faa6c88aa3597eabb3cc973c4a6ee80}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T8&A {\ttfamily \hyperlink{vx__types_8h_ae3c17ecc60bf32f3e113766b10830aa4}{vx\+\_\+uint8}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T16@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T16}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T16@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T16}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a7e6fb8f3de4533c7c4afdb94c9b6eaab}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a7e6fb8f3de4533c7c4afdb94c9b6eaab}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T16&A {\ttfamily \hyperlink{vx__types_8h_a26c6ff9283467866f2640bceba3341f4}{vx\+\_\+int16}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T16@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T16}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T16@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T16}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a080bd3dd807437832cf3575388911a33}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a080bd3dd807437832cf3575388911a33}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T16&A {\ttfamily \hyperlink{vx__types_8h_a23fad3d6af10532a44a2d497b7a9e6eb}{vx\+\_\+uint16}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T32@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T32}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T32@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T32}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6ae97bf24e47e1b7bbafccbbccf1daa5ca}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6ae97bf24e47e1b7bbafccbbccf1daa5ca}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T32&A {\ttfamily \hyperlink{vx__types_8h_a822fc495cb9045d45893eed297d48737}{vx\+\_\+int32}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T32@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T32}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T32@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T32}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6ac13f27760e4019caaa2d08c731cba38a}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6ac13f27760e4019caaa2d08c731cba38a}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T32&A {\ttfamily \hyperlink{vx__types_8h_a1ddb983b9696cafdb4256c0df757171c}{vx\+\_\+uint32}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T64@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T64}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T64@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T64}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a63f3f6f0adfd956a4fe24d52ead1ba60}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a63f3f6f0adfd956a4fe24d52ead1ba60}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T64&A {\ttfamily \hyperlink{vx__types_8h_ae1aa1cc6d0a77ddc362add072ef6a9b2}{vx\+\_\+int64}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T64@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T64}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T64@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T64}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a0b6e6769d3f0b762f4f097247c373e38}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a0b6e6769d3f0b762f4f097247c373e38}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+I\+N\+T64&A {\ttfamily \hyperlink{vx__types_8h_aa92272cf1c97ed31a638fa7e6b0f4826}{vx\+\_\+uint64}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T32@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T32}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T32@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T32}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6aaa36bdf0ca05d4e93b1d5a4946570e16}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6aaa36bdf0ca05d4e93b1d5a4946570e16}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T32&A {\ttfamily \hyperlink{vx__types_8h_af14ad5e46a20640307420a745d199e1d}{vx\+\_\+float32}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T64@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T64}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T64@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T64}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6aa91493fa84ebc83fe838e875dbc2d67c}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6aa91493fa84ebc83fe838e875dbc2d67c}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+A\+T64&A {\ttfamily \hyperlink{vx__types_8h_a3718da3659bf64bccb45830294edc59e}{vx\+\_\+float64}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+UM@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+UM}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+UM@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+UM}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6ab65ac087a1fbe31c6cb3f49dd25bb064}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6ab65ac087a1fbe31c6cb3f49dd25bb064}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+UM&A {\ttfamily \hyperlink{vx__types_8h_a73d23cb932d31a69f44182054a987c85}{vx\+\_\+enum}}. Equivalent in size to a {\ttfamily \hyperlink{vx__types_8h_a822fc495cb9045d45893eed297d48737}{vx\+\_\+int32}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+ZE@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+ZE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+ZE@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+ZE}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a46abaab8e11a3846b2774c6c6b5f32c2}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a46abaab8e11a3846b2774c6c6b5f32c2}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+ZE&A {\ttfamily \hyperlink{vx__types_8h_a46d89d47ad9a2de1de723d0db861d324}{vx\+\_\+size}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a4d029fb0f491fef7574d8bf6698f5aa9}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a4d029fb0f491fef7574d8bf6698f5aa9}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+F\+\_\+\+I\+M\+A\+GE&A {\ttfamily \hyperlink{vx__types_8h_a371968e3355d6f9e413d836ccc14d5b8}{vx\+\_\+df\+\_\+image}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL@{V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL}}}\mbox{\Hypertarget{vx__types_8h_a44aa67e15168e5912a0800090a120be6a7feade3dbc0b0206502f8339d1617cc9}\label{vx__types_8h_a44aa67e15168e5912a0800090a120be6a7feade3dbc0b0206502f8339d1617cc9}} 
+V\+X\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL&A {\ttfamily \hyperlink{vx__types_8h_a024b285f161ef15a0f56b12175dd668b}{vx\+\_\+bool}}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{vx__types_8h_a49682f34339161ba7594f52aa8d59c1c}\label{vx__types_8h_a49682f34339161ba7594f52aa8d59c1c}} 
+\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!vx\+\_\+vendor\+\_\+id\+\_\+e@{vx\+\_\+vendor\+\_\+id\+\_\+e}}
+\index{vx\+\_\+vendor\+\_\+id\+\_\+e@{vx\+\_\+vendor\+\_\+id\+\_\+e}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}
+\subsubsection{\texorpdfstring{vx\+\_\+vendor\+\_\+id\+\_\+e}{vx\_vendor\_id\_e}}
+{\footnotesize\ttfamily enum \hyperlink{vx__types_8h_a49682f34339161ba7594f52aa8d59c1c}{vx\+\_\+vendor\+\_\+id\+\_\+e}}
+
+
+
+The Vendor ID of the Implementation. As new vendors submit their implementations, this enumeration will grow. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS@{V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS}!vx\+\_\+types.\+h@{vx\+\_\+types.\+h}}\index{vx\+\_\+types.\+h@{vx\+\_\+types.\+h}!V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS@{V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS}}}\mbox{\Hypertarget{vx__types_8h_a49682f34339161ba7594f52aa8d59c1ca18e689a3807616bbbc61283ec8a9ea60}\label{vx__types_8h_a49682f34339161ba7594f52aa8d59c1ca18e689a3807616bbbc61283ec8a9ea60}} 
+V\+X\+\_\+\+I\+D\+\_\+\+K\+H\+R\+O\+N\+OS&The Khronos Group. \\
+\hline
+
+\end{DoxyEnumFields}
