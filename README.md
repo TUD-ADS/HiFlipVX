@@ -14,7 +14,7 @@ Open Source **Hi**gh-Level Synthesis **F**PGA **L**ibrary for **I**mage **P**roc
 
 ## Provided Functions
 
-Image Pixelwise Functions
+Image **Pixelwise** Functions
 - Absolute Difference
 - Arithmetic Addition
 - Arithmetic Subtraction
@@ -31,7 +31,7 @@ Image Pixelwise Functions
 - Thresholding
 - Weighted Average
 
-Image Filter Functions
+Image **Filter** Functions
 - Box Filter
 - Custom Convolution
 - Dilate Image
@@ -45,7 +45,7 @@ Image Filter Functions
 - Segment Test Detector
 - Sobel
 
-Image Conversion Functions
+Image **Conversion** Functions
 - Channel Combine
 - Channel Extract
 - Color Convert
@@ -54,7 +54,7 @@ Image Conversion Functions
 - Multicast
 - Scale Image
 
-Image Analysis Functions
+Image **Analysis** Functions
 - Control Flow
 - Equalize Histogram
 - Histogram
@@ -64,16 +64,16 @@ Image Analysis Functions
 - TableLookup
 
 
-Windowed operations support different border handling:
+Windowed operations support different **border handling**:
 - Replicated: Pixels beyond borders are replicated
 - Constant: Pixels beyond borders are constant zero
 - Undefined: Pixels beyond borders do not contain valid data
 
-Some operations support conversion policies against overflow:
+Some operations support **conversion policies** against overflow:
 - Wrap: Results are the least significant bits of the output operand.
 - Saturate: Results are saturated to the bit depth of the output operand.
 
-Some operations support rounding policies:
+Some operations support **rounding policies**:
 - Round to Zero: This truncates the least significant values that are lost in operations.
 - Round to Nearest Even: This rounds to nearest even output value.
 
@@ -109,7 +109,7 @@ The library files explained in the previous sub-section can be used as follows:
 
 ## Needed macros (*vx_helper.h*)
 - **__XILINX__** -> Set this flag when using the library in the Xilinx tools
-- **__LAST__** -> Creates a LAST signal to the *vx_image_data* that indicates the EOF (start of frame) - Set for VDMA & DMA
+- **__LAST__** -> Creates a LAST signal to the *vx_image_data* that indicates the EOF (end of frame) - Set for VDMA & DMA
 - **__USER__** -> Creates a USER signal to the *vx_image_data* that indicates the SOF (start of frame) - Set for VDMA
 
 
