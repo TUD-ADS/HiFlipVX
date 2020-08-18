@@ -16,9 +16,9 @@
 #ifndef VX_HELPER_H_
 #define VX_HELPER_H_
 
-//#define __XILINX__    // Set this flag when using Xilinx tool: HLS & SDX
-//#define __LAST__      // Creates a LAST signal that indicates EOF (start of frame) - Set for VDMA & DMA
-//#define __USER__      // Creates a USER signal that indicates SOF (start of frame) - Set for VDMA
+//#define __XILINX__    // Set this flag when using the library in the Xilinx tools
+//#define __LAST__      // Creates a LAST signal to the *vx_image_data* that indicates the EOF (end of frame) - Set for VDMA & DMA
+//#define __USER__      // Creates a USER signal to the *vx_image_data* that indicates the SOF (start of frame) - Set for VDMA
 //#define __EVAL_TIME__ // Turn on time measurements
 
 /*********************************************************************************************************************/

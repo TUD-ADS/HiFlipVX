@@ -20,7 +20,6 @@
 #include "img_conversion_base.h"
 #ifndef __XILINX__
 #include "img_filter_test.h"
-#include "img_other_test.h"
 #include "img_pixelop_test.h"
 #include "img_reader.h"
 #endif
@@ -1109,7 +1108,6 @@ int main(void) {
 
 	// Verification
 #ifndef __SDSCC__
-	//swTestOtherMain();
 	//SwTestPixelopMain();
 	//TestFilterMain();
 #endif
