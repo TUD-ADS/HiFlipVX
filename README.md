@@ -3,31 +3,33 @@
 Open Source **Hi**gh-Level Synthesis **F**PGA **L**ibrary for **I**mage **P**rocessing
 
 - Image procesing library for FPGAs
-- Contains 28 image processing functions
+- Contains 41 image processing functions
 - Funktions based on the OpenVX standard
-- Highly optimized, parametrizable
+- Highly optimized, parametrizable and streaming capable
 - Most functions support auto-vectorization (parallelization)
 - Most functions support additional data-types
-- Functions implemented for streaming applications
 - Does not require additional libraries
-- Optimized for Xilinx SDSoC / Vivado HLS
+- Optimized for Xilinx SDSoC / SDAccel / Vivado HLS
 
 
 ## Provided Functions
 
 Image Pixelwise Functions
+- Absolute Difference
+- Arithmetic Addition
+- Arithmetic Subtraction
 - Bitwise AND
 - Bitwise EXCLUSIVE OR
 - Bitwise INCLUSIVE OR
 - Bitwise NOT
-- Arithmetic Addition
-- Arithmetic Subtraction
-- Min
-- Max
 - Data Object Copy
-- Absolute Difference
-- Pixel-wise Multiplication
 - Magnitude
+- Max
+- Min
+- Phase
+- Pixel-wise Multiplication
+- Thresholding
+- Weighted Average
 
 Image Filter Functions
 - Box Filter
@@ -35,19 +37,32 @@ Image Filter Functions
 - Dilate Image
 - Erode Image
 - Gaussian Filter
+- Hysteresis Filter
 - Median Filter
+- Non-Maxima Suppression
+- Oriented Non-Maxima Suppression
 - Scharr 3x3
+- Segment Test Detector
 - Sobel
 
-Image Conversion and Analysis Functions
-- Color Convert
+Image Conversion Functions
 - Channel Combine
 - Channel Extract
+- Color Convert
 - Convert Bit Depth
+- Convert Data Width
+- Multicast
+- Scale Image
+
+Image Analysis Functions
+- Control Flow
+- Equalize Histogram
 - Histogram
 - Integral Image
-- Scale Image
+- Mean & Standard Deviation
+- Min, Max Location
 - TableLookup
+
 
 Windowed operations support different border handling:
 - Replicated: Pixels beyond borders are replicated
@@ -66,36 +81,44 @@ Some operations support rounding policies:
 ## Library Files:
 
 The image processing library contains the following files:
-- **main.cpp:** Contains examples of how to use the implemented functions. 
-- **img_filter_base.h:**  Contains all filter functions. Call functions from here.
-- **img_pixelop_base.h:** Contains all pixel-wise operation functions. Call functions from here.
-- **img_other_base.h:**   Contains all other operation functions. Call functions from here.
-- **img_helper.h:**       Contains The image data tpye and functions to create and destroy images
-- **vx_types.h:**         Contains all OpenVX data types needed (imported from OpenVX)
-- img_filter_core.h:  Contains all sub-functions that are needed for the filter functions.
-- img_filter_test.h:  Contains all test function, to test the functionality of the filter functions.
-- img_pixelop_core.h: Contains all sub-functions that are needed for the pixel-wise operations.
-- img_pixelop_test.h: Contains all test function, to test the functionality of the pixel-wise operation functions.
-- img_other_core.h:   Contains all sub-functions that are needed for the other operations.
-- img_other_test.h:   Contains all test function, to test the functionality of the other functions.
+- **main.cpp:**              Contains examples of how to use the implemented functions. 
+- **img_filter_base.h:**     Contains all filter functions. Call functions from here.
+- **img_pixelop_base.h:**    Contains all pixel-wise operation functions. Call functions from here.
+- **img_conversion_base.h:** Contains all conversion functions. Call functions from here.
+- **img_analysis_base.h:**   Contains all analysis functions. Call functions from here.
+- **vx_helper.h:**           Contains all own data types, enums and macros. Contains own image data type (*vx_image_data*) and functions to create and destroy these images. 
+- **vx_types.h:**            Contains all OpenVX data types, enums and macros (imported from OpenVX).
+- img_filter_core.h:     Contains all sub-functions that are needed for the filter functions.
+- img_filter_test.h:     Contains all test function, to test the functionality of the filter functions.
+- img_pixelop_core.h:    Contains all sub-functions that are needed for the pixel-wise operations.
+- img_pixelop_test.h:    Contains all test function, to test the functionality of the pixel-wise operation functions.
+- img_conversion_core.h: Contains all sub-functions that are needed for the conversion operations.
+- img_analysis_core.h:   Contains all sub-functions that are needed for the analysis operations.
+- img_reader.h:          Contains files to read/write pgm images for testing,  
 
 
 ## Usage
 
 The library files explained in the previous sub-section can be used as follows:
-- Add the *filter_base.h*, *pixelop_base.h* and *img_other_core.h* to call functions.
-- The *img_helper.h* contains the needed image data type and functions to create and destroy images
-- *vx_types.h* needed OpenVX data types
-- The "main.cpp" contains examples how to call the implemented functions.
-- There is an example in the main for hardware efficient streaming in 1 accelerator.
+- Add the *filter_base.h*, *pixelop_base.h*, *img_analysis_base.h:* and *img_conversion_base.h* to call functions.
+- The *vx_helper.h* contains the needed image data type and functions to create and destroy images
+- *vx_types.h* contains the needed OpenVX data types
+- The *main.cpp* contains examples how to call the implemented functions.
+- There are example applications in the main for efficient streaming within one accelerator.
+
+
+## Needed macros (*vx_helper.h*)
+- **__XILINX__** -> Set this flag when using the library in the Xilinx tools
+- **__LAST__** -> Creates a LAST signal to the *vx_image_data* that indicates the EOF (start of frame) - Set for VDMA & DMA
+- **__USER__** -> Creates a USER signal to the *vx_image_data* that indicates the SOF (start of frame) - Set for VDMA
 
 
 ## Outlook
 
 Further functionality will be added to the library:
-- Will add more functions in future (Minimum 8 Functions in next Version)
-- Add functions from the OpenVX neural network extension
-- Create an upper layer for application distribution and HW/SW Codesign using the OpenVX graphs
+- Add functions for feature detection
+- Add functions for neural networks
+- Create an OpenVX framework including the graph-based approach and memory management
 
 
 ## Citations
