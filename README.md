@@ -2,9 +2,9 @@
 
 Open Source **Hi**gh-Level Synthesis **F**PGA **L**ibrary for **I**mage **P**rocessing
 
-- Image procesing library for FPGAs
+- Image processing library for FPGAs
 - Contains 41 image processing functions
-- Funktions based on the OpenVX standard
+- Functions based on the OpenVX standard
 - Highly optimized, parametrizable and streaming capable
 - Most functions support auto-vectorization (parallelization)
 - Most functions support additional data-types
