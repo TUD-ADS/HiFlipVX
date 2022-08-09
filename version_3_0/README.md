@@ -2,7 +2,7 @@
 
 Open Source **Hi**gh-Level Synthesis **F**PGA **L**ibrary for **I**mage **P**rocessing
 
-- Image procesing library for FPGAs
+- Object detection library for FPGAs
 - Contains 65 (image, feature and neural network) functions
 - 42 funktions based on the OpenVX standard
 - 23 functions developed from different algorithms
@@ -46,17 +46,17 @@ Open Source **Hi**gh-Level Synthesis **F**PGA **L**ibrary for **I**mage **P**roc
 | Scatter              |                           | ORB Features        |                        |
 
 Windowed operations support different **border handling**:
-- Replicated: Pixels beyond borders are replicated            |
-- Constant: Pixels beyond borders are constant zero         |
-- Undefined : Pixels beyond borders do not contain valid data |
+- Replicated: Pixels beyond borders are replicated            
+- Constant: Pixels beyond borders are constant zero         
+- Undefined : Pixels beyond borders do not contain valid data 
 
 Some operations support **conversion policies** against overflow:
-- Wrap: Results are the least significant bits of the output operand. |
-- Saturate: Results are saturated to the bit depth of the output operand. |
+- Wrap: Results are the least significant bits of the output operand. 
+- Saturate: Results are saturated to the bit depth of the output operand. 
 
 Some operations support **rounding policies**:
-- Round to Zero: This truncates the least significant values that are lost in operations. |
-- Round to Nearest Even: This rounds to nearest even output value.                                |
+- Round to Zero: This truncates the least significant values that are lost in operations. 
+- Round to Nearest Even: This rounds to nearest even output value.                                
 
 ## Library Files:
 
@@ -114,8 +114,8 @@ The library files explained in the previous sub-section can be used as follows:
 
 ## Outlook
 Further functionality will be added to the library:
-- Add AKAZE feature detection function. All ready all sub-functions are inside of the library
-- Update the library for Vitis (at the moment LAST and USER signals of the AXI4-stream protocol dont work with Vitis)
+- Add AKAZE feature detection function. All sub-functions are already inside of the library.
+- Update the library for Vitis (at the moment LAST and USER signals of the AXI4-stream protocol dont work with Vitis).
 
 ## HiFlipVX related Publications
 - L. Kalms, A. Podlubne, and D. Göhringer. “HiFlipVX: an Open Source High-Level Synthesis FPGA Library for Image Processing”. In: International Symposium on Applied Reconfigurable Computing (ARC). Springer, Apr. 2019, pp. 149–164. DOI: 10.1007/978-3-030-17227-5_12.
@@ -126,8 +126,8 @@ Further functionality will be added to the library:
 - L. Kalms, T. Häring, and D. Göhringer. “DECISION: Distributing OpenVX Applications on CPUs, GPUs and FPGAs using OpenCL”. In: International Parallel and Distributed Processing Symposium Workshops (IPDPSW). IEEE, May 2022, pp. 1–8. DOI: 10.1109/IPDPSW55747.2022.00023
 
 ## Contact Info
-- M.Sc. Lester Kalms, Technische Universität Dresden, lester.kalms@tu-dresden.de,
-- M.Sc. Matthias Nickel, Technische Universität Dresden, matthias.nickel@tu-dresden.de,
+- M.Sc. Lester Kalms, Technische Universität Dresden, lester.kalms@tu-dresden.de
+- M.Sc. Matthias Nickel, Technische Universität Dresden, matthias.nickel@tu-dresden.de
 
 ## Acknowledgment
 This work has been partially supported by European Union’s Horizon 2020 research and innovation programme as part of the TULIPP project under grant agreement No 688403 and partially by the German Federal Ministry of Education and Research BMBF as part of the PARIS project under grant agreement number 16ES0657.
